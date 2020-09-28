@@ -1,0 +1,51 @@
+Script started on 2020-09-25 11:16:03-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="35"]
+root@Pentest:/home/joaofracassi/beco-xpl/droopy-v0.2# searchsploit drupal
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+[01;31m[KDrupal[m[K 4.0 - News Message HTML Injection                                                                                            | php/webapps/21863.txt
+[01;31m[KDrupal[m[K 4.1/4.2 - Cross-Site Scripting                                                                                               | php/webapps/22940.txt
+[01;31m[KDrupal[m[K 4.5.3 < 4.6.1 - Comments PHP Injection                                                                                       | php/webapps/1088.pl
+[01;31m[KDrupal[m[K 4.7 - 'Attachment mod_mime' Remote Command Execution                                                                         | php/webapps/1821.php
+[01;31m[KDrupal[m[K 4.x - URL-Encoded Input HTML Injection                                                                                       | php/webapps/27020.txt
+[01;31m[KDrupal[m[K 5.2 - PHP Zend Hash ation Vector                                                                                             | php/webapps/4510.txt
+[01;31m[KDrupal[m[K 5.21/6.16 - Denial of Service                                                                                                | php/dos/10826.sh
+[01;31m[KDrupal[m[K 6.15 - Multiple Persistent Cross-Site Scripting Vulnerabilities                                                              | php/webapps/11060.txt
+[01;31m[KDrupal[m[K 7.0 < 7.31 - '[01;31m[KDrupal[m[Kgeddon' SQL Injection (Add Admin User)                                                                   | php/webapps/34992.py
+[01;31m[KDrupal[m[K 7.0 < 7.31 - '[01;31m[KDrupal[m[Kgeddon' SQL Injection (Admin Session)                                                                    | php/webapps/44355.php
+[01;31m[KDrupal[m[K 7.0 < 7.31 - '[01;31m[KDrupal[m[Kgeddon' SQL Injection (PoC) (Reset Password) (1)                                                         | php/webapps/34984.py
+[01;31m[KDrupal[m[K 7.0 < 7.31 - '[01;31m[KDrupal[m[Kgeddon' SQL Injection (PoC) (Reset Password) (2)                                                         | php/webapps/34993.php
+[01;31m[KDrupal[m[K 7.0 < 7.31 - '[01;31m[KDrupal[m[Kgeddon' SQL Injection (Remote Code Execution)                                                            | php/webapps/35150.php
+[01;31m[KDrupal[m[K 7.12 - Multiple Vulnerabilities                                                                                              | php/webapps/18564.txt
+[01;31m[KDrupal[m[K 7.x Module Services - Remote Code Execution                                                                                  | php/webapps/41564.php
+[01;31m[KDrupal[m[K < 4.7.6 - Post Comments Remote Command Execution                                                                             | php/webapps/3313.pl
+[01;31m[KDrupal[m[K < 5.1 - Post Comments Remote Command Execution                                                                               | php/webapps/3312.pl
+[01;31m[KDrupal[m[K < 5.22/6.16 - Multiple Vulnerabilities                                                                                       | php/webapps/33706.txt
+[01;31m[KDrupal[m[K < 7.34 - Denial of Service                                                                                                   | php/dos/35415.txt
+[01;31m[KDrupal[m[K < 7.58 - '[01;31m[KDrupal[m[Kgeddon3' (Authenticated) Remote Code (Metasploit)                                                            | php/webapps/44557.rb
+[01;31m[KDrupal[m[K < 7.58 - '[01;31m[KDrupal[m[Kgeddon3' (Authenticated) Remote Code Execution (PoC)                                                         | php/webapps/44542.txt
+[01;31m[KDrupal[m[K < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - '[01;31m[KDrupal[m[Kgeddon2' Remote Code Execution                                                 | php/webapps/44449.rb
+[01;31m[KDrupal[m[K < 8.3.9 / < 8.4.6 / < 8.5.1 - '[01;31m[KDrupal[m[Kgeddon2' Remote Code Execution (Metasploit)                                             | php/remote/44482.rb
+[01;31m[KDrupal[m[K < 8.3.9 / < 8.4.6 / < 8.5.1 - '[01;31m[KDrupal[m[Kgeddon2' Remote Code Execution (PoC)                                                    | php/webapps/44448.py
+[01;31m[KDrupal[m[K < 8.5.11 / < 8.6.10 - RESTful Web Services unserialize() Remote Command Execution (Metasploit)                               | php/remote/46510.rb
+[01;31m[KDrupal[m[K < 8.6.10 / < 8.5.11 - REST Module Remote Code Execution                                                                      | php/webapps/46452.txt
+[01;31m[KDrupal[m[K < 8.6.9 - REST Module Remote Code Execution                                                                                  | php/webapps/46459.py
+[01;31m[KDrupal[m[K avatar_uploader v7.x-1.0-beta8 - Arbitrary File Disclosure                                                                   | php/webapps/44501.txt
+[01;31m[KDrupal[m[K Module Ajax Checklist 5.x-1.0 - Multiple SQL Injections                                                                      | php/webapps/32415.txt
+[01;31m[KDrupal[m[K Module CAPTCHA - Security Bypass                                                                                             | php/webapps/35335.html
+[01;31m[KDrupal[m[K Module CKEditor 3.0 < 3.6.2 - Persistent EventHandler Cross-Site Scripting                                                   | php/webapps/18389.txt
+[01;31m[KDrupal[m[K Module CKEditor < 4.1WYSIWYG ([01;31m[KDrupal[m[K 6.x/7.x) - Persistent Cross-Site Scripting                                              | php/webapps/25493.txt
+[01;31m[KDrupal[m[K Module CODER 2.5 - Remote Command Execution (Metasploit)                                                                     | php/webapps/40149.rb
+[01;31m[KDrupal[m[K Module Coder < 7.x-1.3/7.x-2.6 - Remote Code Execution                                                                       | php/remote/40144.php
+[01;31m[KDrupal[m[K Module Cumulus 5.x-1.1/6.x-1.4 - 'tagcloud' Cross-Site Scripting                                                             | php/webapps/35397.txt
+[01;31m[KDrupal[m[K Module Drag & Drop Gallery 6.x-1.5 - 'upload.php' Arbitrary File Upload                                                      | php/webapps/37453.php
+[01;31m[KDrupal[m[K Module Embedded Media Field/Media 6.x : Video Flotsam/Media: Audio Flotsam - Multiple Vulnerabilities                        | php/webapps/35072.txt
+[01;31m[KDrupal[m[K Module RESTWS 7.x - PHP Remote Code Execution (Metasploit)                                                                   | php/remote/40130.rb
+[01;31m[KDrupal[m[K Module Sections - Cross-Site Scripting                                                                                       | php/webapps/10485.txt
+[01;31m[KDrupal[m[K Module Sections 5.x-1.2/6.x-1.2 - HTML Injection                                                                             | php/webapps/33410.txt
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+root@Pentest:/home/joaofracassi/beco-xpl/droopy-v0.2# exo[Kit
+exit
+
+Script done on 2020-09-25 11:18:28-03:00 [COMMAND_EXIT_CODE="0"]

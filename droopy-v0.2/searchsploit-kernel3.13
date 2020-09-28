@@ -1,0 +1,97 @@
+Script started on 2020-09-25 11:53:13-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi# 
+root@Pentest:/home/joaofracassi# searchsploit j[Kkernel [K[K[K[K[K[K[Klinux 3.13.0
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Alienvault Open Source SIEM (OSSIM) < 4.7.0 - 'get_license' Remote Command Execution (Metasploit)                                   | [01;31m[Klinux[m[K/remote/42697.rb
+Alienvault Open Source SIEM (OSSIM) < 4.7.0 - av-centerd 'get_log_line()' Remote Code Execution                                     | [01;31m[Klinux[m[K/remote/33805.pl
+Alienvault Open Source SIEM (OSSIM) < 4.8.0 - 'get_file' Information Disclosure (Metasploit)                                        | [01;31m[Klinux[m[K/remote/42695.rb
+AppArmor securityfs < 4.8 - 'aa_fs_seq_hash_show' Reference Count Leak                                                              | [01;31m[Klinux[m[K/dos/40181.c
+CyberArk < 10 - Memory Disclosure                                                                                                   | [01;31m[Klinux[m[K/remote/44829.py
+CyberArk Password Vault < 9.7 / < 10 - Memory Disclosure                                                                            | [01;31m[Klinux[m[K/dos/44428.txt
+Dell EMC RecoverPoint < 5.1.2 - Local Root Command Execution                                                                        | [01;31m[Klinux[m[K/local/44920.txt
+Dell EMC RecoverPoint < 5.1.2 - Remote Root Command Execution                                                                       | [01;31m[Klinux[m[K/remote/44921.txt
+Dell EMC RecoverPoint boxmgmt CLI < 5.1.2 - Arbitrary File Read                                                                     | [01;31m[Klinux[m[K/local/44688.txt
+DenyAll WAF < 6.3.0 - Remote Code Execution (Metasploit)                                                                            | [01;31m[Klinux[m[K/webapps/42769.rb
+Exim < 4.86.2 - Local Privilege Escalation                                                                                          | [01;31m[Klinux[m[K/local/39549.txt
+Exim < 4.90.1 - 'base64d' Remote Code Execution                                                                                     | [01;31m[Klinux[m[K/remote/44571.py
+Gnome Web (Epiphany) < 3.28.2.1 - Denial of Service                                                                                 | [01;31m[Klinux[m[K/dos/44857.html
+Jfrog Artifactory < 4.16 - Arbitrary File Upload / Remote Command Execution                                                         | [01;31m[Klinux[m[K/webapps/44543.txt
+KDE libkhtml 3.5 < 4.2.0 - Unhandled HTML Parse Exception                                                                           | [01;31m[Klinux[m[K/dos/2954.html
+LibreOffice < 6.0.1 - '=WEBSERVICE' Remote Arbitrary File Disclosure                                                                | [01;31m[Klinux[m[K/remote/44022.md
+[01;31m[KLinux[m[K < 4.14.103 / < 4.19.25 - Out-of-Bounds Read and Write in SNMP NAT Module                                                      | [01;31m[Klinux[m[K/dos/46477.txt
+[01;31m[KLinux[m[K < 4.16.9 / < 4.14.41 - 4-byte Infoleak via Uninitialized Struct Field in compat adjtimex Syscall                              | [01;31m[Klinux[m[K/dos/44641.c
+[01;31m[KLinux[m[K < 4.20.14 - Virtual Address 0 is Mappable via Privileged write() to /proc/*/mem                                               | [01;31m[Klinux[m[K/dos/46502.txt
+[01;31m[KLinux[m[K Kernel (Solaris 10 / < 5.10 138888-01) - Local Privilege Escalation                                                           | solaris/local/15962.c
+[01;31m[KLinux[m[K Kernel 3.11 < 4.8 0 - 'SO_SNDBUFFORCE' / 'SO_RCVBUFFORCE' Local Privilege Escalation                                          | [01;31m[Klinux[m[K/local/41995.c
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13.0[m[K < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation                                | [01;31m[Klinux[m[K/local/37292.c
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13.0[m[K < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation (Access /etc/shadow)           | [01;31m[Klinux[m[K/local/37293.txt
+[01;31m[KLinux[m[K Kernel 3.14-rc1 < 3.15-rc4 (x64) - Raw Mode PTY Echo Race Condition Privilege Escalation                                      | [01;31m[Klinux[m[K_x86-64/local/33516.c
+[01;31m[KLinux[m[K Kernel 3.4 < 3.13.2 (Ubuntu 13.04/13.10 x64) - 'CONFIG_X86_X32=y' Local Privilege Escalation (3)                              | [01;31m[Klinux[m[K_x86-64/local/31347.c
+[01;31m[KLinux[m[K Kernel 3.4 < 3.13.2 (Ubuntu 13.10) - 'CONFIG_X86_X32' Arbitrary Write (2)                                                     | [01;31m[Klinux[m[K/local/31346.c
+[01;31m[KLinux[m[K Kernel 3.4 < 3.13.2 - recvmmsg x32 compat (PoC)                                                                               | [01;31m[Klinux[m[K/dos/31305.c
+[01;31m[KLinux[m[K Kernel 4.10.5 / < 4.14.3 (Ubuntu) - DCCP Socket Use-After-Free                                                                | [01;31m[Klinux[m[K/dos/43234.c
+[01;31m[KLinux[m[K Kernel 4.8.0 UDEV < 232 - Local Privilege Escalation                                                                          | [01;31m[Klinux[m[K/local/41886.c
+[01;31m[KLinux[m[K Kernel < 3.16.1 - 'Remount FUSE' Local Privilege Escalation                                                                   | [01;31m[Klinux[m[K/local/34923.c
+[01;31m[KLinux[m[K Kernel < 3.16.39 (Debian 8 x64) - 'inotfiy' Local Privilege Escalation                                                        | [01;31m[Klinux[m[K_x86-64/local/44302.c
+[01;31m[KLinux[m[K Kernel < 4.10.13 - 'keyctl_set_reqkey_keyring' Local Denial of Service                                                        | [01;31m[Klinux[m[K/dos/42136.c
+[01;31m[KLinux[m[K kernel < 4.10.15 - Race Condition Privilege Escalation                                                                        | [01;31m[Klinux[m[K/local/43345.c
+[01;31m[KLinux[m[K Kernel < 4.11.8 - 'mq_notify: double sock_put()' Local Privilege Escalation                                                   | [01;31m[Klinux[m[K/local/45553.c
+[01;31m[KLinux[m[K Kernel < 4.13.1 - BlueTooth Buffer Overflow (PoC)                                                                             | [01;31m[Klinux[m[K/dos/42762.txt
+[01;31m[KLinux[m[K Kernel < 4.13.9 (Ubuntu 16.04 / Fedora 27) - Local Privilege Escalation                                                       | [01;31m[Klinux[m[K/local/45010.c
+[01;31m[KLinux[m[K Kernel < 4.14.rc3 - Local Denial of Service                                                                                   | [01;31m[Klinux[m[K/dos/42932.c
+[01;31m[KLinux[m[K Kernel < 4.15.4 - 'show_floppy' KASLR Address Leak                                                                            | [01;31m[Klinux[m[K/local/44325.c
+[01;31m[KLinux[m[K Kernel < 4.16.11 - 'ext4_read_inline_data()' Memory Corruption                                                                | [01;31m[Klinux[m[K/dos/44832.txt
+[01;31m[KLinux[m[K Kernel < 4.17-rc1 - 'AF_LLC' Double Free                                                                                      | [01;31m[Klinux[m[K/dos/44579.c
+[01;31m[KLinux[m[K Kernel < 4.4.0-116 (Ubuntu 16.04.4) - Local Privilege Escalation                                                              | [01;31m[Klinux[m[K/local/44298.c
+[01;31m[KLinux[m[K Kernel < 4.4.0-21 (Ubuntu 16.04 x64) - 'netfilter target_offset' Local Privilege Escalation                                   | [01;31m[Klinux[m[K_x86-64/local/44300.c
+[01;31m[KLinux[m[K Kernel < 4.4.0-83 / < 4.8.0-58 (Ubuntu 14.04/16.04) - Local Privilege Escalation (KASLR / SMEP)                               | [01;31m[Klinux[m[K/local/43418.c
+[01;31m[KLinux[m[K Kernel < 4.4.0/ < 4.8.0 (Ubuntu 14.04/16.04 / [01;31m[KLinux[m[K Mint 17/18 / Zorin) - Local Privilege Escalation (KASLR / SMEP)           | [01;31m[Klinux[m[K/local/47169.c
+[01;31m[KLinux[m[K Kernel < 4.5.1 - Off-By-One (PoC)                                                                                             | [01;31m[Klinux[m[K/dos/44301.c
+Logpoint < 5.6.4 - Root Remote Code Execution                                                                                       | [01;31m[Klinux[m[K/remote/42158.py
+MatrixSSL < 4.0.2 - Stack Buffer Overflow Verifying x.509 Certificates                                                              | [01;31m[Klinux[m[K/dos/46435.txt
+Nagios < 4.2.2 - Arbitrary Code Execution                                                                                           | [01;31m[Klinux[m[K/remote/40920.py
+Nagios < 4.2.4 - Local Privilege Escalation                                                                                         | [01;31m[Klinux[m[K/local/40921.sh
+NfSen < 1.3.7 / AlienVault OSSIM < 5.3.6 - Local Privilege Escalation                                                               | [01;31m[Klinux[m[K/local/42305.txt
+OpenSSH 2.3 < 7.7 - Username Enumeration                                                                                            | [01;31m[Klinux[m[K/remote/45233.py
+OpenSSH 2.3 < 7.7 - Username Enumeration (PoC)                                                                                      | [01;31m[Klinux[m[K/remote/45210.py
+OpenSSH < 6.6 SFTP (x64) - Command Execution                                                                                        | [01;31m[Klinux[m[K_x86-64/remote/45000.c
+OpenSSH < 6.6 SFTP - Command Execution                                                                                              | [01;31m[Klinux[m[K/remote/45001.py
+OpenSSH < 7.4 - 'UsePrivilegeSeparation Disabled' Forwarded Unix Domain Sockets Privilege Escalation                                | [01;31m[Klinux[m[K/local/40962.txt
+OpenSSH < 7.4 - agent Protocol Arbitrary Library Loading                                                                            | [01;31m[Klinux[m[K/remote/40963.txt
+OpenSSH < 7.7 - User Enumeration (2)                                                                                                | [01;31m[Klinux[m[K/remote/45939.py
+Oracle MySQL < 5.1.49 - 'DDL' Statements Denial of Service                                                                          | [01;31m[Klinux[m[K/dos/34522.txt
+Oracle MySQL < 5.1.49 - Malformed 'BINLOG' Arguments Denial of Service                                                              | [01;31m[Klinux[m[K/dos/34521.txt
+Oracle VM VirtualBox < 5.0.32 / < 5.1.14 - Local Privilege Escalation                                                               | [01;31m[Klinux[m[K/local/41196.txt
+Oracle WebCenter FatWire Content Server < 7 - Improper Access Control                                                               | [01;31m[Klinux[m[K/webapps/44757.txt
+PHP < 4.4.5/5.2.1 - 'shmop' Local Code Execution                                                                                    | [01;31m[Klinux[m[K/local/3426.php
+PHP < 4.4.5/5.2.1 - 'shmop' SSL RSA Private-Key Disclosure                                                                          | [01;31m[Klinux[m[K/local/3427.php
+PHP < 4.4.5/5.2.1 - '_SESSION unset()' Local Overflow                                                                               | [01;31m[Klinux[m[K/local/3571.php
+PHP < 4.4.5/5.2.1 - '_SESSION' Deserialization Overwrite                                                                            | [01;31m[Klinux[m[K/local/3572.php
+Pi-hole < 4.4 - Authenticated Remote Code Execution                                                                                 | [01;31m[Klinux[m[K/webapps/48442.py
+Pi-hole < 4.4 - Authenticated Remote Code Execution / Privileges Escalation                                                         | [01;31m[Klinux[m[K/webapps/48443.py
+Redis-cli < 5.0 - Buffer Overflow (PoC)                                                                                             | [01;31m[Klinux[m[K/local/44904.py
+RPi Cam Control < 6.4.25 - 'preview.php' Remote Command Execution                                                                   | [01;31m[Klinux[m[K/webapps/45361.py
+runc < 1.0-rc6 (Docker < 18.09.2) - Container Breakout (1)                                                                          | [01;31m[Klinux[m[K/local/46359.md
+runc < 1.0-rc6 (Docker < 18.09.2) - Container Breakout (2)                                                                          | [01;31m[Klinux[m[K/local/46369.md
+Samba 3.5.0 < 4.4.14/4.5.10/4.6.4 - 'is_known_pipename()' Arbitrary Module Load (Metasploit)                                        | [01;31m[Klinux[m[K/remote/42084.rb
+SAP B2B / B2C CRM 2.x < 4.x - Local File Inclusion                                                                                  | [01;31m[Klinux[m[K/webapps/44655.txt
+Serv-U FTP Server < 15.1.7 - Local Privilege Escalation (1)                                                                         | [01;31m[Klinux[m[K/local/47009.c
+SixApart MovableType < 5.2.12 - Storable Perl Code Execution (Metasploit)                                                           | [01;31m[Klinux[m[K/webapps/41697.rb
+Splunk < 7.0.1 - Information Disclosure                                                                                             | [01;31m[Klinux[m[K/webapps/44865.txt
+systemd (systemd-tmpfiles) < 236 - 'fs.protected_hardlinks=0' Local Privilege Escalation                                            | [01;31m[Klinux[m[K/local/43935.txt
+Tenable Appliance < 4.5 - Root Remote Code Execution                                                                                | [01;31m[Klinux[m[K/remote/41892.sh
+Ubuntu < 15.10 - PT Chown Arbitrary PTs Access Via User Namespace Privilege Escalation                                              | [01;31m[Klinux[m[K/local/41760.txt
+UCOPIA Wireless Appliance < 5.1 (Captive Portal) - Root Remote Code Execution                                                       | [01;31m[Klinux[m[K/remote/42949.txt
+UCOPIA Wireless Appliance < 5.1.8 - Local Privilege Escalation                                                                      | [01;31m[Klinux[m[K/local/42936.md
+UCOPIA Wireless Appliance < 5.1.8 - Restricted Shell Escape                                                                         | [01;31m[Klinux[m[K/local/42937.md
+Vim < 8.1.1365 / Neovim < 0.3.6 - Arbitrary Code Execution                                                                          | [01;31m[Klinux[m[K/local/46973.md
+Virtualmin < 3.703 - Multiple Local/Remote Vulnerabilities                                                                          | [01;31m[Klinux[m[K/remote/9143.txt
+WordPress Core < 4.7.4 - Unauthorized Password Reset                                                                                | [01;31m[Klinux[m[K/webapps/41963.txt
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+root@Pentest:/home/joaofracassi# exit
+exit
+
+Script done on 2020-09-25 12:00:17-03:00 [COMMAND_EXIT_CODE="0"]

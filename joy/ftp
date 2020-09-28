@@ -1,0 +1,22 @@
+Script started on 2020-09-26 01:04:10-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# ftp 193.1[K[K[K2.168.1.106
+Connected to 192.168.1.106.
+220 The Good Tech Inc. FTP Server
+Name (192.168.1.106:joaofracassi): anonymu ous
+331 Anonymous login ok, send your complete email address as your password
+Password:
+230 Anonymous access granted, restrictions apply
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful
+150 Opening ASCII mode data connection for file list
+drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download
+drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload
+226 Transfer complete
+ftp> exit
+221 Goodbye.
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:04:34-03:00 [COMMAND_EXIT_CODE="0"]

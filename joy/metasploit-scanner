@@ -1,0 +1,47 @@
+Script started on 2020-09-26 00:59:56-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="35"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# 
+root@Pentest:/home/joaofracassi/beco-xpl/joy# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../                                                  
+[0m[36m     ,           ,
+    /             \
+   ((__---,,,---__))
+      (_) O O (_)_________
+         \ _ /            |\
+          o_o \   M S F   | \
+               \   _____  |  *
+                |||   WW|||
+                |||     |||
+[0m
+
+       =[ [33mmetasploit v5.0.101-dev[0m                         ]
++ -- --=[ 2049 exploits - 1108 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: View missing module options with [32mshow missing[0m
+
+[?1034h[4mmsf5[0m [0m> use auxiliary/scanner/ftp.anonuymous[K[K[K[K[K[K[K[K[K[K[K/anonymous 
+[0m[4mmsf5[0m auxiliary([1m[31mscanner/ftp/anonymous[0m) [0m> options
+[0m
+Module options (auxiliary/scanner/ftp/anonymous):
+
+   Name     Current Setting      Required  Description
+   ----     ---------------      --------  -----------
+   FTPPASS  mozilla@example.com  no        The password for the specified username
+   FTPUSER  anonymous            no        The username to authenticate as
+   RHOSTS                        yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT    21                   yes       The target port (TCP)
+   THREADS  1                    yes       The number of concurrent threads (max one per host)
+
+[4mmsf5[0m auxiliary([1m[31mscanner/ftp/anonymous[0m) [0m> set rhosts 192.168.1.106
+[0mrhosts => 192.168.1.106
+[4mmsf5[0m auxiliary([1m[31mscanner/ftp/anonymous[0m) [0m> run
+[0m
+[1m[32m[+][0m 192.168.1.106:21      - 192.168.1.106:21 - Anonymous READ/WRITE (220 The Good Tech Inc. FTP Server)
+[1m[34m[*][0m 192.168.1.106:21      - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31mscanner/ftp/anonymous[0m) [0m> [K[4mmsf5[0m auxiliary([1m[31mscanner/ftp/anonymous[0m) [0m> exit
+[0mroot@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:11:15-03:00 [COMMAND_EXIT_CODE="0"]

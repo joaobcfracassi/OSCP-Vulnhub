@@ -1,0 +1,24 @@
+Script started on 2020-09-27 09:52:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="33"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/violator[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/violator[00m# ftp 192.168.1.107
+Connected to 192.168.1.107.
+220 ProFTPD 1.3.5rc3 Server (Debian) [::ffff:192.168.1.107]
+Name (192.168.1.107:joaofracassi): af  
+331 Password required for af
+Password:
+230 User af logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful
+150 Opening ASCII mode data connection for file list
+drwxr-xr-x   2 af       af           4096 Jun 11  2016 minarke-1.21
+-rw-rw-r--   1 af       af          15576 Jun 11  2016 minarke-1.21.tar.bz2
+226 Transfer complete
+ftp> exit
+221 Goodbye.
+]0;root@Pentest: /home/joaofracassi/beco-xpl/violator[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/violator[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/violator[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/violator[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/violator[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/violator[00m# exit
+exit
+
+Script done on 2020-09-27 09:54:06-03:00 [COMMAND_EXIT_CODE="0"]

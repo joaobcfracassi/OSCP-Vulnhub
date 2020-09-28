@@ -1,0 +1,38 @@
+Script started on 2020-09-27 21:28:19-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="35"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# ls
+attack  attack2  crack-passwd  how-to  passwd  recon  recon2  shadow
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# unshadow passwd shadow > cracj[Kk[K[K[K[K[Khash
+Created directory: /root/.john
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# ls
+attack  attack2  crack-passwd  hash  how-to  passwd  recon  recon2  shadow
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# john hash --wordpress[K[K[K[K[Klist:[K=/usr/[K[K[K[Kusr/share/wordlists/rockyou.txt
+Warning: detected hash type "sha512crypt", but the string is also recognized as "HMAC-SHA256"
+Use the "--format=HMAC-SHA256" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 3 password hashes with 3 different salts (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+fopen: /usr/share/wordlists/rockyou.txt: Arquivo ou diret?rio inexistente
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# john hash --wordlist=/usr/share/wordlists/rockyou.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd [K[K[K[K]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# john hash --wordlist=/usr/share/wordlists
+Warning: detected hash type "sha512crypt", but the string is also recognized as "HMAC-SHA256"
+Use the "--format=HMAC-SHA256" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 3 password hashes with 3 different salts (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Press 'q' or Ctrl-C to abort, almost any other key for status
+fgets: ? um diret?rio
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# john hash --wordlist=/usr/share/wordlists[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/rockyou.txt
+Warning: detected hash type "sha512crypt", but the string is also recognized as "HMAC-SHA256"
+Use the "--format=HMAC-SHA256" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 3 password hashes with 3 different salts (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Press 'q' or Ctrl-C to abort, almost any other key for status
+computer         (w1r3s[0m)
+Wait...1g 0:00:00:22 0,07% (ETA: 06:31:05) 0.04384g/s 516.2p/s 1043c/s 1043C/s taylor01..guille
+Use the "--show" option to display all of the cracked passwords reliably
+Session aborted
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m#  [Kexit
+exit
+
+Script done on 2020-09-27 21:39:44-03:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,9 @@
+Script started on 2020-09-26 01:35:54-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# 
+root@Pentest:/home/joaofracassi/beco-xpl/joy# echo 'BEGIN {system("[K\"/bin/bash\")};[K'"[1@a[1@w[1@k[1@'[1P[1@ [1P[1@"[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C > teste[K
+root@Pentest:/home/joaofracassi/beco-xpl/joy# cat ted[Kd[Kst 
+awk 'BEGIN {system("/bin/bash")}'
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:40:01-03:00 [COMMAND_EXIT_CODE="0"]

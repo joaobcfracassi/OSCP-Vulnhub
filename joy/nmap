@@ -1,0 +1,59 @@
+Script started on 2020-09-26 00:54:48-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="35"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# nmap -v -sV -p- -Pn 192.168.1.106
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-26 00:55 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating ARP Ping Scan at 00:55
+Scanning 192.168.1.106 [1 port]
+Completed ARP Ping Scan at 00:55, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 00:55
+Completed Parallel DNS resolution of 1 host. at 00:55, 0.02s elapsed
+Initiating SYN Stealth Scan at 00:55
+Scanning 192.168.1.106 [65535 ports]
+Discovered open port 587/tcp on 192.168.1.106
+Discovered open port 143/tcp on 192.168.1.106
+Discovered open port 80/tcp on 192.168.1.106
+Discovered open port 22/tcp on 192.168.1.106
+Discovered open port 139/tcp on 192.168.1.106
+Discovered open port 21/tcp on 192.168.1.106
+Discovered open port 110/tcp on 192.168.1.106
+Discovered open port 995/tcp on 192.168.1.106
+Discovered open port 25/tcp on 192.168.1.106
+Discovered open port 445/tcp on 192.168.1.106
+Discovered open port 993/tcp on 192.168.1.106
+Discovered open port 465/tcp on 192.168.1.106
+Completed SYN Stealth Scan at 00:55, 6.66s elapsed (65535 total ports)
+Initiating Service scan at 00:55
+Scanning 12 services on 192.168.1.106
+Completed Service scan at 00:55, 14.05s elapsed (12 services on 1 host)
+NSE: Script scanning 192.168.1.106.
+Initiating NSE at 00:55
+Completed NSE at 00:55, 0.20s elapsed
+Initiating NSE at 00:55
+Completed NSE at 00:55, 0.10s elapsed
+Nmap scan report for 192.168.1.106
+Host is up (0.00022s latency).
+Not shown: 65523 closed ports
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         ProFTPD 1.2.10
+22/tcp  open  ssh         Dropbear sshd 0.34 (protocol 2.0)
+25/tcp  open  smtp        Postfix smtpd
+80/tcp  open  http        Apache httpd 2.4.25
+110/tcp open  pop3        Dovecot pop3d
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        Dovecot imapd
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+465/tcp open  smtp        Postfix smtpd
+587/tcp open  smtp        Postfix smtpd
+993/tcp open  ssl/imaps?
+995/tcp open  ssl/pop3s?
+MAC Address: 08:00:27:7A:9F:06 (Oracle VirtualBox virtual NIC)
+Service Info: Hosts: The,  JOY.localdomain, 127.0.1.1, JOY; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.63 seconds
+           Raw packets sent: 65536 (2.884MB) | Rcvd: 65536 (2.621MB)
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 00:56:07-03:00 [COMMAND_EXIT_CODE="0"]

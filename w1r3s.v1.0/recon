@@ -1,0 +1,144 @@
+Script started on 2020-09-27 20:29:51-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="35"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# exitnetdiscover
+[H[2J[3J[1;1H Currently scanning: Starting.   |   Screen View: Unique Hosts                                                                                                       
+                                                                                                                                                                     
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                       
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: Starting.   |   Screen View: Unique Hosts                                                                                                       
+                                                                                                                                                                     
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                       
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.0.0/16   |   Screen View: Unique Hosts                                                                                                  
+                                                                                                                                                                     
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                       
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.2.0/16   |   Screen View: Unique Hosts                                                                                                  
+                                                                                                                                                                     
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                       
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.4.0/16   |   Screen View: Unique Hosts                                                                                                  
+                                                                                                                                                                     
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                       
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.6.0/16   |   Screen View: Unique Hosts                                                                                                  
+                                                                                                                                                                     
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                       
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.8.0/16   |   Screen View: Unique Hosts                                                                                                  
+                                                                                                                                                                     
+ 6 Captured ARP Req/Rep packets, from 6 hosts.   Total size: 360                                                                                                     
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                     
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                      
+ 192.168.1.109   08:00:27:77:0f:fa      1      60  PCS Systemtechnik GmbH                                                                                            
+ 192.168.1.100   cc:0d:f2:64:c2:c0      1      60  Motorola Mobility LLC, a Lenovo Company                                                                           
+ 192.168.1.103   40:49:0f:c1:3b:83      1      60  Hon Hai Precision Ind. Co.,Ltd.                                                                                   
+ 192.168.1.104   ee:bb:f5:d0:89:7c      1      60  Unknown vendor                                                                                                    
+[J[1;1H Currently scanning: 192.168.11.0/16   |   Screen View: Unique Hosts                                                                                                 
+                                                                                                                                                                     
+ 6 Captured ARP Req/Rep packets, from 6 hosts.   Total size: 360                                                                                                     
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                     
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                      
+ 192.168.1.109   08:00:27:77:0f:fa      1      60  PCS Systemtechnik GmbH                                                                                            
+ 192.168.1.100   cc:0d:f2:64:c2:c0      1      60  Motorola Mobility LLC, a Lenovo Company                                                                           
+ 192.168.1.103   40:49:0f:c1:3b:83      1      60  Hon Hai Precision Ind. Co.,Ltd.                                                                                   
+ 192.168.1.104   ee:bb:f5:d0:89:7c      1      60  Unknown vendor                                                                                                    
+[J[1;1H Currently scanning: 192.168.13.0/16   |   Screen View: Unique Hosts                                                                                                 
+                                                                                                                                                                     
+ 6 Captured ARP Req/Rep packets, from 6 hosts.   Total size: 360                                                                                                     
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                     
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                      
+ 192.168.1.109   08:00:27:77:0f:fa      1      60  PCS Systemtechnik GmbH                                                                                            
+ 192.168.1.100   cc:0d:f2:64:c2:c0      1      60  Motorola Mobility LLC, a Lenovo Company                                                                           
+ 192.168.1.103   40:49:0f:c1:3b:83      1      60  Hon Hai Precision Ind. Co.,Ltd.                                                                                   
+ 192.168.1.104   ee:bb:f5:d0:89:7c      1      60  Unknown vendor                                                                                                    
+[J[1;1H Currently scanning: 192.168.15.0/16   |   Screen View: Unique Hosts                                                                                                 
+                                                                                                                                                                     
+ 6 Captured ARP Req/Rep packets, from 6 hosts.   Total size: 360                                                                                                     
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                     
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                      
+ 192.168.1.109   08:00:27:77:0f:fa      1      60  PCS Systemtechnik GmbH                                                                                            
+ 192.168.1.100   cc:0d:f2:64:c2:c0      1      60  Motorola Mobility LLC, a Lenovo Company                                                                           
+ 192.168.1.103   40:49:0f:c1:3b:83      1      60  Hon Hai Precision Ind. Co.,Ltd.                                                                                   
+ 192.168.1.104   ee:bb:f5:d0:89:7c      1      60  Unknown vendor                                                                                                    
+[J
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# nmap -v -sV -Pn 192.168.1.109[C[1@-[1@p[C[1@-[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-27 20:30 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating ARP Ping Scan at 20:30
+Scanning 192.168.1.109 [1 port]
+Completed ARP Ping Scan at 20:30, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:30
+Completed Parallel DNS resolution of 1 host. at 20:30, 0.10s elapsed
+Initiating SYN Stealth Scan at 20:30
+Scanning 192.168.1.109 [65535 ports]
+Discovered open port 80/tcp on 192.168.1.109
+Discovered open port 22/tcp on 192.168.1.109
+Discovered open port 21/tcp on 192.168.1.109
+Discovered open port 3306/tcp on 192.168.1.109
+Completed SYN Stealth Scan at 20:31, 48.42s elapsed (65535 total ports)
+Initiating Service scan at 20:31
+Scanning 4 services on 192.168.1.109
+Completed Service scan at 20:31, 11.04s elapsed (4 services on 1 host)
+NSE: Script scanning 192.168.1.109.
+Initiating NSE at 20:31
+Completed NSE at 20:31, 0.16s elapsed
+Initiating NSE at 20:31
+Completed NSE at 20:31, 0.02s elapsed
+Nmap scan report for 192.168.1.109
+Host is up (0.00066s latency).
+Not shown: 55528 filtered ports, 10003 closed ports
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+3306/tcp open  mysql   MySQL (unauthorized)
+MAC Address: 08:00:27:77:0F:FA (Oracle VirtualBox virtual NIC)
+Service Info: Host: W1R3S.inc; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 61.53 seconds
+           Raw packets sent: 121064 (5.327MB) | Rcvd: 10008 (400.324KB)
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# search [Ksploit vsftpd 2.0.9[K8
+Exploits: No Results
+Shellcodes: No Results
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# search [Ksploit vsftpd
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+[01;31m[Kvsftpd[m[K 2.0.5 - 'CWD' (Authenticated) Remote Memory Consumption                                                                      | linux/dos/5814.pl
+[01;31m[Kvsftpd[m[K 2.0.5 - 'deny_file' Option Remote Denial of Service (1)                                                                      | windows/dos/31818.sh
+[01;31m[Kvsftpd[m[K 2.0.5 - 'deny_file' Option Remote Denial of Service (2)                                                                      | windows/dos/31819.pl
+[01;31m[Kvsftpd[m[K 2.3.2 - Denial of Service                                                                                                    | linux/dos/16270.c
+[01;31m[Kvsftpd[m[K 2.3.4 - Backdoor Command Execution (Metasploit)                                                                              | unix/remote/17491.rb
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+]0;root@Pentest: /home/joaofracassi/beco-xpl/w1r3s.v1.0[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/w1r3s.v1.0[00m# exit
+exit
+
+Script done on 2020-09-27 20:34:32-03:00 [COMMAND_EXIT_CODE="0"]

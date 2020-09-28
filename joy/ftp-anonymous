@@ -1,0 +1,25 @@
+Script started on 2020-09-26 00:57:47-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="35"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# nc v[K-v 192.168.1.106 21
+192.168.1.106: inverse host lookup failed: Unknown host
+(UNKNOWN) [192.168.1.106] 21 (ftp) open
+220 The Good Tech Inc. FTP Server
+u USER any i onymous
+331 Anonymous login ok, send your complete email address as your password
+PASS anonymous
+230 Anonymous access granted, restrictions apply
+pwd
+257 "/" is the current directory
+^C
+root@Pentest:/home/joaofracassi/beco-xpl/joy# nc -v 192.168.1.106 21
+192.168.1.106: inverse host lookup failed: Unknown host
+(UNKNOWN) [192.168.1.106] 21 (ftp) open
+220 The Good Tech Inc. FTP Server
+USER ftp
+331 Anonymous login ok, send your complete email address as your password
+pass ftp
+230 Anonymous access granted, restrictions apply
+^C
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 00:58:36-03:00 [COMMAND_EXIT_CODE="1"]

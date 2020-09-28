@@ -1,0 +1,30 @@
+Script started on 2020-09-26 01:40:14-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="33"]
+root@Pentest:/home/joaofracassi/beco-xpl/joy# ftp 192.168.1.106
+Connected to 192.168.1.106.
+220 The Good Tech Inc. FTP Server
+Name (192.168.1.106:joaofracassi): qn  anonymous
+331 Anonymous login ok, send your complete email address as your password
+Password:
+230 Anonymous access granted, restrictions apply
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> puty[K test
+local: test remote: test
+200 PORT command successful
+150 Opening BINARY mode data connection for test
+226 Transfer complete
+34 bytes sent in 0.00 secs (948.6607 kB/s)
+ftp> ls
+200 PORT command successful
+150 Opening ASCII mode data connection for file list
+drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download
+-rw-r--r--   1 ftp      ftp            34 Sep 26 04:40 test
+drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload
+-rw-r--r--   1 0        0             407 Sep 26 04:14 versl
+226 Transfer complete
+ftp> exit
+221 Goodbye.
+root@Pentest:/home/joaofracassi/beco-xpl/joy# exit
+exit
+
+Script done on 2020-09-26 01:42:04-03:00 [COMMAND_EXIT_CODE="0"]
