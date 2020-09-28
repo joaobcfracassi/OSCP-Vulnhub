@@ -5,7 +5,7 @@ Esse repositório é do Desafio: Hackear 30 VMs em 30 dias.
 Também serve como repositório de estudos para as certificações OSCP e DCPT.
 
 É um CTF Boot2Root, onde tem que quebrar a segurança dela e capturar o usuário root ou a flag contida em "/root".<br/>
-[Vulnhub](https://www.vulnhub.com/)
+A [Vulnhub](https://www.vulnhub.com/) é um site de download com diversas VMs vulneráveis para estudos e CTF.
 
 As VMs resolvidas do desafio, estão na seguinte ordem (atualizado, conforme é resolvido as VMs):<br/>
 1. [Hacker Fest: 2019](https://www.vulnhub.com/entry/hacker-fest-2019,378/)
