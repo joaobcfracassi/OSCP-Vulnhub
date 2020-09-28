@@ -1,4 +1,4 @@
-# Desafio-30VMs-em-30-dias
+# Desafio: Hackear 30VMs em 30 dias
 
 Esse repositório é do Desafio: Hackear 30 VMs em 30 dias.
 
