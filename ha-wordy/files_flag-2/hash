@@ -1,0 +1,31 @@
+Script started on 2020-09-29 22:55:48-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="169" LINES="38"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# ha[K[Khashid YWFydGk6YWFydGlAZ21haWwuY29t
+Analyzing 'YWFydGk6YWFydGlAZ21haWwuY29t'
+[+] Unknown hash
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# hash-identifier
+   #########################################################################
+   #     __  __                     __           ______    _____           #
+   #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #
+   #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #
+   #     \ \  _  \  /'__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #
+   #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #
+   #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #
+   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v1.2 #
+   #                                                             By Zion3R #
+   #                                                    www.Blackploit.com #
+   #                                                   Root@Blackploit.com #
+   #########################################################################
+--------------------------------------------------
+ HASH: YWFydGk6YWFydGlAZ21haWwuY29t
+
+ Not Found.
+--------------------------------------------------
+ HASH: ^C
+
+	Bye!
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# echo -n "YWFydGk6YWFydGlAZ21haWwuY29t" - [K[K| base[K[K[K[Kbase64 -d
+aarti:aarti@gmail.com]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-29 23:05:52-03:00 [COMMAND_EXIT_CODE="0"]

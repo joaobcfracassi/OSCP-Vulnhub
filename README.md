@@ -15,3 +15,7 @@ As VMs resolvidas do desafio, estão na seguinte ordem (atualizado, conforme é 
 5. [Violator](https://www.vulnhub.com/entry/violator-1,153/)
 6. [W1r3s V1.0.1](https://www.vulnhub.com/entry/w1r3s-101,220/)
 7. [HA Wordy](https://www.vulnhub.com/entry/ha-wordy,363/)
+
+
+A VM "HA Wordy" é uma virtual machine que não tem somente o intuito de ser um boot2root, ela é uma máquina para testes de pentração em Wordpress.</br>
+Possui 5 flags que devem ser encontrados, além de fazer o escalonamento de privilégios para ter acesso de root.</br>

@@ -1,0 +1,506 @@
+Script started on 2020-09-29 22:14:57-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="169" LINES="38"]
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# netdiscover
+[H[2J[3J[1;1H Currently scanning: Starting.   |   Screen View: Unique Hosts                                                                                                          
+                                                                                                                                                                        
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: Starting.   |   Screen View: Unique Hosts                                                                                                          
+                                                                                                                                                                        
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.0.0/16   |   Screen View: Unique Hosts                                                                                                     
+                                                                                                                                                                        
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.2.0/16   |   Screen View: Unique Hosts                                                                                                     
+                                                                                                                                                                        
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.4.0/16   |   Screen View: Unique Hosts                                                                                                     
+                                                                                                                                                                        
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.6.0/16   |   Screen View: Unique Hosts                                                                                                     
+                                                                                                                                                                        
+ 0 Captured ARP Req/Rep packets, from 0 hosts.   Total size: 0                                                                                                          
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+[J[1;1H Currently scanning: 192.168.8.0/16   |   Screen View: Unique Hosts                                                                                                     
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.11.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.13.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.15.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.17.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.19.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.22.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.24.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.26.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.28.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.31.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.33.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.35.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.37.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 3 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 180                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      1      60  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.40.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.42.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.44.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.46.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.48.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.51.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.53.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.55.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.57.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.59.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.62.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.64.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.66.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.68.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.70.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.73.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.75.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.77.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.79.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.82.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.84.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.86.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.88.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 4 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 240                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      2     120  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.91.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 5 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 300                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      3     180  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.93.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 5 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 300                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      3     180  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.95.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 5 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 300                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      3     180  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.97.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 5 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 300                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      3     180  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.99.0/16   |   Screen View: Unique Hosts                                                                                                    
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.102.0/16   |   Screen View: Unique Hosts                                                                                                   
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.104.0/16   |   Screen View: Unique Hosts                                                                                                   
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.106.0/16   |   Screen View: Unique Hosts                                                                                                   
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.108.0/16   |   Screen View: Unique Hosts                                                                                                   
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.110.0/16   |   Screen View: Unique Hosts                                                                                                   
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J[1;1H Currently scanning: 192.168.113.0/16   |   Screen View: Unique Hosts                                                                                                   
+                                                                                                                                                                        
+ 6 Captured ARP Req/Rep packets, from 3 hosts.   Total size: 360                                                                                                        
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.1.1     50:c7:bf:c4:8c:21      4     240  TP-LINK TECHNOLOGIES CO.,LTD.                                                                                        
+ 192.168.1.102   5c:c9:d3:a4:c1:83      1      60  PALLADIUM ENERGY ELETRONICA DA AMAZONIA LTDA                                                                         
+ 192.168.1.104   08:00:27:3d:c7:b3      1      60  PCS Systemtechnik GmbH                                                                                               
+[J
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# ex[K[Knmap -v -sV -p- -Pn 192.168.1.104
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-29 22:16 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating ARP Ping Scan at 22:16
+Scanning 192.168.1.104 [1 port]
+Completed ARP Ping Scan at 22:16, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:16
+Completed Parallel DNS resolution of 1 host. at 22:16, 0.11s elapsed
+Initiating SYN Stealth Scan at 22:16
+Scanning 192.168.1.104 [65535 ports]
+Discovered open port 80/tcp on 192.168.1.104
+Completed SYN Stealth Scan at 22:16, 6.00s elapsed (65535 total ports)
+Initiating Service scan at 22:16
+Scanning 1 service on 192.168.1.104
+Completed Service scan at 22:16, 6.16s elapsed (1 service on 1 host)
+NSE: Script scanning 192.168.1.104.
+Initiating NSE at 22:16
+Completed NSE at 22:16, 0.02s elapsed
+Initiating NSE at 22:16
+Completed NSE at 22:16, 0.01s elapsed
+Nmap scan report for 192.168.1.104
+Host is up (0.00025s latency).
+Not shown: 65534 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+MAC Address: 08:00:27:3D:C7:B3 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.60 seconds
+           Raw packets sent: 65536 (2.884MB) | Rcvd: 65536 (2.621MB)
+]0;root@Pentest: /home/joaofracassi/beco-xpl/ha-wordy[1;31mroot@Pentest[00m:[1;34m/home/joaofracassi/beco-xpl/ha-wordy[00m# exit
+exit
+
+Script done on 2020-09-29 22:16:38-03:00 [COMMAND_EXIT_CODE="0"]
