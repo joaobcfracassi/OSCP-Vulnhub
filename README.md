@@ -1,4 +1,4 @@
-# CTFs
+# OSCP-Vulnhub
 
 Este é meu repositório para documentação técnica dos CTFs que resolvo.</br>
 São os Labs de Teste de intrusão que faço para me preparar para as certificações DCPT e OSCP.
