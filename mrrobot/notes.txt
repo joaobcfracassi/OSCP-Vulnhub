@@ -283,5 +283,11 @@ https://blog.wpscan.com/wpscan/2019/09/17/wpscan-brute-force.html
 https://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/
 https://linuxconfig.org/test-wordpress-logins-with-hydra-on-kali-linux
 
+https://www.hackingarticles.in/linux-for-pentester-find-privilege-escalation/
+https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html
+http://pentestmonkey.net/tools/audit/unix-privesc-check
+https://pentestlab.blog/category/privilege-escalation/
+https://www.infowester.com/lintargzip.php
+
 
 
