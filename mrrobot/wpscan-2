@@ -1,0 +1,204 @@
+Script started on 2020-10-26 09:56:54-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="100" LINES="30"]
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ -u admin -P fsociety.dic --[K[K--password-attack ATTACK
+[sudo] password for kali: 
+
+Scan Aborted: invalid option: -u
+Did you mean?  ua
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ -u admin -P fsociety.dic --password-attack ATTACK[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C admin -P fsociety.d[1P[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CU admin -P fsociety.[1@d[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+Scan Aborted: --password-attack 'attack' is not a valid choice, expected one of the followings: wp-login,xmlrpc,xmlrpc-multicall
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ 
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ wpscan p[K-utl[K[K[Kurl http://192.168.0.28/ --wordlist fsociety.dic [C[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- -username adminm[K 
+
+Scan Aborted: invalid option: --wordlist
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ wpscan --url http://192.168.0.28/ --wordlist fsociety.dic --username admin [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwordlist fsociety.dic --u[1P[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+Scan Aborted: invalid option: -wordlist
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ wpscan --url http://192.168.0.28/ -wordlist fsociety.dic --username admin [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-wordlist fsociety.dic --[1@u[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K--passwords fsociety.dic  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.2
+                               
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[34m[i][0m Updating the Database ...
+[34m[i][0m Update completed.
+
+
+Scan Aborted: Permission denied @ rb_sysopen - /tmp/wpscan/cache/1353adc133b9d8557b77c3914b7a1372/3996491440
+Trace: /usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/cache/file_store.rb:47:in `write'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/cache/file_store.rb:47:in `write_entry'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/cache/typhoeus.rb:21:in `set'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/cacheable.rb:5:in `response='
+/usr/lib/ruby/vendor_ruby/typhoeus/request/operations.rb:32:in `finish'
+/usr/lib/ruby/vendor_ruby/typhoeus/easy_factory.rb:164:in `block in set_callback'
+/usr/lib/ruby/vendor_ruby/ethon/easy/response_callbacks.rb:65:in `block in complete'
+/usr/lib/ruby/vendor_ruby/ethon/easy/response_callbacks.rb:65:in `each'
+/usr/lib/ruby/vendor_ruby/ethon/easy/response_callbacks.rb:65:in `complete'
+/usr/lib/ruby/vendor_ruby/ethon/easy/operations.rb:33:in `perform'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/operations.rb:16:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/cacheable.rb:18:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/block_connection.rb:31:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/stubbable.rb:25:in `run'
+/usr/lib/ruby/vendor_ruby/typhoeus/request/before.rb:26:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/browser/actions.rb:20:in `get'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/app/controllers/core.rb:38:in `check_target_availability'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/app/controllers/core.rb:59:in `before_scan'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/controllers.rb:46:in `each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/controllers.rb:46:in `block in run'
+/usr/lib/ruby/2.7.0/timeout.rb:78:in `timeout'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/controllers.rb:45:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/scan.rb:24:in `run'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/bin/wpscan:17:in `block in <top (required)>'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/scan.rb:15:in `initialize'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/bin/wpscan:6:in `new'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/bin/wpscan:6:in `<top (required)>'
+/usr/bin/wpscan:23:in `load'
+/usr/bin/wpscan:23:in `<main>'
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ 
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ wpscan --url http://192.168.0.28/ --passwords fsociety.dic  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cswpscan --url http://192.168.0.28/ --passwords fsociety.dic [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [Cuwpscan --url http://192.168.0.28/ --passwords fsociety.dic [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[Cdwpscan --url http://192.168.0.28/ --passwords fsociety.dic [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[Cowpscan --url http://192.168.0.28/ --passwords fsociety.d[1@i[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C wpscan --url http://192.168.0.28/ --passwords fsociety.[1@d[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C
+
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.2
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.0.28/ [192.168.0.28]
+[32m[+][0m Started: Mon Oct 26 10:03:28 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.0.28/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.0.28/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://192.168.0.28/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.0.28/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.24 identified (Latest, released on 2020-06-10).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.0.28/6643771.html, Match: '-release.min.js?ver=4.3.24'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.0.28/6643771.html, Match: 'WordPress 4.3.24'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://192.168.0.28/wp-content/themes/twentyfifteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.0.28/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.7
+ | Style URL: http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24, Match: 'Version: 1.3'
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+
+[34m[i][0m No plugins Found.
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+                                                                                                     Checking Config Backups - Time: 00:00:00 <                         > (0 / 21)  0.00%  ETA: ??:??:?? Checking Config Backups - Time: 00:00:00 <=                        > (1 / 21)  4.76%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:00 <==                       > (2 / 21)  9.52%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <===                      > (3 / 21) 14.28%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <====                     > (4 / 21) 19.04%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <=====                    > (5 / 21) 23.80%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <=======                  > (6 / 21) 28.57%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <========                 > (7 / 21) 33.33%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <=========                > (8 / 21) 38.09%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <==========               > (9 / 21) 42.85%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <===========             > (10 / 21) 47.61%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:00 <=============           > (12 / 21) 57.14%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <==============          > (13 / 21) 61.90%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <===============         > (14 / 21) 66.66%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <==================      > (16 / 21) 76.19%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <===================     > (17 / 21) 80.95%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <=====================   > (19 / 21) 90.47%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:00 <=======================> (21 / 21) 100.00% Time: 00:00:00
+
+[34m[i][0m No Config Backups Found.
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+                                                                                                     Brute Forcing Author IDs - Time: 00:00:00 <                        > (0 / 10)  0.00%  ETA: ??:??:?? Brute Forcing Author IDs - Time: 00:00:00 <==                      > (1 / 10) 10.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <====                    > (2 / 10) 20.00%  ETA: 00:00:03 Brute Forcing Author IDs - Time: 00:00:01 <=======                 > (3 / 10) 30.00%  ETA: 00:00:03 Brute Forcing Author IDs - Time: 00:00:01 <=========               > (4 / 10) 40.00%  ETA: 00:00:02 Brute Forcing Author IDs - Time: 00:00:01 <============            > (5 / 10) 50.00%  ETA: 00:00:01 Brute Forcing Author IDs - Time: 00:00:01 <==============          > (6 / 10) 60.00%  ETA: 00:00:01 Brute Forcing Author IDs - Time: 00:00:01 <================        > (7 / 10) 70.00%  ETA: 00:00:01 Brute Forcing Author IDs - Time: 00:00:01 <===================     > (8 / 10) 80.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:01 <=====================   > (9 / 10) 90.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:01 <======================> (10 / 10) 100.00% Time: 00:00:01
+
+[34m[i][0m No Users Found.
+
+[32m[+][0m Performing password attack on Xmlrpc Multicall against 0 user/s
+
+[34m[i][0m No Valid Passwords Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Mon Oct 26 10:03:51 2020
+[32m[+][0m Requests Done: 79
+[32m[+][0m Cached Requests: 6
+[32m[+][0m Data Sent: 18.694 KB
+[32m[+][0m Data Received: 288.501 KB
+[32m[+][0m Memory used: 228.699 MB
+[32m[+][0m Elapsed time: 00:00:22
+
+Scan Aborted: divided by 0
+Trace: /usr/share/rubygems-integration/all/gems/wpscan-3.8.2/app/finders/passwords/xml_rpc_multicall.rb:41:in `/'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/app/finders/passwords/xml_rpc_multicall.rb:41:in `attack'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/app/controllers/password_attack.rb:42:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/controllers.rb:50:in `each'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/controllers.rb:50:in `block in run'
+/usr/lib/ruby/2.7.0/timeout.rb:78:in `timeout'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/controllers.rb:45:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/scan.rb:24:in `run'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/bin/wpscan:17:in `block in <top (required)>'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.10.1/lib/cms_scanner/scan.rb:15:in `initialize'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/bin/wpscan:6:in `new'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.2/bin/wpscan:6:in `<top (required)>'
+/usr/bin/wpscan:23:in `load'
+/usr/bin/wpscan:23:in `<main>'
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ 
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ --passwords fsociety.dic [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-passwords fsociety[1@.[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-passwords fsociet[1@y[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci--passwords fsocie[1@t[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--passwords fsociet[1P[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu--passwords fsocie[1@t[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs--passwords fsoci[1@e[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr--passwords fsoc[1@i[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--passwords fsoci[1P[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce--passwords fsoc[1@i[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr--passwords fso[1@c[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn--passwords fs[1@o[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca--passwords f[1@s[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm--passwords [1@f[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce--passwords[1@ [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --password[1@s[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca--passwor[1@d[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd--passwo[1@r[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm--passw[1@o[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci--pass[1@w[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm--pas[1@s[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --pa[C[1@s[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+Scan Aborted: invalid option: --username
+Did you mean?  usernames
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ --username admim --passwords fsociety.dic [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpasswords fsociety.dic [K[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cusername admim --pa[17@sswords fsociety.[C[C[C[C[A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo wpscan --url http://192.168.0.28/ --username admim --passwords fsociety.dic [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ --username admim --passwords fsociety.dic [A]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceit[K[K[Kexit
+exit
+
+Script done on 2020-10-26 10:24:36-04:00 [COMMAND_EXIT_CODE="1"]

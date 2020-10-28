@@ -1,0 +1,374 @@
+Script started on 2020-10-26 09:36:55-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="100" LINES="30"]
+\]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ \[K
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan -u[K[K--url http?[K://192.168.1[K0.28/ --enumerate u vp vt
+[sudo] password for kali: 
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.2
+                               
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[34m[i][0m Updating the Database ...
+[34m[i][0m Update completed.
+
+[32m[+][0m URL: http://192.168.0.28/ [192.168.0.28]
+[32m[+][0m Started: Mon Oct 26 09:39:25 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.0.28/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.0.28/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://192.168.0.28/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.0.28/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.24 identified (Latest, released on 2020-06-10).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.0.28/8e8ed17.html, Match: '-release.min.js?ver=4.3.24'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.0.28/8e8ed17.html, Match: 'WordPress 4.3.24'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://192.168.0.28/wp-content/themes/twentyfifteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.0.28/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.7
+ | Style URL: http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24, Match: 'Version: 1.3'
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+                                                                                                     Brute Forcing Author IDs - Time: 00:00:00 <                        > (0 / 10)  0.00%  ETA: ??:??:?? Brute Forcing Author IDs - Time: 00:00:00 <==                      > (1 / 10) 10.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <====                    > (2 / 10) 20.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <=======                 > (3 / 10) 30.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <=========               > (4 / 10) 40.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <============            > (5 / 10) 50.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <==============          > (6 / 10) 60.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <================        > (7 / 10) 70.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <===================     > (8 / 10) 80.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <=====================   > (9 / 10) 90.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <======================> (10 / 10) 100.00% Time: 00:00:00
+
+[34m[i][0m No Users Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Mon Oct 26 09:39:35 2020
+[32m[+][0m Requests Done: 72
+[32m[+][0m Cached Requests: 6
+[32m[+][0m Data Sent: 14.707 KB
+[32m[+][0m Data Received: 15.652 MB
+[32m[+][0m Memory used: 136.273 MB
+[32m[+][0m Elapsed time: 00:00:09
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ --enumerate u vp vt[K[K[K[K[K[K
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.2
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.0.28/ [192.168.0.28]
+[32m[+][0m Started: Mon Oct 26 09:42:00 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.0.28/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.0.28/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://192.168.0.28/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.0.28/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.24 identified (Latest, released on 2020-06-10).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.0.28/030bf09.html, Match: '-release.min.js?ver=4.3.24'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.0.28/030bf09.html, Match: 'WordPress 4.3.24'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://192.168.0.28/wp-content/themes/twentyfifteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.0.28/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.7
+ | Style URL: http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24, Match: 'Version: 1.3'
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+                                                                                                     Brute Forcing Author IDs - Time: 00:00:00 <                        > (0 / 10)  0.00%  ETA: ??:??:?? Brute Forcing Author IDs - Time: 00:00:00 <==                      > (1 / 10) 10.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <=======                 > (3 / 10) 30.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <=========               > (4 / 10) 40.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <============            > (5 / 10) 50.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <==============          > (6 / 10) 60.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <================        > (7 / 10) 70.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <=====================   > (9 / 10) 90.00%  ETA: 00:00:00 Brute Forcing Author IDs - Time: 00:00:00 <======================> (10 / 10) 100.00% Time: 00:00:00
+
+[34m[i][0m No Users Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Mon Oct 26 09:42:10 2020
+[32m[+][0m Requests Done: 12
+[32m[+][0m Cached Requests: 50
+[32m[+][0m Data Sent: 2.681 KB
+[32m[+][0m Data Received: 11.839 KB
+[32m[+][0m Memory used: 133.598 MB
+[32m[+][0m Elapsed time: 00:00:09
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ --enumerate u[Kvp
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.2
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.0.28/ [192.168.0.28]
+[32m[+][0m Started: Mon Oct 26 09:42:31 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.0.28/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.0.28/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://192.168.0.28/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.0.28/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.24 identified (Latest, released on 2020-06-10).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.0.28/b28b9d7.html, Match: '-release.min.js?ver=4.3.24'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.0.28/b28b9d7.html, Match: 'WordPress 4.3.24'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://192.168.0.28/wp-content/themes/twentyfifteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.0.28/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.7
+ | Style URL: http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24, Match: 'Version: 1.3'
+
+[32m[+][0m Enumerating Vulnerable Plugins (via Passive Methods)
+
+[34m[i][0m No plugins Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Mon Oct 26 09:42:47 2020
+[32m[+][0m Requests Done: 2
+[32m[+][0m Cached Requests: 32
+[32m[+][0m Data Sent: 544 B
+[32m[+][0m Data Received: 9.065 KB
+[32m[+][0m Memory used: 208.129 MB
+[32m[+][0m Elapsed time: 00:00:16
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ sudo wpscan --url http://192.168.0.28/ --enumerate vp[Kt
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.2
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.0.28/ [192.168.0.28]
+[32m[+][0m Started: Mon Oct 26 09:50:17 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.0.28/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://192.168.0.28/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://192.168.0.28/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://192.168.0.28/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.24 identified (Latest, released on 2020-06-10).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.0.28/d7bf655.html, Match: '-release.min.js?ver=4.3.24'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.0.28/d7bf655.html, Match: 'WordPress 4.3.24'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://192.168.0.28/wp-content/themes/twentyfifteen/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | Readme: http://192.168.0.28/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.7
+ | Style URL: http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://192.168.0.28/wp-content/themes/twentyfifteen/style.css?ver=4.3.24, Match: 'Version: 1.3'
+
+[32m[+][0m Enumerating Vulnerable Themes (via Passive and Aggressive Methods)
+                                                                                                     Checking Known Locations - Time: 00:00:00 <                       > (0 / 329)  0.00%  ETA: ??:??:?? Checking Known Locations - Time: 00:00:00 <                       > (1 / 329)  0.30%  ETA: 00:00:35 Checking Known Locations - Time: 00:00:00 <                       > (3 / 329)  0.91%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:00 <                       > (4 / 329)  1.21%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                       > (5 / 329)  1.51%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:00 <                       > (6 / 329)  1.82%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:00 <                       > (7 / 329)  2.12%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:00 <                       > (8 / 329)  2.43%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                       > (9 / 329)  2.73%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                      > (11 / 329)  3.34%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                      > (12 / 329)  3.64%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                      > (13 / 329)  3.95%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                      > (14 / 329)  4.25%  ETA: 00:00:15 Checking Known Locations - Time: 00:00:00 <                      > (15 / 329)  4.55%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <                      > (16 / 329)  4.86%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <=                     > (17 / 329)  5.16%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:00 <=                     > (18 / 329)  5.47%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <=                     > (20 / 329)  6.07%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:00 <=                     > (22 / 329)  6.68%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (23 / 329)  6.99%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (24 / 329)  7.29%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (25 / 329)  7.59%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (26 / 329)  7.90%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (27 / 329)  8.20%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (28 / 329)  8.51%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (29 / 329)  8.81%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (30 / 329)  9.11%  ETA: 00:00:14 Checking Known Locations - Time: 00:00:01 <=                     > (31 / 329)  9.42%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <=                     > (32 / 329)  9.72%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (33 / 329) 10.03%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (34 / 329) 10.33%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (36 / 329) 10.94%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (37 / 329) 11.24%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (38 / 329) 11.55%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (39 / 329) 11.85%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (40 / 329) 12.15%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (41 / 329) 12.46%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (42 / 329) 12.76%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (43 / 329) 13.06%  ETA: 00:00:13 Checking Known Locations - Time: 00:00:01 <==                    > (44 / 329) 13.37%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:01 <==                    > (45 / 329) 13.67%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:01 <==                    > (46 / 329) 13.98%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (47 / 329) 14.28%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (48 / 329) 14.58%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (50 / 329) 15.19%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (51 / 329) 15.50%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (52 / 329) 15.80%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (54 / 329) 16.41%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (55 / 329) 16.71%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (56 / 329) 17.02%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <===                   > (57 / 329) 17.32%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <===                   > (58 / 329) 17.62%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (59 / 329) 17.93%  ETA: 00:00:12 Checking Known Locations - Time: 00:00:02 <===                   > (61 / 329) 18.54%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <===                   > (62 / 329) 18.84%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (63 / 329) 19.14%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (64 / 329) 19.45%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (65 / 329) 19.75%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (66 / 329) 20.06%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (67 / 329) 20.36%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (68 / 329) 20.66%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (69 / 329) 20.97%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (70 / 329) 21.27%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:02 <====                  > (71 / 329) 21.58%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:03 <====                  > (72 / 329) 21.88%  ETA: 00:00:11 Checking Known Locations - Time: 00:00:03 <====                  > (74 / 329) 22.49%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <====                  > (75 / 329) 22.79%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (76 / 329) 23.10%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (77 / 329) 23.40%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (79 / 329) 24.01%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (80 / 329) 24.31%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (83 / 329) 25.22%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (84 / 329) 25.53%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (85 / 329) 25.83%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (87 / 329) 26.44%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (89 / 329) 27.05%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (90 / 329) 27.35%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (91 / 329) 27.65%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <=====                 > (92 / 329) 27.96%  ETA: 00:00:10 Checking Known Locations - Time: 00:00:03 <======                > (94 / 329) 28.57%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:03 <======                > (95 / 329) 28.87%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:03 <======                > (96 / 329) 29.17%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:03 <======                > (97 / 329) 29.48%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:03 <======                > (98 / 329) 29.78%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:03 <======                > (99 / 329) 30.09%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (100 / 329) 30.39%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (101 / 329) 30.69%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (102 / 329) 31.00%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (103 / 329) 31.30%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (104 / 329) 31.61%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (105 / 329) 31.91%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (106 / 329) 32.21%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (107 / 329) 32.52%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (108 / 329) 32.82%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (109 / 329) 33.13%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <======               > (110 / 329) 33.43%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <=======              > (112 / 329) 34.04%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <=======              > (113 / 329) 34.34%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <=======              > (114 / 329) 34.65%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <=======              > (115 / 329) 34.95%  ETA: 00:00:09 Checking Known Locations - Time: 00:00:04 <=======              > (117 / 329) 35.56%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (118 / 329) 35.86%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (120 / 329) 36.47%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (121 / 329) 36.77%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (122 / 329) 37.08%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (124 / 329) 37.68%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (125 / 329) 37.99%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:04 <=======              > (126 / 329) 38.29%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <=======              > (127 / 329) 38.60%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (129 / 329) 39.20%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (130 / 329) 39.51%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (131 / 329) 39.81%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (132 / 329) 40.12%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (133 / 329) 40.42%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (135 / 329) 41.03%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (136 / 329) 41.33%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (137 / 329) 41.64%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (138 / 329) 41.94%  ETA: 00:00:08 Checking Known Locations - Time: 00:00:05 <========             > (139 / 329) 42.24%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <========             > (140 / 329) 42.55%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <========             > (141 / 329) 42.85%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (143 / 329) 43.46%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (145 / 329) 44.07%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (147 / 329) 44.68%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (149 / 329) 45.28%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (151 / 329) 45.89%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (153 / 329) 46.50%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:05 <=========            > (155 / 329) 47.11%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:06 <=========            > (157 / 329) 47.72%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:06 <==========           > (158 / 329) 48.02%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:06 <==========           > (159 / 329) 48.32%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:06 <==========           > (160 / 329) 48.63%  ETA: 00:00:07 Checking Known Locations - Time: 00:00:06 <==========           > (161 / 329) 48.93%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (162 / 329) 49.24%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (163 / 329) 49.54%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (165 / 329) 50.15%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (166 / 329) 50.45%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (167 / 329) 50.75%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (168 / 329) 51.06%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (169 / 329) 51.36%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (171 / 329) 51.97%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (173 / 329) 52.58%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <==========           > (174 / 329) 52.88%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (175 / 329) 53.19%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (176 / 329) 53.49%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (177 / 329) 53.79%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (178 / 329) 54.10%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (179 / 329) 54.40%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (180 / 329) 54.71%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (181 / 329) 55.01%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (182 / 329) 55.31%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:06 <===========          > (183 / 329) 55.62%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:07 <===========          > (184 / 329) 55.92%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:07 <===========          > (185 / 329) 56.23%  ETA: 00:00:06 Checking Known Locations - Time: 00:00:07 <===========          > (187 / 329) 56.83%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <===========          > (188 / 329) 57.14%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <===========          > (189 / 329) 57.44%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <===========          > (190 / 329) 57.75%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (191 / 329) 58.05%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (192 / 329) 58.35%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (194 / 329) 58.96%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (196 / 329) 59.57%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (198 / 329) 60.18%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (200 / 329) 60.79%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <============         > (202 / 329) 61.39%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <=============        > (204 / 329) 62.00%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <=============        > (206 / 329) 62.61%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <=============        > (207 / 329) 62.91%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <=============        > (208 / 329) 63.22%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <=============        > (209 / 329) 63.52%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:07 <=============        > (210 / 329) 63.82%  ETA: 00:00:05 Checking Known Locations - Time: 00:00:08 <=============        > (211 / 329) 64.13%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (212 / 329) 64.43%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (213 / 329) 64.74%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (214 / 329) 65.04%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (215 / 329) 65.34%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (217 / 329) 65.95%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (219 / 329) 66.56%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <=============        > (220 / 329) 66.86%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (221 / 329) 67.17%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (222 / 329) 67.47%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (224 / 329) 68.08%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (225 / 329) 68.38%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (226 / 329) 68.69%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (227 / 329) 68.99%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (228 / 329) 69.30%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (229 / 329) 69.60%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (231 / 329) 70.21%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (233 / 329) 70.82%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (235 / 329) 71.42%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <==============       > (236 / 329) 71.73%  ETA: 00:00:04 Checking Known Locations - Time: 00:00:08 <===============      > (237 / 329) 72.03%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:08 <===============      > (239 / 329) 72.64%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (240 / 329) 72.94%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (241 / 329) 73.25%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (243 / 329) 73.86%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (244 / 329) 74.16%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (245 / 329) 74.46%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (246 / 329) 74.77%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (247 / 329) 75.07%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (249 / 329) 75.68%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (250 / 329) 75.98%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (251 / 329) 76.29%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (252 / 329) 76.59%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <===============      > (253 / 329) 76.89%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (254 / 329) 77.20%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (255 / 329) 77.50%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (256 / 329) 77.81%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (257 / 329) 78.11%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (258 / 329) 78.41%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (260 / 329) 79.02%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (261 / 329) 79.33%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (262 / 329) 79.63%  ETA: 00:00:03 Checking Known Locations - Time: 00:00:09 <================     > (264 / 329) 80.24%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:09 <================     > (266 / 329) 80.85%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:09 <=================    > (268 / 329) 81.45%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (269 / 329) 81.76%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (270 / 329) 82.06%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (271 / 329) 82.37%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (272 / 329) 82.67%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (273 / 329) 82.97%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (274 / 329) 83.28%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (275 / 329) 83.58%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (276 / 329) 83.89%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (277 / 329) 84.19%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (278 / 329) 84.49%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (279 / 329) 84.80%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (280 / 329) 85.10%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (281 / 329) 85.41%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <=================    > (282 / 329) 85.71%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <==================   > (283 / 329) 86.01%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <==================   > (284 / 329) 86.32%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <==================   > (285 / 329) 86.62%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <==================   > (286 / 329) 86.93%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <==================   > (288 / 329) 87.53%  ETA: 00:00:02 Checking Known Locations - Time: 00:00:10 <==================   > (290 / 329) 88.14%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:10 <==================   > (292 / 329) 88.75%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:10 <==================   > (294 / 329) 89.36%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:10 <==================   > (295 / 329) 89.66%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <==================   > (296 / 329) 89.96%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <==================   > (298 / 329) 90.57%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <==================   > (299 / 329) 90.88%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (300 / 329) 91.18%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (301 / 329) 91.48%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (302 / 329) 91.79%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (303 / 329) 92.09%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (304 / 329) 92.40%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (305 / 329) 92.70%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (306 / 329) 93.00%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (307 / 329) 93.31%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (308 / 329) 93.61%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (309 / 329) 93.92%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (310 / 329) 94.22%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (311 / 329) 94.52%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (312 / 329) 94.83%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (313 / 329) 95.13%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <===================  > (315 / 329) 95.74%  ETA: 00:00:01 Checking Known Locations - Time: 00:00:11 <==================== > (317 / 329) 96.35%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:11 <==================== > (319 / 329) 96.96%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:11 <==================== > (320 / 329) 97.26%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:11 <==================== > (321 / 329) 97.56%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:11 <==================== > (322 / 329) 97.87%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:11 <==================== > (323 / 329) 98.17%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:11 <==================== > (324 / 329) 98.48%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:12 <==================== > (325 / 329) 98.78%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:12 <==================== > (326 / 329) 99.08%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:12 <==================== > (327 / 329) 99.39%  ETA: 00:00:00 Checking Known Locations - Time: 00:00:12 <====================> (329 / 329) 100.00% Time: 00:00:12
+[32m[+][0m Checking Theme Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m No themes Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Mon Oct 26 09:50:38 2020
+[32m[+][0m Requests Done: 358
+[32m[+][0m Cached Requests: 10
+[32m[+][0m Data Sent: 83.673 KB
+[32m[+][0m Data Received: 334.55 KB
+[32m[+][0m Memory used: 144.457 MB
+[32m[+][0m Elapsed time: 00:00:20
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ exit
+exit
+
+Script done on 2020-10-26 09:50:42-04:00 [COMMAND_EXIT_CODE="0"]

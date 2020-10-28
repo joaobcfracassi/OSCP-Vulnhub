@@ -1,0 +1,27 @@
+Script started on 2020-10-26 08:38:55-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="90" LINES="29"]
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ script nmap -A 192.168.0.28
+script: invalid option -- 'A'
+Try 'script --help' for more information.
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ script nmap -A 192.168.0.28[1P[1P[1P[1P[1P[1P[1P
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-26 08:39 EDT
+Nmap scan report for 192.168.0.28
+Host is up (0.00078s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+443/tcp open   ssl/http Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=www.example.com
+| Not valid before: 2015-09-16T10:45:03
+|_Not valid after:  2025-09-13T10:45:03
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.57 seconds
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ exit
+exit
+
+Script done on 2020-10-26 08:39:44-04:00 [COMMAND_EXIT_CODE="0"]

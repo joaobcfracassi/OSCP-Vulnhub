@@ -1,0 +1,35 @@
+Script started on 2020-10-26 08:36:57-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="90" LINES="29"]
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ nmap -v -sV -Pn 192.168.0.28 -oG mrrobot.txt
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-26 08:38 EDT
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 08:38
+Completed Parallel DNS resolution of 1 host. at 08:38, 0.01s elapsed
+Initiating Connect Scan at 08:38
+Scanning 192.168.0.28 [1000 ports]
+Discovered open port 443/tcp on 192.168.0.28
+Discovered open port 80/tcp on 192.168.0.28
+Completed Connect Scan at 08:38, 4.40s elapsed (1000 total ports)
+Initiating Service scan at 08:38
+Scanning 2 services on 192.168.0.28
+Completed Service scan at 08:38, 12.11s elapsed (2 services on 1 host)
+NSE: Script scanning 192.168.0.28.
+Initiating NSE at 08:38
+Completed NSE at 08:38, 2.15s elapsed
+Initiating NSE at 08:38
+Completed NSE at 08:38, 0.03s elapsed
+Nmap scan report for 192.168.0.28
+Host is up (0.0011s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+443/tcp open   ssl/http Apache httpd
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.89 seconds
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ 
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ exit
+exit
+
+Script done on 2020-10-26 08:38:47-04:00 [COMMAND_EXIT_CODE="0"]

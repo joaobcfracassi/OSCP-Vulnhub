@@ -1,0 +1,76 @@
+Script started on 2020-10-27 15:38:58-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="39"]
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# hash0[K-identifier 
+   #########################################################################
+   #     __  __                     __           ______    _____           #
+   #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #
+   #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #
+   #     \ \  _  \  /'__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #
+   #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #
+   #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #
+   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v1.2 #
+   #                                                             By Zion3R #
+   #                                                    www.Blackploit.com #
+   #                                                   Root@Blackploit.com #
+   #########################################################################
+--------------------------------------------------
+ HASH: c3fcd3d76192e4007dfb496cca67e13b
+
+Possible Hashs:
+[+] MD5
+[+] Domain Cached Credentials - MD4(MD4(($pass)).(strtolower($username)))
+
+Least Possible Hashs:
+[+] RAdmin v2.x
+[+] NTLM
+[+] MD4
+[+] MD2
+[+] MD5(HMAC)
+[+] MD4(HMAC)
+[+] MD2(HMAC)
+[+] MD5(HMAC(Wordpress))
+[+] Haval-128
+[+] Haval-128(HMAC)
+[+] RipeMD-128
+[+] RipeMD-128(HMAC)
+[+] SNEFRU-128
+[+] SNEFRU-128(HMAC)
+[+] Tiger-128
+[+] Tiger-128(HMAC)
+[+] md5($pass.$salt)
+[+] md5($salt.$pass)
+[+] md5($salt.$pass.$salt)
+[+] md5($salt.$pass.$username)
+[+] md5($salt.md5($pass))
+[+] md5($salt.md5($pass))
+[+] md5($salt.md5($pass.$salt))
+[+] md5($salt.md5($pass.$salt))
+[+] md5($salt.md5($salt.$pass))
+[+] md5($salt.md5(md5($pass).$salt))
+[+] md5($username.0.$pass)
+[+] md5($username.LF.$pass)
+[+] md5($username.md5($pass).$salt)
+[+] md5(md5($pass))
+[+] md5(md5($pass).$salt)
+[+] md5(md5($pass).md5($salt))
+[+] md5(md5($salt).$pass)
+[+] md5(md5($salt).md5($pass))
+[+] md5(md5($username.$pass).$salt)
+[+] md5(md5(md5($pass)))
+[+] md5(md5(md5(md5($pass))))
+[+] md5(md5(md5(md5(md5($pass)))))
+[+] md5(sha1($pass))
+[+] md5(sha1(md5($pass)))
+[+] md5(sha1(md5(sha1($pass))))
+[+] md5(strtoupper(md5($pass)))
+--------------------------------------------------
+ HASH: ^C
+
+	Bye!
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ssh robot@192.1680[K.0.28
+ssh: connect to host 192.168.0.28 port 22: Connection refused
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ser[K[K[Kw[Kexit
+exit
+
+Script done on 2020-10-27 16:00:07-04:00 [COMMAND_EXIT_CODE="255"]

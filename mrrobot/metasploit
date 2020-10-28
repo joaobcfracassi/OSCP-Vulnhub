@@ -1,0 +1,91 @@
+Script started on 2020-10-27 16:41:53-04:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="166" LINES="39"]
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ msfconsole
+^C
+Aborting...
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ sudo su
+[sudo] password for kali: 
+]0;root@kali: /home/kali[1;31mroot@kali[00m:[1;34m/home/kali[00m# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-                                                  
+[0m[36m[0m[37m
+  Metasploit Park, System Security Interface
+  Version 4.0.5, Alpha E
+  Ready...
+  > [1maccess security[0m
+  access: PERMISSION DENIED.
+  > [1maccess security grid[0m
+  access: PERMISSION DENIED.
+  > [1maccess main security grid[0m
+  access: PERMISSION DENIED....and...
+  [31mYOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD!
+  YOU DIDN'T SAY THE MAGIC WORD![0m
+[0m
+
+       =[ [33mmetasploit v5.0.99-dev[0m                          ]
++ -- --=[ 2045 exploits - 1106 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Tired of setting RHOSTS for modules? Try globally setting it with [32msetg RHOSTS x.x.x.x[0m
+
+[?1034h[4mmsf5[0m [0m> search Recvmmsg
+[0m
+Matching Modules
+================
+
+   #  Name                                   Disclosure Date  Rank  Check  Description
+   -  ----                                   ---------------  ----  -----  -----------
+   0  exploit/linux/local/[45mrecvmmsg[0m_priv_esc  2014-02-02       good  Yes    Linux Kernel [45mrecvmmsg[0m Privilege Escalation
+
+
+[4mmsf5[0m [0m> use exploit/linux/local/recvmmsg_priv_esc
+[0m[1m[34m[*][0m No payload configured, defaulting to linux/x64/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mlinux/local/recvmmsg_priv_esc[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mlinux/local/recvmmsg_priv_esc[0m) [0m> options[K[K[K[K[K[K[Kshow options
+[0m
+Module options (exploit/linux/local/recvmmsg_priv_esc):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   COMPILE  Auto             yes       Compile on target (Accepted: Auto, True, False)
+   SESSION                   yes       The session to run this module on.
+
+
+Payload options (linux/x64/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.0.29     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Auto
+
+
+[4mmsf5[0m exploit([1m[31mlinux/local/recvmmsg_priv_esc[0m) [0m> exit
+[0m]0;root@kali: /home/kali[1;31mroot@kali[00m:[1;34m/home/kali[00m# exit
+exit
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ ls
+[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  metasploit  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mTryJao[0m  [01;34mVideos[0m
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ clear
+[H[2J[3J]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ ls
+[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  metasploit  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mTryJao[0m  [01;34mVideos[0m
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ m[Ksudo mv metasploit .T[K[K/Try[K[K[K[KTryJao/OSCP-Vulnhub/me[Krrobot/
+[sudo] password for kali: 
+Sorry, try again.
+[sudo] password for kali: 
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ cla[K[K[Kcear[K[K[Klear
+[H[2J[3J]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ P[Kecho $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+]0;kali@kali: ~[1;34mkali@kali[00m:[1;32m~[00m$ cd [K[K[Kcd [K[K[Kexit
+exit
+
+Script done on 2020-10-27 18:03:46-04:00 [COMMAND_EXIT_CODE="0"]

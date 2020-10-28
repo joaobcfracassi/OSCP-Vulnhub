@@ -1,0 +1,38 @@
+Script started on 2020-10-26 08:51:56-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="90" LINES="29"]
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ exitnmap -A 192.168.0.28-192.168.0.28O192.168.0.28 192.168.0.28
+TCP/IP fingerprinting (for OS scan) requires root privileges.
+QUITTING!
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ nmap -A -O 192.168.0.28[1@s[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -oG mrrobot[Kt2.txt
+[sudo] password for kali: 
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-10-26 08:52 EDT
+Nmap scan report for 192.168.0.28
+Host is up (0.00078s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+443/tcp open   ssl/http Apache httpd
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=www.example.com
+| Not valid before: 2015-09-16T10:45:03
+|_Not valid after:  2025-09-13T10:45:03
+MAC Address: 08:00:27:AA:78:12 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.11
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.78 ms 192.168.0.28
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.11 seconds
+]0;kali@kali: ~/TryJao/OSCP-Vulnhub/mrrobot[1;34mkali@kali[00m:[1;32m~/TryJao/OSCP-Vulnhub/mrrobot[00m$ exit
+exit
+
+Script done on 2020-10-26 08:53:23-04:00 [COMMAND_EXIT_CODE="0"]
